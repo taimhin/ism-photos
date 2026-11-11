@@ -713,19 +713,15 @@ function pageHome() {
 }
 
 function featureCard(activity, index) {
-  const cat = catById(activity.category);
   return `
-    <a class="feature-card reveal" href="#/activity/${encodeURIComponent(activity.id)}" style="--cat:${cat.color}">
+    <a class="feature-card reveal" href="#/activity/${encodeURIComponent(activity.id)}">
       <img class="feature-img" src="${activity.photos[0].src}" alt="${esc(L(activity.photos[0].caption))}" loading="${index === 0 ? "eager" : "lazy"}">
       <span class="feature-shade"></span>
       <span class="feature-top">
-        <span class="card-chip">${esc(L(cat))}</span>
         <span class="feature-arrow">${icon("arrowUpRight")}</span>
       </span>
       <span class="feature-body">
-        <span class="feature-date">${esc(activity.year)} · ${esc(fmtDate(activity.date))}</span>
         <strong class="feature-title">${esc(L(activity.title))}</strong>
-        <span class="feature-alt">${esc(O(activity.title))}</span>
       </span>
     </a>`;
 }
@@ -991,25 +987,15 @@ function updateActivityChipCounts(f) {
 }
 
 function activityCard(activity) {
-  const T = t();
-  const cat = catById(activity.category);
   return `
     <article class="activity-card reveal">
       <a class="activity-link" href="#/activity/${encodeURIComponent(activity.id)}">
         <div class="activity-media">
           <img src="${activity.photos[0].src}" alt="${esc(L(activity.photos[0].caption))}" loading="lazy">
-          <span class="card-cat" style="--cat:${cat.color};--cat-soft:${cat.soft}">${esc(L(cat))}</span>
-          <span class="card-year">${esc(activity.year)}</span>
         </div>
         <div class="activity-body">
-          <span class="activity-date">${esc(fmtDate(activity.date))}</span>
           <h3 class="activity-title">${esc(L(activity.title))}</h3>
-          <p class="activity-alt">${esc(O(activity.title))}</p>
-          <p class="activity-excerpt">${esc(L(activity.excerpt))}</p>
-          <span class="activity-foot">
-            <span>${icon("camera")} ${photoCount(activity.photos.length)}</span>
-            <span class="round-arrow">${icon("arrowRight")}</span>
-          </span>
+          <span class="round-arrow">${icon("arrowRight")}</span>
         </div>
       </a>
     </article>`;
@@ -1118,17 +1104,11 @@ function updateGalleryResults() {
 }
 
 function galleryItem(photo, index) {
-  const cat = catById(photo.activity.category);
   return `
-    <button class="masonry-item" type="button" data-photo-set="gallery" data-photo-index="${index}" aria-label="${esc(L(photo.caption))}">
-      <img src="${photo.src}" alt="${esc(L(photo.caption))}" loading="lazy">
+    <button class="masonry-item" type="button" data-photo-set="gallery" data-photo-index="${index}" aria-label="${esc(L(photo.activity.title))}">
+      <img src="${photo.src}" alt="${esc(L(photo.activity.title))}" loading="lazy">
       <span class="masonry-overlay">
-        <span class="masonry-top">
-          <span class="masonry-cat"><span class="tag-dot" style="background:${cat.color}"></span>${esc(photo.activity.year)} · ${esc(L(cat))}</span>
-          <span class="masonry-zoom">${icon("expand")}</span>
-        </span>
         <span class="masonry-activity">${esc(L(photo.activity.title))}</span>
-        <span class="masonry-cap">${esc(L(photo.caption))}</span>
       </span>
     </button>`;
 }
@@ -1139,7 +1119,6 @@ function pageActivity(route) {
   const activity = activityById(route.id);
   if (!activity) return pageNotFound();
   const T = t();
-  const cat = catById(activity.category);
   const ordered = sortedActivities();
   const index = ordered.findIndex((a) => a.id === activity.id);
   const newer = ordered[index - 1];
@@ -1154,74 +1133,21 @@ function pageActivity(route) {
           <span aria-hidden="true">/</span>
           <a href="#/activities">${esc(T.detailActivities)}</a>
           <span aria-hidden="true">/</span>
-          <span>${esc(activity.year)}</span>
-          <span aria-hidden="true">/</span>
           <span>${esc(L(activity.title))}</span>
         </nav>
-        <div class="detail-hero">
-          <div class="detail-intro">
-            <span class="cat-pill" style="--cat:${cat.color};--cat-soft:${cat.soft}">${icon(cat.icon)} ${esc(L(cat))}</span>
-            <h1 class="detail-title">${esc(L(activity.title))}</h1>
-            <p class="detail-alt-title">${esc(O(activity.title))}</p>
-            <p class="detail-sub">${esc(L(activity.subtitle))}</p>
-            <p class="detail-excerpt">${esc(L(activity.excerpt))}</p>
-            <div class="detail-meta">
-              <span class="meta-item">${icon("calendar")}<span><small>${esc(T.date)}</small>${esc(fmtDate(activity.date))}</span></span>
-              <span class="meta-item">${icon("pin")}<span><small>${esc(T.location)}</small>${esc(L(activity.location))}</span></span>
-              <span class="meta-item">${icon("camera")}<span><small>${esc(T.photosLabel)}</small>${photoCount(activity.photos.length)}</span></span>
-            </div>
-          </div>
-          <figure class="detail-cover">
-            <img src="${activity.photos[0].src}" alt="${esc(L(activity.photos[0].caption))}">
-            <figcaption class="cover-sticker">${icon("camera")} ${esc(T.albumTitle)}</figcaption>
-          </figure>
-        </div>
+        <h1 class="detail-title">${esc(L(activity.title))}</h1>
       </div>
     </section>
 
-    <section class="section detail-body-section">
-      <div class="container detail-layout">
-        <div class="detail-main">
-          <p class="section-kicker">${esc(T.aboutEvent)}</p>
-          <h2 class="section-title small">${esc(L(activity.subtitle))}</h2>
-          <div class="prose">
-            ${activity.body[state.lang].map((p) => `<p>${esc(p)}</p>`).join("")}
-          </div>
-        </div>
-        <aside class="detail-side">
-          <div class="side-card">
-            <span class="side-mark">${icon(cat.icon)}</span>
-            <h3>${esc(L(cat))}</h3>
-            <p>${esc(L(cat.tagline))}</p>
-            <dl class="fact-list">
-              <div><dt>${esc(T.date)}</dt><dd>${esc(fmtDate(activity.date))}</dd></div>
-              <div><dt>${esc(T.location)}</dt><dd>${esc(L(activity.location))}</dd></div>
-              <div><dt>${esc(T.photosLabel)}</dt><dd>${photoCount(activity.photos.length)}</dd></div>
-            </dl>
-            <a class="text-link" href="#/activities">${icon("chevronLeft")} ${esc(T.backActivities)}</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section album-section">
+    <section class="album-section simple-album">
       <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="section-kicker">${esc(T.albumTitle)} · ${esc(L(cat))}</p>
-            <h2 class="section-title small">${esc(L(activity.title))}</h2>
-          </div>
-          <p class="album-hint">${icon("expand")} ${esc(T.albumHint)}</p>
-        </div>
         <div class="photo-grid">
           ${activity.photos.map((photo, i) => `
-            <button class="photo-tile" type="button" data-photo-set="detail" data-photo-index="${i}" aria-label="${esc(L(photo.caption))}" style="--delay:${i * 35}ms">
+            <button class="photo-tile" type="button" data-photo-set="detail" data-photo-index="${i}" aria-label="${esc(L(activity.title))}">
               <img src="${photo.src}" alt="${esc(L(photo.caption))}" loading="lazy">
               <span class="photo-tile-zoom">${icon("expand")}</span>
-              <span class="photo-tile-num">${String(i + 1).padStart(2, "0")}</span>
             </button>`).join("")}
         </div>
-        <p class="album-end">✦ ${esc(T.albumEnd)} ✦</p>
       </div>
     </section>
 
@@ -1231,12 +1157,10 @@ function pageActivity(route) {
           ${newer ? `<a class="next-card" href="#/activity/${encodeURIComponent(newer.id)}">
             <span class="next-label">${icon("chevronLeft")} ${esc(T.prevActivity)}</span>
             <strong>${esc(L(newer.title))}</strong>
-            <small>${esc(O(newer.title))}</small>
           </a>` : ""}
           ${older ? `<a class="next-card align-right" href="#/activity/${encodeURIComponent(older.id)}">
             <span class="next-label">${esc(T.nextActivity)} ${icon("chevronRight")}</span>
             <strong>${esc(L(older.title))}</strong>
-            <small>${esc(O(older.title))}</small>
           </a>` : ""}
         </div>
       </div>
@@ -1392,10 +1316,8 @@ function updateLightbox() {
   img.src = photo.src;
   img.alt = L(photo.caption);
   $("#lb-counter").textContent = `${lb.index + 1} / ${lb.list.length}`;
-  $("#lb-caption").textContent = L(photo.caption);
-  $("#lb-meta").textContent = photo.activity
-    ? `${photo.activity.year} · ${L(photo.activity.title)} · ${fmtDate(photo.activity.date)}`
-    : "";
+  $("#lb-caption").textContent = photo.activity ? L(photo.activity.title) : "";
+  $("#lb-meta").textContent = "";
   const dialog = $("#lightbox .lb-dialog");
   dialog.setAttribute("aria-label", T.lightboxLabel);
   $("#lb-close").setAttribute("aria-label", T.lightboxClose);

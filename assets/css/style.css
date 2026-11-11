@@ -914,7 +914,7 @@ html[lang="en"] .brand-text strong {
   z-index: 2;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .card-chip {
@@ -1962,9 +1962,11 @@ html[lang="en"] .brand-text strong {
 
 .activity-body {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
   flex: 1;
-  padding: 21px 22px 19px;
+  padding: 18px 20px;
 }
 
 .activity-date {
@@ -1978,10 +1980,14 @@ html[lang="en"] .brand-text strong {
 }
 
 .activity-title {
-  margin-bottom: 3px;
-  font-size: 1.22rem;
+  margin: 0;
+  font-size: 1.18rem;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.35;
+}
+
+.activity-body .round-arrow {
+  flex: 0 0 auto;
 }
 
 .activity-alt {
@@ -2146,8 +2152,9 @@ html[lang="en"] .brand-text strong {
 }
 
 .detail-title {
-  margin-bottom: 6px;
-  font-size: clamp(2.1rem, 4.2vw, 3.7rem);
+  max-width: 1000px;
+  margin-bottom: 0;
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 1.08;
@@ -2350,6 +2357,11 @@ html[lang="en"] .brand-text strong {
 .album-section {
   margin-top: 36px;
   background: var(--bg-2);
+}
+
+.simple-album {
+  margin-top: 0;
+  padding: 52px 0 76px;
 }
 
 .album-hint {
@@ -3055,8 +3067,13 @@ html[lang="en"] .brand-text strong {
 
 .lb-cap-text {
   color: var(--cream);
-  font-size: 12.5px;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.6;
+}
+
+#lb-meta:empty {
+  display: none;
 }
 
 .lb-cap-meta {
