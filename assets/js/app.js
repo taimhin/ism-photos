@@ -426,7 +426,7 @@ function renderHeader(route) {
   header.innerHTML = `
     <div class="container header-inner">
       <a class="brand" href="#/" aria-label="${esc(T.siteName)}">
-        <img src="assets/img/logo.svg" alt="" width="46" height="46">
+        <img src="assets/img/crest.png" alt="" width="46" height="46">
         <span class="brand-text">
           <strong>${esc(T.siteName)}</strong>
           <span>${esc(T.siteSub)}</span>
@@ -455,7 +455,7 @@ function renderFooter() {
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="brand brand-footer" href="#/">
-          <img src="assets/img/logo.svg" alt="" width="46" height="46">
+          <img src="assets/img/crest.png" alt="" width="46" height="46">
           <span class="brand-text"><strong>${esc(T.siteName)}</strong><span>${esc(T.siteSub)}</span></span>
         </a>
         <p>${esc(T.footerTagline)}</p>
@@ -630,7 +630,7 @@ function pageHome() {
             <defs><path id="orbitPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
             <text><textPath href="#orbitPath">SALESIAN SCHOOL MACAU · ACTIVITY GALLERY · </textPath></text>
           </svg>
-          <span>${icon("sparkle")}</span>
+          <span><img src="assets/img/crest.png" alt=""></span>
         </div>
         <div class="collage">
           ${collage}
@@ -1354,7 +1354,7 @@ function pageAbout() {
             <span class="contact-note">${icon("pin")} ${esc(T.contactNote)}</span>
           </div>
           <div class="contact-seal">
-            <img src="assets/img/logo.svg" alt="" width="64" height="64">
+            <img src="assets/img/crest.png" alt="" width="64" height="64">
             <span><strong>${esc(T.siteName)}</strong><small>${esc(T.siteSub)}</small></span>
           </div>
         </div>

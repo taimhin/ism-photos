@@ -110,7 +110,8 @@ assets/
   css/style.css            視覺與響應式版面
   js/data.js               活動、照片、分類資料（主要編輯位置）
   js/app.js                路由、雙語、搜尋、燈箱、互動
-  img/logo.svg             網站標誌
+  img/logo.svg             舊網站標誌（備用）
+  img/crest.png            澳門慈幼中學校徽
   img/ph/                  早期版面示意圖（現已停用）
 photos/                    已壓縮的網站照片
 tools/                     照片與版面示意圖產生工具
