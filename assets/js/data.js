@@ -129,57 +129,274 @@ const ACTIVITIES = [
       {
         "src": "photos/class-competition/01.jpg",
         "caption": {
-          "zh": "班際競賽開始，同學全力以赴。",
-          "en": "The inter-class competition begins with full effort."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/02.jpg",
         "caption": {
-          "zh": "隊友互相打氣，現場氣氛熱烈。",
-          "en": "Teammates cheer each other on in a lively atmosphere."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/03.jpg",
         "caption": {
-          "zh": "比賽結束，班級合照留念。",
-          "en": "Classes pose for photos after the competition."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/04.jpg",
         "caption": {
-          "zh": "班際競賽開始，同學全力以赴。",
-          "en": "The inter-class competition begins with full effort."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/05.jpg",
         "caption": {
-          "zh": "隊友互相打氣，現場氣氛熱烈。",
-          "en": "Teammates cheer each other on in a lively atmosphere."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/06.jpg",
         "caption": {
-          "zh": "比賽結束，班級合照留念。",
-          "en": "Classes pose for photos after the competition."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/07.jpg",
         "caption": {
-          "zh": "班際競賽開始，同學全力以赴。",
-          "en": "The inter-class competition begins with full effort."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       },
       {
         "src": "photos/class-competition/08.jpg",
         "caption": {
-          "zh": "隊友互相打氣，現場氣氛熱烈。",
-          "en": "Teammates cheer each other on in a lively atmosphere."
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/09.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/10.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/11.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/12.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/13.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/14.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/15.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/16.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/17.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/18.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/19.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/20.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/21.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/22.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/23.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/24.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/25.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/26.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/27.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/28.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/29.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/30.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/31.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/32.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/33.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/34.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/35.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/36.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/37.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/38.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
+        }
+      },
+      {
+        "src": "photos/class-competition/39.jpg",
+        "caption": {
+          "zh": "F3 班際競賽",
+          "en": "F3 Inter-class Competition"
         }
       }
     ]
@@ -219,50 +436,50 @@ const ACTIVITIES = [
       {
         "src": "photos/new-curriculum/01.jpg",
         "caption": {
-          "zh": "行政人員入班講解新課程安排。",
-          "en": "Administrators explain the new curriculum in class."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/02.jpg",
         "caption": {
-          "zh": "同學細心聆聽，了解課程變化。",
-          "en": "Students listen carefully to the changes ahead."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/03.jpg",
         "caption": {
-          "zh": "老師即場解答同學的疑問。",
-          "en": "Teachers answer students' questions on the spot."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/04.jpg",
         "caption": {
-          "zh": "行政人員入班講解新課程安排。",
-          "en": "Administrators explain the new curriculum in class."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/05.jpg",
         "caption": {
-          "zh": "同學細心聆聽，了解課程變化。",
-          "en": "Students listen carefully to the changes ahead."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/06.jpg",
         "caption": {
-          "zh": "老師即場解答同學的疑問。",
-          "en": "Teachers answer students' questions on the spot."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       },
       {
         "src": "photos/new-curriculum/07.jpg",
         "caption": {
-          "zh": "行政人員入班講解新課程安排。",
-          "en": "Administrators explain the new curriculum in class."
+          "zh": "F3 行政人員入班講解新課程",
+          "en": "F3 New Curriculum Briefing"
         }
       }
     ]
@@ -302,57 +519,127 @@ const ACTIVITIES = [
       {
         "src": "photos/sports-week/01.jpg",
         "caption": {
-          "zh": "體育週活動開始，同學挑戰不同項目。",
-          "en": "Sports Week begins with a range of challenges."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/02.jpg",
         "caption": {
-          "zh": "同學全力以赴，場邊加油聲不斷。",
-          "en": "Students give their all as cheers ring out."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/03.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留念。",
-          "en": "A group photo wraps up the day."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/04.jpg",
         "caption": {
-          "zh": "體育週活動開始，同學挑戰不同項目。",
-          "en": "Sports Week begins with a range of challenges."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/05.jpg",
         "caption": {
-          "zh": "同學全力以赴，場邊加油聲不斷。",
-          "en": "Students give their all as cheers ring out."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/06.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留念。",
-          "en": "A group photo wraps up the day."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/07.jpg",
         "caption": {
-          "zh": "體育週活動開始，同學挑戰不同項目。",
-          "en": "Sports Week begins with a range of challenges."
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       },
       {
         "src": "photos/sports-week/08.jpg",
         "caption": {
-          "zh": "同學全力以赴，場邊加油聲不斷。",
-          "en": "Students give their all as cheers ring out."
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/09.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/10.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/11.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/12.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/13.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/14.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/15.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/16.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/17.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
+        }
+      },
+      {
+        "src": "photos/sports-week/18.jpg",
+        "caption": {
+          "zh": "體育週",
+          "en": "Sports Week"
         }
       }
     ]
@@ -392,57 +679,379 @@ const ACTIVITIES = [
       {
         "src": "photos/music-week/01.jpg",
         "caption": {
-          "zh": "音樂週舞台上，同學投入演出。",
-          "en": "Students give an engaging performance on the Music Week stage."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/02.jpg",
         "caption": {
-          "zh": "台下的掌聲與歡呼此起彼落。",
-          "en": "Applause and cheers rise from the audience."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/03.jpg",
         "caption": {
-          "zh": "演出結束，表演者與老師合照。",
-          "en": "Performers and teachers pose for a photo after the show."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/04.jpg",
         "caption": {
-          "zh": "音樂週舞台上，同學投入演出。",
-          "en": "Students give an engaging performance on the Music Week stage."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/05.jpg",
         "caption": {
-          "zh": "台下的掌聲與歡呼此起彼落。",
-          "en": "Applause and cheers rise from the audience."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/06.jpg",
         "caption": {
-          "zh": "演出結束，表演者與老師合照。",
-          "en": "Performers and teachers pose for a photo after the show."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/07.jpg",
         "caption": {
-          "zh": "音樂週舞台上，同學投入演出。",
-          "en": "Students give an engaging performance on the Music Week stage."
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       },
       {
         "src": "photos/music-week/08.jpg",
         "caption": {
-          "zh": "台下的掌聲與歡呼此起彼落。",
-          "en": "Applause and cheers rise from the audience."
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/09.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/10.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/11.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/12.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/13.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/14.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/15.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/16.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/17.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/18.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/19.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/20.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/21.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/22.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/23.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/24.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/25.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/26.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/27.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/28.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/29.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/30.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/31.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/32.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/33.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/34.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/35.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/36.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/37.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/38.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/39.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/40.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/41.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/42.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/43.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/44.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/45.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/46.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/47.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/48.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/49.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/50.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/51.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/52.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/53.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
+        }
+      },
+      {
+        "src": "photos/music-week/54.jpg",
+        "caption": {
+          "zh": "音樂週",
+          "en": "Music Week"
         }
       }
     ]
@@ -482,43 +1091,43 @@ const ACTIVITIES = [
       {
         "src": "photos/provincial-talk/01.jpg",
         "caption": {
-          "zh": "省會長向師生講話，分享勉勵。",
-          "en": "The Provincial Superior shares words of encouragement."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       },
       {
         "src": "photos/provincial-talk/02.jpg",
         "caption": {
-          "zh": "同學專心聆聽，現場氣氛莊重。",
-          "en": "Students listen attentively in a solemn atmosphere."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       },
       {
         "src": "photos/provincial-talk/03.jpg",
         "caption": {
-          "zh": "講話結束，全場以掌聲致謝。",
-          "en": "The community applauds at the end of the address."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       },
       {
         "src": "photos/provincial-talk/04.jpg",
         "caption": {
-          "zh": "省會長向師生講話，分享勉勵。",
-          "en": "The Provincial Superior shares words of encouragement."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       },
       {
         "src": "photos/provincial-talk/05.jpg",
         "caption": {
-          "zh": "同學專心聆聽，現場氣氛莊重。",
-          "en": "Students listen attentively in a solemn atmosphere."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       },
       {
         "src": "photos/provincial-talk/06.jpg",
         "caption": {
-          "zh": "講話結束，全場以掌聲致謝。",
-          "en": "The community applauds at the end of the address."
+          "zh": "省會長講話",
+          "en": "Provincial Superior's Address"
         }
       }
     ]
@@ -560,29 +1169,29 @@ const ACTIVITIES = [
       {
         "src": "photos/career-week/01.jpg",
         "caption": {
-          "zh": "生涯規劃週攤位前，同學了解升學資訊。",
-          "en": "Students explore pathways at the Career Week booths."
+          "zh": "生涯規劃週",
+          "en": "Career Planning Week"
         }
       },
       {
         "src": "photos/career-week/02.jpg",
         "caption": {
-          "zh": "導師與同學交流，協助探索方向。",
-          "en": "Mentors talk with students and help them explore directions."
+          "zh": "生涯規劃週",
+          "en": "Career Planning Week"
         }
       },
       {
         "src": "photos/career-week/03.jpg",
         "caption": {
-          "zh": "活動結束，同學帶著新想法離開。",
-          "en": "Students leave with new ideas and possibilities."
+          "zh": "生涯規劃週",
+          "en": "Career Planning Week"
         }
       },
       {
         "src": "photos/career-week/04.jpg",
         "caption": {
-          "zh": "生涯規劃週攤位前，同學了解升學資訊。",
-          "en": "Students explore pathways at the Career Week booths."
+          "zh": "生涯規劃週",
+          "en": "Career Planning Week"
         }
       }
     ]
@@ -624,43 +1233,43 @@ const ACTIVITIES = [
       {
         "src": "photos/reclamation-talk/01.jpg",
         "caption": {
-          "zh": "講者以地圖解說填海與城市發展。",
-          "en": "The speaker uses maps to explain reclamation and urban growth."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       },
       {
         "src": "photos/reclamation-talk/02.jpg",
         "caption": {
-          "zh": "同學專心聆聽，思考土地與環境的關係。",
-          "en": "Students reflect on the relationship between land and environment."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       },
       {
         "src": "photos/reclamation-talk/03.jpg",
         "caption": {
-          "zh": "問答環節，同學踴躍舉手提問。",
-          "en": "Students raise questions during the Q&A."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       },
       {
         "src": "photos/reclamation-talk/04.jpg",
         "caption": {
-          "zh": "講者以地圖解說填海與城市發展。",
-          "en": "The speaker uses maps to explain reclamation and urban growth."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       },
       {
         "src": "photos/reclamation-talk/05.jpg",
         "caption": {
-          "zh": "同學專心聆聽，思考土地與環境的關係。",
-          "en": "Students reflect on the relationship between land and environment."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       },
       {
         "src": "photos/reclamation-talk/06.jpg",
         "caption": {
-          "zh": "問答環節，同學踴躍舉手提問。",
-          "en": "Students raise questions during the Q&A."
+          "zh": "填海講座",
+          "en": "Land Reclamation Talk"
         }
       }
     ]
@@ -700,15 +1309,15 @@ const ACTIVITIES = [
       {
         "src": "photos/jump-rope/01.jpg",
         "caption": {
-          "zh": "跳繩比賽現場，同學全力以赴。",
-          "en": "Students give their best at the jump rope competition."
+          "zh": "初中跳繩比賽",
+          "en": "Junior High Jump Rope Competition"
         }
       },
       {
         "src": "photos/jump-rope/02.jpg",
         "caption": {
-          "zh": "繩影翻飛，場邊同學加油打氣。",
-          "en": "Ropes spin as classmates cheer from the sidelines."
+          "zh": "初中跳繩比賽",
+          "en": "Junior High Jump Rope Competition"
         }
       }
     ]
@@ -748,50 +1357,50 @@ const ACTIVITIES = [
       {
         "src": "photos/easter-prayer/01.jpg",
         "caption": {
-          "zh": "中小學師生齊聚，參與復活節祈禱會。",
-          "en": "Primary and secondary students gather for the Easter prayer."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/02.jpg",
         "caption": {
-          "zh": "同學安靜祈禱，現場氣氛平和。",
-          "en": "Students pray quietly in a peaceful atmosphere."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/03.jpg",
         "caption": {
-          "zh": "祈禱會結束，師生有序離開會場。",
-          "en": "The gathering ends and everyone leaves in an orderly way."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/04.jpg",
         "caption": {
-          "zh": "中小學師生齊聚，參與復活節祈禱會。",
-          "en": "Primary and secondary students gather for the Easter prayer."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/05.jpg",
         "caption": {
-          "zh": "同學安靜祈禱，現場氣氛平和。",
-          "en": "Students pray quietly in a peaceful atmosphere."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/06.jpg",
         "caption": {
-          "zh": "祈禱會結束，師生有序離開會場。",
-          "en": "The gathering ends and everyone leaves in an orderly way."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       },
       {
         "src": "photos/easter-prayer/07.jpg",
         "caption": {
-          "zh": "中小學師生齊聚，參與復活節祈禱會。",
-          "en": "Primary and secondary students gather for the Easter prayer."
+          "zh": "中小學復活節祈禱會",
+          "en": "Easter Prayer Gathering"
         }
       }
     ]
@@ -833,57 +1442,162 @@ const ACTIVITIES = [
       {
         "src": "photos/subject-selection/01.jpg",
         "caption": {
-          "zh": "講解會現場，家長與同學專心聆聽。",
-          "en": "Parents and students listen closely at the briefing."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/02.jpg",
         "caption": {
-          "zh": "老師介紹選科資訊，家長不時記錄。",
-          "en": "Teachers present subject information as parents take notes."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/03.jpg",
         "caption": {
-          "zh": "會後交流，家長與老師討論升學方向。",
-          "en": "Families talk with teachers about pathways after the talk."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/04.jpg",
         "caption": {
-          "zh": "講解會現場，家長與同學專心聆聽。",
-          "en": "Parents and students listen closely at the briefing."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/05.jpg",
         "caption": {
-          "zh": "老師介紹選科資訊，家長不時記錄。",
-          "en": "Teachers present subject information as parents take notes."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/06.jpg",
         "caption": {
-          "zh": "會後交流，家長與老師討論升學方向。",
-          "en": "Families talk with teachers about pathways after the talk."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/07.jpg",
         "caption": {
-          "zh": "講解會現場，家長與同學專心聆聽。",
-          "en": "Parents and students listen closely at the briefing."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       },
       {
         "src": "photos/subject-selection/08.jpg",
         "caption": {
-          "zh": "老師介紹選科資訊，家長不時記錄。",
-          "en": "Teachers present subject information as parents take notes."
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/09.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/10.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/11.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/12.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/13.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/14.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/15.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/16.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/17.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/18.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/19.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/20.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/21.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/22.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
+        }
+      },
+      {
+        "src": "photos/subject-selection/23.jpg",
+        "caption": {
+          "zh": "F3 選科講解會（親子專場）",
+          "en": "F3 Subject Selection Talk (Parent Session)"
         }
       }
     ]
@@ -923,57 +1637,99 @@ const ACTIVITIES = [
       {
         "src": "photos/subject-selection-talk/01.jpg",
         "caption": {
-          "zh": "老師向 F3 同學介紹各選修科目。",
-          "en": "Teachers introduce the elective subjects to F3 students."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/02.jpg",
         "caption": {
-          "zh": "同學細心聆聽，了解課程要求。",
-          "en": "Students listen closely to the course requirements."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/03.jpg",
         "caption": {
-          "zh": "問答環節，同學踴躍舉手提問。",
-          "en": "Students raise their hands during the Q&A."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/04.jpg",
         "caption": {
-          "zh": "老師向 F3 同學介紹各選修科目。",
-          "en": "Teachers introduce the elective subjects to F3 students."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/05.jpg",
         "caption": {
-          "zh": "同學細心聆聽，了解課程要求。",
-          "en": "Students listen closely to the course requirements."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/06.jpg",
         "caption": {
-          "zh": "問答環節，同學踴躍舉手提問。",
-          "en": "Students raise their hands during the Q&A."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/07.jpg",
         "caption": {
-          "zh": "老師向 F3 同學介紹各選修科目。",
-          "en": "Teachers introduce the elective subjects to F3 students."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       },
       {
         "src": "photos/subject-selection-talk/08.jpg",
         "caption": {
-          "zh": "同學細心聆聽，了解課程要求。",
-          "en": "Students listen closely to the course requirements."
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/09.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/10.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/11.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/12.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/13.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/14.jpg",
+        "caption": {
+          "zh": "F3 選科講解會",
+          "en": "F3 Subject Selection Talk"
         }
       }
     ]
@@ -1013,57 +1769,155 @@ const ACTIVITIES = [
       {
         "src": "photos/bamboo-craft/01.jpg",
         "caption": {
-          "zh": "講者介紹竹棚工藝的結構與特色。",
-          "en": "The speaker introduces the structure of bamboo scaffolding."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/02.jpg",
         "caption": {
-          "zh": "同學專心聆聽，認識傳統搭棚技術。",
-          "en": "Students learn about traditional scaffolding techniques."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/03.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留念。",
-          "en": "A group photo at the end of the activity."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/04.jpg",
         "caption": {
-          "zh": "講者介紹竹棚工藝的結構與特色。",
-          "en": "The speaker introduces the structure of bamboo scaffolding."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/05.jpg",
         "caption": {
-          "zh": "同學專心聆聽，認識傳統搭棚技術。",
-          "en": "Students learn about traditional scaffolding techniques."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/06.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留念。",
-          "en": "A group photo at the end of the activity."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/07.jpg",
         "caption": {
-          "zh": "講者介紹竹棚工藝的結構與特色。",
-          "en": "The speaker introduces the structure of bamboo scaffolding."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       },
       {
         "src": "photos/bamboo-craft/08.jpg",
         "caption": {
-          "zh": "同學專心聆聽，認識傳統搭棚技術。",
-          "en": "Students learn about traditional scaffolding techniques."
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/09.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/10.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/11.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/12.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/13.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/14.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/15.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/16.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/17.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/18.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/19.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/20.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/21.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/22.jpg",
+        "caption": {
+          "zh": "F3 搭棚工藝",
+          "en": "Bamboo Scaffolding Workshop"
         }
       }
     ]
@@ -1103,57 +1957,330 @@ const ACTIVITIES = [
       {
         "src": "photos/chinese-culture/01.jpg",
         "caption": {
-          "zh": "同學在攤位前進行文化配對遊戲。",
-          "en": "Students take part in a cultural matching game."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/02.jpg",
         "caption": {
-          "zh": "導師講解文化知識，同學細心聆聽。",
-          "en": "Students listen as instructors share cultural knowledge."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/03.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留住熱鬧的一天。",
-          "en": "Teachers and students pose together at the end of the day."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/04.jpg",
         "caption": {
-          "zh": "同學在攤位前進行文化配對遊戲。",
-          "en": "Students take part in a cultural matching game."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/05.jpg",
         "caption": {
-          "zh": "導師講解文化知識，同學細心聆聽。",
-          "en": "Students listen as instructors share cultural knowledge."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/06.jpg",
         "caption": {
-          "zh": "活動結束，師生合照留住熱鬧的一天。",
-          "en": "Teachers and students pose together at the end of the day."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/07.jpg",
         "caption": {
-          "zh": "同學在攤位前進行文化配對遊戲。",
-          "en": "Students take part in a cultural matching game."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       },
       {
         "src": "photos/chinese-culture/08.jpg",
         "caption": {
-          "zh": "導師講解文化知識，同學細心聆聽。",
-          "en": "Students listen as instructors share cultural knowledge."
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/09.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/10.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/11.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/12.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/13.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/14.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/15.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/16.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/17.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/18.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/19.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/20.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/21.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/22.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/23.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/24.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/25.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/26.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/27.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/28.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/29.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/30.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/31.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/32.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/33.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/34.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/35.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/36.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/37.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/38.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/39.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/40.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/41.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/42.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/43.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/44.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/45.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/46.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
+        }
+      },
+      {
+        "src": "photos/chinese-culture/47.jpg",
+        "caption": {
+          "zh": "愛國愛澳中華文化推廣活動",
+          "en": "Chinese Culture Day"
         }
       }
     ]
@@ -1195,57 +2322,85 @@ const ACTIVITIES = [
       {
         "src": "photos/maritime-talk/01.jpg",
         "caption": {
-          "zh": "講者分享航海工作與航運發展。",
-          "en": "The speaker shares insights into maritime work and shipping."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/02.jpg",
         "caption": {
-          "zh": "同學對航海儀器與海上生活充滿好奇。",
-          "en": "Students are curious about navigation instruments and life at sea."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/03.jpg",
         "caption": {
-          "zh": "活動結束，師生以掌聲感謝講者。",
-          "en": "The audience thanks the speaker with a round of applause."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/04.jpg",
         "caption": {
-          "zh": "講者分享航海工作與航運發展。",
-          "en": "The speaker shares insights into maritime work and shipping."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/05.jpg",
         "caption": {
-          "zh": "同學對航海儀器與海上生活充滿好奇。",
-          "en": "Students are curious about navigation instruments and life at sea."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/06.jpg",
         "caption": {
-          "zh": "活動結束，師生以掌聲感謝講者。",
-          "en": "The audience thanks the speaker with a round of applause."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/07.jpg",
         "caption": {
-          "zh": "講者分享航海工作與航運發展。",
-          "en": "The speaker shares insights into maritime work and shipping."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       },
       {
         "src": "photos/maritime-talk/08.jpg",
         "caption": {
-          "zh": "同學對航海儀器與海上生活充滿好奇。",
-          "en": "Students are curious about navigation instruments and life at sea."
+          "zh": "航海講座",
+          "en": "Maritime Talk"
+        }
+      },
+      {
+        "src": "photos/maritime-talk/09.jpg",
+        "caption": {
+          "zh": "航海講座",
+          "en": "Maritime Talk"
+        }
+      },
+      {
+        "src": "photos/maritime-talk/10.jpg",
+        "caption": {
+          "zh": "航海講座",
+          "en": "Maritime Talk"
+        }
+      },
+      {
+        "src": "photos/maritime-talk/11.jpg",
+        "caption": {
+          "zh": "航海講座",
+          "en": "Maritime Talk"
+        }
+      },
+      {
+        "src": "photos/maritime-talk/12.jpg",
+        "caption": {
+          "zh": "航海講座",
+          "en": "Maritime Talk"
         }
       }
     ]
@@ -1285,57 +2440,162 @@ const ACTIVITIES = [
       {
         "src": "photos/math-competition-f2/01.jpg",
         "caption": {
-          "zh": "F2 參賽同學在台上準備應戰。",
-          "en": "F2 contestants get ready on stage."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/02.jpg",
         "caption": {
-          "zh": "台下同學為班級熱烈打氣。",
-          "en": "Classmates cheer from the audience."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/03.jpg",
         "caption": {
-          "zh": "比賽結束，參賽隊伍合照留念。",
-          "en": "Teams pose for a photo after the competition."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/04.jpg",
         "caption": {
-          "zh": "F2 參賽同學在台上準備應戰。",
-          "en": "F2 contestants get ready on stage."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/05.jpg",
         "caption": {
-          "zh": "台下同學為班級熱烈打氣。",
-          "en": "Classmates cheer from the audience."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/06.jpg",
         "caption": {
-          "zh": "比賽結束，參賽隊伍合照留念。",
-          "en": "Teams pose for a photo after the competition."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/07.jpg",
         "caption": {
-          "zh": "F2 參賽同學在台上準備應戰。",
-          "en": "F2 contestants get ready on stage."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f2/08.jpg",
         "caption": {
-          "zh": "台下同學為班級熱烈打氣。",
-          "en": "Classmates cheer from the audience."
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/09.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/10.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/11.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/12.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/13.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/14.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/15.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/16.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/17.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/18.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/19.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/20.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/21.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/22.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/23.jpg",
+        "caption": {
+          "zh": "F2 數學比賽",
+          "en": "F2 Mathematics Competition"
         }
       }
     ]
@@ -1375,57 +2635,197 @@ const ACTIVITIES = [
       {
         "src": "photos/math-competition-f1/01.jpg",
         "caption": {
-          "zh": "F1 同學專注解答比賽題目。",
-          "en": "F1 students focus on their competition problems."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/02.jpg",
         "caption": {
-          "zh": "限時之內，大家冷靜思考。",
-          "en": "Working calmly against the clock."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/03.jpg",
         "caption": {
-          "zh": "賽後師生合照，記錄努力的一天。",
-          "en": "Students and teachers gather for a photo after the contest."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/04.jpg",
         "caption": {
-          "zh": "F1 同學專注解答比賽題目。",
-          "en": "F1 students focus on their competition problems."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/05.jpg",
         "caption": {
-          "zh": "限時之內，大家冷靜思考。",
-          "en": "Working calmly against the clock."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/06.jpg",
         "caption": {
-          "zh": "賽後師生合照，記錄努力的一天。",
-          "en": "Students and teachers gather for a photo after the contest."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/07.jpg",
         "caption": {
-          "zh": "F1 同學專注解答比賽題目。",
-          "en": "F1 students focus on their competition problems."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition-f1/08.jpg",
         "caption": {
-          "zh": "限時之內，大家冷靜思考。",
-          "en": "Working calmly against the clock."
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/09.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/10.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/11.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/12.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/13.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/14.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/15.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/16.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/17.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/18.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/19.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/20.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/21.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/22.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/23.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/24.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/25.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/26.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/27.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/28.jpg",
+        "caption": {
+          "zh": "F1 數學比賽",
+          "en": "F1 Mathematics Competition"
         }
       }
     ]
@@ -1467,57 +2867,309 @@ const ACTIVITIES = [
       {
         "src": "photos/math-week/01.jpg",
         "caption": {
-          "zh": "數學週攤位前，同學挑戰解題遊戲。",
-          "en": "Students take on puzzle games at the Maths Week booths."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/02.jpg",
         "caption": {
-          "zh": "同學分組合作，一起破解難題。",
-          "en": "Teams work together to crack the problems."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/03.jpg",
         "caption": {
-          "zh": "禮堂內氣氛熱烈，掌聲與歡呼不斷。",
-          "en": "The hall is filled with applause and cheers."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/04.jpg",
         "caption": {
-          "zh": "數學週攤位前，同學挑戰解題遊戲。",
-          "en": "Students take on puzzle games at the Maths Week booths."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/05.jpg",
         "caption": {
-          "zh": "同學分組合作，一起破解難題。",
-          "en": "Teams work together to crack the problems."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/06.jpg",
         "caption": {
-          "zh": "禮堂內氣氛熱烈，掌聲與歡呼不斷。",
-          "en": "The hall is filled with applause and cheers."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/07.jpg",
         "caption": {
-          "zh": "數學週攤位前，同學挑戰解題遊戲。",
-          "en": "Students take on puzzle games at the Maths Week booths."
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       },
       {
         "src": "photos/math-week/08.jpg",
         "caption": {
-          "zh": "同學分組合作，一起破解難題。",
-          "en": "Teams work together to crack the problems."
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/09.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/10.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/11.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/12.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/13.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/14.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/15.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/16.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/17.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/18.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/19.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/20.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/21.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/22.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/23.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/24.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/25.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/26.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/27.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/28.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/29.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/30.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/31.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/32.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/33.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/34.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/35.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/36.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/37.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/38.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/39.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/40.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/41.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/42.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/43.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
+        }
+      },
+      {
+        "src": "photos/math-week/44.jpg",
+        "caption": {
+          "zh": "數學週",
+          "en": "Mathematics Week"
         }
       }
     ]
@@ -1557,57 +3209,323 @@ const ACTIVITIES = [
       {
         "src": "photos/math-competition/01.jpg",
         "caption": {
-          "zh": "比賽現場，同學全神貫注。",
-          "en": "Students are fully focused during the competition."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/02.jpg",
         "caption": {
-          "zh": "參賽者細心思考，逐一拆解難題。",
-          "en": "Contestants work carefully through each problem."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/03.jpg",
         "caption": {
-          "zh": "賽後合照，為努力留下紀錄。",
-          "en": "A group photo after the contest captures the effort."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/04.jpg",
         "caption": {
-          "zh": "比賽現場，同學全神貫注。",
-          "en": "Students are fully focused during the competition."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/05.jpg",
         "caption": {
-          "zh": "參賽者細心思考，逐一拆解難題。",
-          "en": "Contestants work carefully through each problem."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/06.jpg",
         "caption": {
-          "zh": "賽後合照，為努力留下紀錄。",
-          "en": "A group photo after the contest captures the effort."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/07.jpg",
         "caption": {
-          "zh": "比賽現場，同學全神貫注。",
-          "en": "Students are fully focused during the competition."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       },
       {
         "src": "photos/math-competition/08.jpg",
         "caption": {
-          "zh": "參賽者細心思考，逐一拆解難題。",
-          "en": "Contestants work carefully through each problem."
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/09.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/10.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/11.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/12.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/13.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/14.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/15.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/16.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/17.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/18.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/19.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/20.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/21.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/22.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/23.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/24.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/25.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/26.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/27.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/28.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/29.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/30.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/31.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/32.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/33.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/34.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/35.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/36.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/37.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/38.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/39.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/40.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/41.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/42.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/43.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/44.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/45.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
+        }
+      },
+      {
+        "src": "photos/math-competition/46.jpg",
+        "caption": {
+          "zh": "F3 數學比賽",
+          "en": "F3 Mathematics Competition"
         }
       }
     ]

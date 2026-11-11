@@ -3697,8 +3697,4 @@ html[lang="en"] .brand-text strong {
   .category-card {
     min-height: 190px;
   }
-
-  .masonry {
-    columns: 1;
-  }
 }
