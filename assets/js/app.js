@@ -493,7 +493,8 @@ function closeMobileNav() {
 function bindChrome() {
   const menuBtn = $("#menu-toggle");
   if (menuBtn) {
-    menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
       const open = document.body.classList.toggle("nav-open");
       menuBtn.setAttribute("aria-expanded", String(open));
       menuBtn.innerHTML = open ? icon("close") : icon("menu");
