@@ -43,9 +43,12 @@ const CATEGORIES = [
   }
 ];
 
+const SCHOOL_YEARS = ["2526", "2627"];
+
 const ACTIVITIES = [
   {
     id: "reclamation-talk",
+    year: "2526",
     category: "talks",
     date: "2026-05-09",
     title: { zh: "填海講座", en: "Land Reclamation Talk" },
@@ -91,6 +94,7 @@ const ACTIVITIES = [
   },
   {
     id: "maritime-talk",
+    year: "2526",
     category: "talks",
     date: "2026-05-08",
     title: { zh: "航海講座", en: "Maritime Talk" },
@@ -136,6 +140,7 @@ const ACTIVITIES = [
   },
   {
     id: "bamboo-craft",
+    year: "2526",
     category: "culture",
     date: "2026-04-25",
     title: { zh: "F3 搭棚工藝", en: "Bamboo Scaffolding Workshop" },
@@ -189,6 +194,7 @@ const ACTIVITIES = [
   },
   {
     id: "math-week",
+    year: "2526",
     category: "academic",
     date: "2026-04-20",
     title: { zh: "數學週", en: "Mathematics Week" },
@@ -242,6 +248,7 @@ const ACTIVITIES = [
   },
   {
     id: "chinese-culture",
+    year: "2526",
     category: "culture",
     date: "2026-04-11",
     title: { zh: "愛國愛澳中華文化推廣活動", en: "Chinese Culture Day" },
@@ -295,6 +302,7 @@ const ACTIVITIES = [
   },
   {
     id: "math-competition",
+    year: "2526",
     category: "academic",
     date: "2026-03-14",
     title: { zh: "初中數學比賽", en: "Junior Mathematics Competition" },
@@ -348,6 +356,7 @@ const ACTIVITIES = [
   },
   {
     id: "career-week",
+    year: "2526",
     category: "guidance",
     date: "2026-03-02",
     title: { zh: "生涯規劃週", en: "Career Planning Week" },
@@ -401,6 +410,7 @@ const ACTIVITIES = [
   },
   {
     id: "subject-selection",
+    year: "2526",
     category: "guidance",
     date: "2026-02-07",
     title: { zh: "F3 選科講解會（親子專場）", en: "F3 Subject Selection Talk (Parent Session)" },

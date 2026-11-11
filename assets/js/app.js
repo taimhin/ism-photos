@@ -59,12 +59,16 @@ const UI = {
     footerMade: "以鏡頭記錄校園",
     pageActivitiesKicker: "活動總覽 ALL ACTIVITIES",
     pageActivitiesTitle: "每一場活動，\n都值得被記得。",
-    pageActivitiesLead: "按類別篩選，或用關鍵字搜尋。找到那天你也在場的活動。",
+    pageActivitiesLead: "按年度或類別篩選，也可用關鍵字搜尋。找到那天你也在場的活動。",
     filterAll: "全部",
     searchActivities: "搜尋活動名稱、內容…",
     searchPhotos: "搜尋照片、活動或類別…",
     searchLabel: "搜尋",
-    newest: "由新到舊",
+    yearLabel: "年度",
+    yearGrouping: "年度分組",
+    yearEmptyTitle: "活動照片準備中",
+    yearEmptyBody: "這一年度的活動照片會陸續上傳，敬請期待。",
+    yearEmptyCta: "先回顧",
     resultActivities: "個活動",
     resultPhotos: "張照片",
     noActivityTitle: "找不到符合的活動",
@@ -175,12 +179,16 @@ const UI = {
     footerMade: "Documenting campus life",
     pageActivitiesKicker: "ALL ACTIVITIES",
     pageActivitiesTitle: "Every event deserves\nto be remembered.",
-    pageActivitiesLead: "Filter by theme or search by keyword. Find the day you were part of.",
+    pageActivitiesLead: "Filter by year or theme, or search by keyword. Find the day you were part of.",
     filterAll: "All",
     searchActivities: "Search activities…",
     searchPhotos: "Search photos, events or themes…",
     searchLabel: "Search",
-    newest: "Newest first",
+    yearLabel: "Year",
+    yearGrouping: "Grouped by year",
+    yearEmptyTitle: "Photos on the way",
+    yearEmptyBody: "Photos from this year will be added as activities happen. Stay tuned.",
+    yearEmptyCta: "Browse",
     resultActivities: "activities",
     resultPhotos: "photos",
     noActivityTitle: "No matching activities",
@@ -247,7 +255,7 @@ const state = {
     }
   })(),
   filters: {
-    activities: { cat: "all", q: "" },
+    activities: { cat: "all", q: "", year: "all" },
     gallery: { cat: "all", q: "" }
   }
 };
@@ -322,7 +330,13 @@ function fmtDate(iso) {
 }
 
 function photoCount(n) {
-  return `${n} ${t().photoCount}`;
+  if (state.lang === "zh") return `${n} ${t().photoCount}`;
+  return `${n} ${n === 1 ? "photo" : "photos"}`;
+}
+
+function activityCount(n) {
+  if (state.lang === "zh") return `${n} ${t().resultActivities}`;
+  return `${n} ${n === 1 ? "activity" : "activities"}`;
 }
 
 function haystack(...values) {
@@ -367,7 +381,7 @@ function parseRoute() {
 
 function applyRouteParams(route) {
   if (route.name === "activities" && lastRouteName !== "activities") {
-    state.filters.activities = { cat: "all", q: "" };
+    state.filters.activities = { cat: "all", q: "", year: "all" };
   }
   if (route.name === "gallery" && lastRouteName !== "gallery") {
     state.filters.gallery = { cat: "all", q: "" };
@@ -730,7 +744,7 @@ function featureCard(activity, index) {
         <span class="feature-arrow">${icon("arrowUpRight")}</span>
       </span>
       <span class="feature-body">
-        <span class="feature-date">${esc(fmtDate(activity.date))}</span>
+        <span class="feature-date">${esc(activity.year)} · ${esc(fmtDate(activity.date))}</span>
         <strong class="feature-title">${esc(L(activity.title))}</strong>
         <span class="feature-alt">${esc(O(activity.title))}</span>
       </span>
@@ -746,7 +760,7 @@ function categoryCard(cat) {
       <span class="cat-icon">${icon(cat.icon)}</span>
       <span class="cat-name">${esc(L(cat))}</span>
       <span class="cat-tagline">${esc(L(cat.tagline))}</span>
-      <span class="cat-meta">${events.length} ${esc(T.resultActivities)} · ${photos} ${esc(T.resultPhotos)}</span>
+      <span class="cat-meta">${activityCount(events.length)} · ${photoCount(photos)}</span>
       <span class="cat-arrow">${icon("arrowUpRight")}</span>
     </a>`;
 }
@@ -773,6 +787,12 @@ function pageActivities() {
         <p class="section-kicker">${esc(T.pageActivitiesKicker)}</p>
         <h1 class="page-title">${nl2br(T.pageActivitiesTitle)}</h1>
         <p class="page-lead">${esc(T.pageActivitiesLead)}</p>
+        <div class="year-switch">
+          <span class="year-switch-label">${esc(T.yearLabel)}</span>
+          <div class="year-tabs" id="year-tabs" role="group" aria-label="${esc(T.yearLabel)}">
+            ${yearTabs(f.year)}
+          </div>
+        </div>
         <div class="toolbar">
           <label class="search-box">
             <span class="sr-only">${esc(T.searchLabel)}</span>
@@ -781,7 +801,7 @@ function pageActivities() {
           </label>
         </div>
         <div class="filter-chips" id="activity-filters" role="group" aria-label="${esc(T.searchLabel)}">
-          ${filterChips("activities", f.cat)}
+          ${filterChips("activities", f.cat, f.year)}
         </div>
       </div>
     </section>
@@ -789,30 +809,59 @@ function pageActivities() {
       <div class="container">
         <div class="result-line">
           <span id="activity-count" aria-live="polite"></span>
-          <span class="result-sort">${icon("calendar")} ${esc(T.newest)}</span>
+          <span class="result-sort">${icon("layers")} ${esc(T.yearGrouping)}</span>
         </div>
         <div id="activity-results"></div>
       </div>
     </section>`;
 }
 
-function filterChips(scope, activeCat) {
+function orderedYears() {
+  const years = SCHOOL_YEARS.slice();
+  ACTIVITIES.forEach((activity) => {
+    if (activity.year && !years.includes(activity.year)) years.push(activity.year);
+  });
+  return years;
+}
+
+function yearTabs(activeYear) {
   const T = t();
-  const f = state.filters[scope];
+  const years = orderedYears();
+  const allCount = ACTIVITIES.length;
+  const tabs = [
+    `<button class="year-tab${activeYear === "all" ? " is-active" : ""}" type="button" data-year="all" aria-pressed="${activeYear === "all"}">
+      ${esc(T.filterAll)}<span class="year-count">${allCount}</span>
+    </button>`
+  ];
+  years.forEach((year) => {
+    const count = ACTIVITIES.filter((activity) => activity.year === year).length;
+    tabs.push(`
+      <button class="year-tab${activeYear === year ? " is-active" : ""}" type="button" data-year="${esc(year)}" aria-pressed="${activeYear === year}">
+        ${esc(year)}<span class="year-count">${count}</span>
+      </button>`);
+  });
+  return tabs.join("");
+}
+
+function filterChips(scope, activeCat, activeYear = "all") {
+  const T = t();
+  const pool = scope === "activities"
+    ? ACTIVITIES.filter((activity) => activeYear === "all" || activity.year === activeYear)
+    : null;
   const counts = scope === "activities"
-    ? CATEGORIES.map((cat) => ACTIVITIES.filter((a) => a.category === cat.id).length)
-    : CATEGORIES.map((cat) => allPhotos().filter((p) => p.activity.category === cat.id).length);
-  const total = counts.reduce((a, b) => a + b, 0);
+    ? CATEGORIES.map((cat) => pool.filter((activity) => activity.category === cat.id).length)
+    : CATEGORIES.map((cat) => allPhotos().filter((photo) => photo.activity.category === cat.id).length);
+  const total = scope === "activities" ? pool.length : counts.reduce((a, b) => a + b, 0);
   const chips = [
     `<button class="chip-filter${activeCat === "all" ? " is-active" : ""}" type="button" data-cat="all" aria-pressed="${activeCat === "all"}">
-      <span>${esc(T.filterAll)}</span><span class="chip-count">${total}</span>
+      <span>${esc(T.filterAll)}</span><span class="chip-count" data-count-all>${total}</span>
     </button>`
   ];
   CATEGORIES.forEach((cat, i) => {
     chips.push(`
       <button class="chip-filter${activeCat === cat.id ? " is-active" : ""}" type="button" data-cat="${cat.id}" aria-pressed="${activeCat === cat.id}">
         <span class="chip-dot" style="background:${cat.color}"></span>
-        <span>${esc(L(cat))}</span><span class="chip-count">${counts[i]}</span>
+        <span>${esc(L(cat))}</span><span class="chip-count" data-count-cat="${cat.id}">${counts[i]}</span>
       </button>`);
   });
   return chips.join("");
@@ -821,8 +870,9 @@ function filterChips(scope, activeCat) {
 function filterActivities(f) {
   return sortedActivities().filter((activity) => {
     const cat = catById(activity.category);
-    return (f.cat === "all" || activity.category === f.cat) &&
-      matches(f.q, activity.title, activity.excerpt, activity.subtitle, activity.location, cat);
+    return (f.year === "all" || activity.year === f.year) &&
+      (f.cat === "all" || activity.category === f.cat) &&
+      matches(f.q, activity.title, activity.excerpt, activity.subtitle, activity.location, cat, activity.year);
   });
 }
 
@@ -830,6 +880,7 @@ function initActivitiesPage() {
   const input = $("#activity-search");
   if (!input) return;
   const f = state.filters.activities;
+  if (!f.year) f.year = "all";
   input.value = f.q;
   input.addEventListener("input", () => {
     f.q = input.value;
@@ -841,12 +892,31 @@ function initActivitiesPage() {
       updateActivitiesResults();
     });
   });
+  $$("#year-tabs [data-year]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      f.year = btn.dataset.year;
+      updateActivitiesResults();
+    });
+  });
   $("#activity-results").addEventListener("click", (event) => {
     if (event.target.closest("[data-reset]")) {
-      state.filters.activities = { cat: "all", q: "" };
+      f.cat = "all";
+      f.q = "";
+      f.year = "all";
       $("#activity-search").value = "";
       updateActivitiesResults();
       $("#activity-search").focus();
+      return;
+    }
+    const jump = event.target.closest("[data-jump-year]");
+    if (jump) {
+      f.year = jump.dataset.jumpYear;
+      updateActivitiesResults();
+      const target = $("#activity-results");
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY - 96;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
     }
   });
   updateActivitiesResults();
@@ -855,20 +925,79 @@ function initActivitiesPage() {
 function updateActivitiesResults() {
   const T = t();
   const f = state.filters.activities;
-  const list = filterActivities(f);
+  if (!f.year) f.year = "all";
+  const activeFilters = f.cat !== "all" || f.q.trim() !== "";
+  const years = f.year === "all" ? orderedYears() : [f.year];
+  const groups = years.map((year) => ({
+    year,
+    list: filterActivities({ ...f, year })
+  }));
+  const visible = groups.filter((group) => group.list.length > 0 || !activeFilters);
   const results = $("#activity-results");
   if (!results) return;
-  results.innerHTML = list.length
-    ? `<div class="activity-grid">${list.map(activityCard).join("")}</div>`
+
+  results.innerHTML = visible.length
+    ? visible.map((group) => activityYearGroup(group)).join("")
     : emptyState("activities");
+
+  const total = visible.reduce((sum, group) => sum + group.list.length, 0);
   const count = $("#activity-count");
-  if (count) count.textContent = `${list.length} ${T.resultActivities}`;
+  if (count) count.textContent = activityCount(total);
+
+  $$("#year-tabs [data-year]").forEach((btn) => {
+    const active = btn.dataset.year === f.year;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-pressed", String(active));
+  });
   $$("#activity-filters [data-cat]").forEach((btn) => {
     const active = btn.dataset.cat === f.cat;
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-pressed", String(active));
   });
+  updateActivityChipCounts(f);
   initReveals();
+}
+
+function activityYearGroup(group) {
+  const T = t();
+  const body = group.list.length
+    ? `<div class="activity-grid">${group.list.map(activityCard).join("")}</div>`
+    : yearEmptyPanel(group.year);
+  return `
+    <section class="year-group" data-year-group="${esc(group.year)}">
+      <div class="year-group-head">
+        <h2>${esc(group.year)}</h2>
+        <span>${activityCount(group.list.length)}</span>
+        <span class="year-line" aria-hidden="true"></span>
+      </div>
+      ${body}
+    </section>`;
+}
+
+function yearEmptyPanel(year) {
+  const T = t();
+  const fallback = orderedYears().find(
+    (candidate) => candidate !== year && ACTIVITIES.some((activity) => activity.year === candidate)
+  );
+  return `
+    <div class="year-empty reveal">
+      <span class="year-empty-icon">${icon("sparkle")}</span>
+      <div class="year-empty-copy">
+        <h3>${esc(year)} · ${esc(T.yearEmptyTitle)}</h3>
+        <p>${esc(T.yearEmptyBody)}</p>
+      </div>
+      ${fallback ? `<button class="btn btn-ghost" type="button" data-jump-year="${esc(fallback)}">${esc(T.yearEmptyCta)} ${esc(fallback)}</button>` : ""}
+    </div>`;
+}
+
+function updateActivityChipCounts(f) {
+  const pool = f.year === "all" ? ACTIVITIES : ACTIVITIES.filter((activity) => activity.year === f.year);
+  const all = $("#activity-filters [data-count-all]");
+  if (all) all.textContent = pool.length;
+  CATEGORIES.forEach((cat) => {
+    const el = $(`#activity-filters [data-count-cat="${cat.id}"]`);
+    if (el) el.textContent = pool.filter((activity) => activity.category === cat.id).length;
+  });
 }
 
 function activityCard(activity) {
@@ -880,6 +1009,7 @@ function activityCard(activity) {
         <div class="activity-media">
           <img src="${activity.photos[0].src}" alt="${esc(L(activity.photos[0].caption))}" loading="lazy">
           <span class="card-cat" style="--cat:${cat.color};--cat-soft:${cat.soft}">${esc(L(cat))}</span>
+          <span class="card-year">${esc(activity.year)}</span>
         </div>
         <div class="activity-body">
           <span class="activity-date">${esc(fmtDate(activity.date))}</span>
@@ -946,7 +1076,7 @@ function filterPhotos(f) {
   return photos.filter((photo) => {
     const cat = catById(photo.activity.category);
     return (f.cat === "all" || photo.activity.category === f.cat) &&
-      matches(f.q, photo.caption, photo.activity.title, photo.activity.excerpt, cat);
+      matches(f.q, photo.caption, photo.activity.title, photo.activity.excerpt, cat, photo.activity.year);
   });
 }
 
@@ -967,7 +1097,8 @@ function initGalleryPage() {
   });
   $("#gallery-results").addEventListener("click", (event) => {
     if (event.target.closest("[data-reset]")) {
-      state.filters.gallery = { cat: "all", q: "" };
+      f.cat = "all";
+      f.q = "";
       $("#gallery-search").value = "";
       updateGalleryResults();
       $("#gallery-search").focus();
@@ -987,7 +1118,7 @@ function updateGalleryResults() {
     ? `<div class="masonry">${list.map((photo, i) => galleryItem(photo, i)).join("")}</div>`
     : emptyState("gallery");
   const count = $("#gallery-count");
-  if (count) count.textContent = `${list.length} ${T.resultPhotos}`;
+  if (count) count.textContent = photoCount(list.length);
   $$("#gallery-filters [data-cat]").forEach((btn) => {
     const active = btn.dataset.cat === f.cat;
     btn.classList.toggle("is-active", active);
@@ -1003,7 +1134,7 @@ function galleryItem(photo, index) {
       <img src="${photo.src}" alt="${esc(L(photo.caption))}" loading="lazy">
       <span class="masonry-overlay">
         <span class="masonry-top">
-          <span class="masonry-cat"><span class="tag-dot" style="background:${cat.color}"></span>${esc(L(cat))}</span>
+          <span class="masonry-cat"><span class="tag-dot" style="background:${cat.color}"></span>${esc(photo.activity.year)} · ${esc(L(cat))}</span>
           <span class="masonry-zoom">${icon("expand")}</span>
         </span>
         <span class="masonry-activity">${esc(L(photo.activity.title))}</span>
@@ -1032,6 +1163,8 @@ function pageActivity(route) {
           <a href="#/">${esc(T.detailHome)}</a>
           <span aria-hidden="true">/</span>
           <a href="#/activities">${esc(T.detailActivities)}</a>
+          <span aria-hidden="true">/</span>
+          <span>${esc(activity.year)}</span>
           <span aria-hidden="true">/</span>
           <span>${esc(L(activity.title))}</span>
         </nav>
@@ -1271,7 +1404,7 @@ function updateLightbox() {
   $("#lb-counter").textContent = `${lb.index + 1} / ${lb.list.length}`;
   $("#lb-caption").textContent = L(photo.caption);
   $("#lb-meta").textContent = photo.activity
-    ? `${L(photo.activity.title)} · ${fmtDate(photo.activity.date)}`
+    ? `${photo.activity.year} · ${L(photo.activity.title)} · ${fmtDate(photo.activity.date)}`
     : "";
   const dialog = $("#lightbox .lb-dialog");
   dialog.setAttribute("aria-label", T.lightboxLabel);

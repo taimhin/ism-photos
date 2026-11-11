@@ -5,7 +5,7 @@
 ## 網站內容
 
 - **首頁**：主視覺、精選活動、主題分類、相簿快照、關於平台
-- **活動總覽**：依主題篩選、關鍵字搜尋
+- **活動總覽**：依年度與主題篩選、關鍵字搜尋，分為 2526／2627
 - **活動詳情**：活動介紹、日期地點、照片集、前後活動導覽
 - **完整相簿**：所有照片的瀑布流排版、搜尋與燈箱放大
 - **關於**：平台理念、數據一覽、照片授權聯絡方式
@@ -13,16 +13,24 @@
 
 目前收錄 8 個活動、44 張版面示意圖（網站設計為可持續新增活動）：
 
-| 活動 ID | 活動名稱 | 主題 |
-| --- | --- | --- |
-| `reclamation-talk` | 填海講座 | 專題講座 |
-| `maritime-talk` | 航海講座 | 專題講座 |
-| `bamboo-craft` | F3 搭棚工藝 | 文化傳承 |
-| `math-week` | 數學週 | 學術 |
-| `chinese-culture` | 愛國愛澳中華文化推廣活動 | 文化傳承 |
-| `math-competition` | 初中數學比賽 | 學術 |
-| `career-week` | 生涯規劃週 | 升學與生涯 |
-| `subject-selection` | F3 選科講解會（親子專場） | 升學與生涯 |
+| 活動 ID | 年度 | 活動名稱 | 主題 |
+| --- | --- | --- | --- |
+| `reclamation-talk` | 2526 | 填海講座 | 專題講座 |
+| `maritime-talk` | 2526 | 航海講座 | 專題講座 |
+| `bamboo-craft` | 2526 | F3 搭棚工藝 | 文化傳承 |
+| `math-week` | 2526 | 數學週 | 學術 |
+| `chinese-culture` | 2526 | 愛國愛澳中華文化推廣活動 | 文化傳承 |
+| `math-competition` | 2526 | 初中數學比賽 | 學術 |
+| `career-week` | 2526 | 生涯規劃週 | 升學與生涯 |
+| `subject-selection` | 2526 | F3 選科講解會（親子專場） | 升學與生涯 |
+
+活動頁的年度分頁由 `assets/js/data.js` 的 `SCHOOL_YEARS` 控制：
+
+```js
+const SCHOOL_YEARS = ["2526", "2627"];
+```
+
+新增 2627 活動時，在該活動物件加入 `year: "2627"`，它就會自動出現在 2627 分頁；未有活動的年度會顯示「活動照片準備中」。
 
 ## 換上真實照片
 
@@ -39,15 +47,20 @@
 
 2. 打開 `assets/js/data.js`，找到該活動的 `photos` 陣列，把 `src` 換成真實照片路徑，並修改中英文說明：
    ```js
-   photos: [
-     {
-       src: "photos/math-week/01.jpg",
-       caption: {
-         zh: "數學遊蹤開始，同學在校園尋找解題線索。",
-         en: "The maths trail begins as students hunt for clues around campus."
+   {
+     id: "math-week",
+     year: "2526",
+     // ...
+     photos: [
+       {
+         src: "photos/math-week/01.jpg",
+         caption: {
+           zh: "數學遊蹤開始，同學在校園尋找解題線索。",
+           en: "The maths trail begins as students hunt for clues around campus."
+         }
        }
-     }
-   ]
+     ]
+   }
    ```
    陣列長度可自由增減；首張照片會自動成為活動封面。
 
