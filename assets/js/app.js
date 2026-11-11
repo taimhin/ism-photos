@@ -13,7 +13,7 @@ const UI = {
     langButton: "EN",
     menu: "開啟選單",
     home: "首頁",
-    heroKicker: "2025–2026 學年 · 校園活動影像",
+    heroKicker: "校園活動影像 · 持續更新",
     heroTitle1: "把校園的每一刻，",
     heroTitle2: "好好收藏。",
     heroLead: "澳門慈幼中學活動照片庫，記錄課堂以外的學習、文化與成長。",
@@ -21,8 +21,7 @@ const UI = {
     heroCta2: "瀏覽相簿",
     statEvents: "個活動",
     statPhotos: "張照片",
-    statYear: "學年",
-    yearValue: "25–26",
+    statThemes: "個主題",
     heroNote: "由校園媒體小組整理 · 持續更新",
     marquee: ["數學週", "選科講解會", "搭棚工藝", "生涯規劃", "中華文化", "航海講座", "填海講座", "初中數學比賽"],
     featuredKicker: "精選活動 FEATURED",
@@ -47,6 +46,7 @@ const UI = {
     aboutPoint3: "分享",
     aboutPoint3Body: "把校園的故事分享給家長、校友與每一位關心慈幼的人。",
     aboutMore: "認識更多",
+    aboutBadge: "校園影像",
     ctaKicker: "持續更新 UPDATED REGULARLY",
     ctaTitle: "下一個精彩瞬間，\n我們繼續拍下。",
     ctaLead: "活動陸續有來，相簿也會一直長大。記得回來看看，說不定下一張照片裡就有你。",
@@ -55,7 +55,7 @@ const UI = {
     footerExplore: "探索",
     footerCategories: "類別",
     footerNote: "本網站由校園媒體小組整理及更新。如欲索取照片原檔或授權使用，請經校務處聯絡我們。",
-    footerRights: "© 2026 澳門慈幼中學 · 校園媒體小組",
+    footerRights: "© 2026 澳門慈幼中學 · 活動照片",
     footerMade: "以鏡頭記錄校園",
     pageActivitiesKicker: "活動總覽 ALL ACTIVITIES",
     pageActivitiesTitle: "每一場活動，\n都值得被記得。",
@@ -93,7 +93,7 @@ const UI = {
     numActivities: "個活動",
     numPhotos: "張照片",
     numCategories: "個主題",
-    numYears: "個學年",
+    numCampus: "個校園",
     contactKicker: "聯絡我們 CONTACT",
     contactTitle: "照片授權與合作",
     contactBody: "如欲索取照片原檔、授權使用或合作拍攝，歡迎經校務處聯絡校園媒體小組。",
@@ -129,7 +129,7 @@ const UI = {
     langButton: "中",
     menu: "Open menu",
     home: "Home",
-    heroKicker: "2025–2026 · CAMPUS MOMENTS",
+    heroKicker: "CAMPUS MOMENTS · UPDATED REGULARLY",
     heroTitle1: "Every bright moment,",
     heroTitle2: "kept forever.",
     heroLead: "The activity photo gallery of Salesian School Macau — capturing learning, culture and growth beyond the classroom.",
@@ -137,8 +137,7 @@ const UI = {
     heroCta2: "Browse gallery",
     statEvents: "events",
     statPhotos: "photos",
-    statYear: "school year",
-    yearValue: "25–26",
+    statThemes: "themes",
     heroNote: "Curated by the Campus Media Team · Updated regularly",
     marquee: ["Maths Week", "Subject Selection", "Bamboo Craft", "Career Planning", "Chinese Culture", "Maritime Talk", "Reclamation Talk", "Maths Competition"],
     featuredKicker: "FEATURED",
@@ -163,6 +162,7 @@ const UI = {
     aboutPoint3: "Share",
     aboutPoint3Body: "Sharing campus stories with parents, alumni and everyone who cares about Salesian.",
     aboutMore: "Read more",
+    aboutBadge: "CAMPUS",
     ctaKicker: "UPDATED REGULARLY",
     ctaTitle: "The next bright moment?\nWe'll keep shooting.",
     ctaLead: "More activities are on the way, and the gallery keeps growing. Come back soon — you might be in the next photo.",
@@ -171,7 +171,7 @@ const UI = {
     footerExplore: "Explore",
     footerCategories: "Themes",
     footerNote: "This gallery is maintained by the Campus Media Team. For original files or usage permission, please contact us through the school office.",
-    footerRights: "© 2026 Salesian School Macau · Campus Media Team",
+    footerRights: "© 2026 Salesian School Macau · Activity Gallery",
     footerMade: "Documenting campus life",
     pageActivitiesKicker: "ALL ACTIVITIES",
     pageActivitiesTitle: "Every event deserves\nto be remembered.",
@@ -209,7 +209,7 @@ const UI = {
     numActivities: "events",
     numPhotos: "photos",
     numCategories: "themes",
-    numYears: "school year",
+    numCampus: "campus",
     contactKicker: "CONTACT",
     contactTitle: "Photo requests & collaborations",
     contactBody: "For original files, usage permission or a photo collaboration, please contact the Campus Media Team through the school office.",
@@ -598,7 +598,7 @@ function pageHome() {
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem"><span class="stat-num">${events.length}</span><span class="stat-label">${esc(T.statEvents)}</span></div>
           <div class="stat" role="listitem"><span class="stat-num">${totalPhotos()}</span><span class="stat-label">${esc(T.statPhotos)}</span></div>
-          <div class="stat" role="listitem"><span class="stat-num">${esc(T.yearValue)}</span><span class="stat-label">${esc(T.statYear)}</span></div>
+          <div class="stat" role="listitem"><span class="stat-num">${CATEGORIES.length}</span><span class="stat-label">${esc(T.statThemes)}</span></div>
         </div>
         <p class="hero-note">${icon("sparkle")} ${esc(T.heroNote)}</p>
       </div>
@@ -683,7 +683,7 @@ function pageHome() {
           const a = activityById(id);
           return `<figure class="about-photo ap-${i + 1}"><img src="${a.photos[i + 1].src}" alt="" loading="lazy"></figure>`;
         }).join("")}
-        <span class="about-badge">${icon("sparkle")} ${esc(T.yearValue)}</span>
+        <span class="about-badge">${icon("sparkle")} ${esc(T.aboutBadge)}</span>
       </div>
       <div class="about-copy">
         <p class="section-kicker">${esc(T.aboutKicker)}</p>
@@ -1050,7 +1050,7 @@ function pageActivity(route) {
           </div>
           <figure class="detail-cover">
             <img src="${activity.photos[0].src}" alt="${esc(L(activity.photos[0].caption))}">
-            <figcaption class="cover-sticker">${icon("sparkle")} ${esc(T.yearValue)}</figcaption>
+            <figcaption class="cover-sticker">${icon("camera")} ${esc(T.albumTitle)}</figcaption>
           </figure>
         </div>
       </div>
@@ -1183,7 +1183,7 @@ function pageAbout() {
           { num: ACTIVITIES.length, label: T.numActivities },
           { num: totalPhotos(), label: T.numPhotos },
           { num: CATEGORIES.length, label: T.numCategories },
-          { num: "1", label: T.numYears }
+          { num: "1", label: T.numCampus }
         ].map((item) => `
           <div class="number-item">
             <strong>${item.num}</strong>
