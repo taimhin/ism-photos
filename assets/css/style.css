@@ -1130,7 +1130,7 @@ html[lang="en"] .brand-text strong {
 /* ---------------- photo strip ---------------- */
 
 .strip-section {
-  padding-bottom: 100px;
+  padding-bottom: 72px;
 }
 
 .strip-container {
@@ -1372,7 +1372,7 @@ html[lang="en"] .brand-text strong {
 /* ---------------- CTA ---------------- */
 
 .cta-section {
-  padding: 100px 0;
+  padding: 64px 0 100px;
 }
 
 .cta-panel {
@@ -3514,7 +3514,7 @@ html[lang="en"] .brand-text strong {
   }
 
   .cta-section {
-    padding: 70px 0;
+    padding: 40px 0 70px;
   }
 
   .cta-panel {

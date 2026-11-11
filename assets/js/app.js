@@ -8,7 +8,7 @@ const UI = {
     siteName: "澳門慈幼中學",
     siteSub: "活動照片 · Activity Gallery",
     skip: "跳至主要內容",
-    nav: { home: "首頁", activities: "活動", gallery: "相簿", about: "關於" },
+    nav: { home: "首頁", activities: "活動", gallery: "相簿" },
     langSwitch: "Switch to English",
     langButton: "EN",
     menu: "開啟選單",
@@ -130,7 +130,7 @@ const UI = {
     siteName: "Salesian School Macau",
     siteSub: "Activity Gallery",
     skip: "Skip to main content",
-    nav: { home: "Home", activities: "Activities", gallery: "Gallery", about: "About" },
+    nav: { home: "Home", activities: "Activities", gallery: "Gallery" },
     langSwitch: "切換至中文",
     langButton: "中",
     menu: "Open menu",
@@ -379,7 +379,6 @@ function parseRoute() {
   if (!segments.length) return { name: "home", params, key: "home" };
   if (segments[0] === "activities") return { name: "activities", params, key: "activities" };
   if (segments[0] === "gallery") return { name: "gallery", params, key: "gallery" };
-  if (segments[0] === "about") return { name: "about", params, key: "about" };
   if (segments[0] === "activity" && segments[1]) {
     return { name: "activity", id: segments[1], params, key: "activity/" + segments[1] };
   }
@@ -436,7 +435,6 @@ function renderHeader(route) {
         ${navLink(route, "home", "#/", T.nav.home)}
         ${navLink(route, "activities", "#/activities", T.nav.activities)}
         ${navLink(route, "gallery", "#/gallery", T.nav.gallery)}
-        ${navLink(route, "about", "#/about", T.nav.about)}
       </nav>
       <div class="header-actions">
         <button class="lang-btn" id="lang-toggle" type="button" aria-label="${esc(T.langSwitch)}">${esc(T.langButton)}</button>
@@ -466,7 +464,6 @@ function renderFooter() {
         <a href="#/">${esc(T.nav.home)}</a>
         <a href="#/activities">${esc(T.nav.activities)}</a>
         <a href="#/gallery">${esc(T.nav.gallery)}</a>
-        <a href="#/about">${esc(T.nav.about)}</a>
       </div>
       <div class="footer-col">
         <h3>${esc(T.footerCategories)}</h3>
@@ -549,7 +546,6 @@ function setDocumentTitle(route) {
     const labels = {
       activities: t().nav.activities,
       gallery: t().nav.gallery,
-      about: t().nav.about,
       notfound: t().notFoundTitle
     };
     document.title = `${labels[route.name] || ""} · ${base}`;
@@ -562,7 +558,6 @@ function viewFor(route) {
     case "activities": return pageActivities();
     case "gallery": return pageGallery();
     case "activity": return pageActivity(route);
-    case "about": return pageAbout();
     default: return pageNotFound();
   }
 }
@@ -695,31 +690,6 @@ function pageHome() {
     <div class="container strip-container">
       <div class="photo-strip">
         ${stripPhotos.map((photo, i) => stripItem(photo, i)).join("")}
-      </div>
-    </div>
-  </section>
-
-  <section class="section about-teaser-section">
-    <div class="container about-teaser">
-      <div class="about-collage" aria-hidden="true">
-        ${["music-week", "sports-week", "chinese-culture"].map((id, i) => {
-          const a = activityById(id);
-          return `<figure class="about-photo ap-${i + 1}"><img src="${a.photos[(i + 1) % a.photos.length].src}" alt="" loading="lazy"></figure>`;
-        }).join("")}
-        <span class="about-badge">${icon("sparkle")} ${esc(T.aboutBadge)}</span>
-      </div>
-      <div class="about-copy">
-        <p class="section-kicker">${esc(T.aboutKicker)}</p>
-        <h2 class="section-title">${nl2br(T.aboutTitle)}</h2>
-        <p class="about-body">${esc(T.aboutBody)}</p>
-        <div class="about-values">
-          ${[1, 2, 3].map((n) => `
-            <div class="value-item">
-              <span class="value-num">0${n}</span>
-              <div><strong>${esc(T["aboutPoint" + n])}</strong><p>${esc(T["aboutPoint" + n + "Body"])}</p></div>
-            </div>`).join("")}
-        </div>
-        <a class="btn btn-ghost" href="#/about">${esc(T.aboutMore)} ${icon("arrowRight")}</a>
       </div>
     </div>
   </section>
