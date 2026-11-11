@@ -6,40 +6,88 @@
 
 const CATEGORIES = [
   {
-    id: "academic",
-    zh: "學術",
-    en: "Academic",
-    tagline: { zh: "課堂之外的知識冒險", en: "Learning beyond the classroom" },
-    color: "#1c5cf0",
-    soft: "#e8efff",
-    icon: "book"
+    "id": "academic",
+    "zh": "學術",
+    "en": "Academic",
+    "tagline": {
+      "zh": "課堂之外的知識冒險",
+      "en": "Learning beyond the classroom"
+    },
+    "color": "#1c5cf0",
+    "soft": "#e8efff",
+    "icon": "book"
   },
   {
-    id: "guidance",
-    zh: "升學與生涯",
-    en: "Guidance",
-    tagline: { zh: "為下一步找到方向", en: "Finding the way forward" },
-    color: "#ff5d44",
-    soft: "#ffe9e5",
-    icon: "compass"
+    "id": "guidance",
+    "zh": "升學與生涯",
+    "en": "Guidance",
+    "tagline": {
+      "zh": "為下一步找到方向",
+      "en": "Finding the way forward"
+    },
+    "color": "#ff5d44",
+    "soft": "#ffe9e5",
+    "icon": "compass"
   },
   {
-    id: "culture",
-    zh: "文化傳承",
-    en: "Culture",
-    tagline: { zh: "把手藝與傳統接住", en: "Keeping craft and tradition alive" },
-    color: "#d18a00",
-    soft: "#fff4dc",
-    icon: "lantern"
+    "id": "culture",
+    "zh": "文化傳承",
+    "en": "Culture",
+    "tagline": {
+      "zh": "把手藝與傳統接住",
+      "en": "Keeping craft and tradition alive"
+    },
+    "color": "#d18a00",
+    "soft": "#fff4dc",
+    "icon": "lantern"
   },
   {
-    id: "talks",
-    zh: "專題講座",
-    en: "Talks",
-    tagline: { zh: "讓世界走進禮堂", en: "Bringing the world into the hall" },
-    color: "#0fa97f",
-    soft: "#e2f8f1",
-    icon: "mic"
+    "id": "talks",
+    "zh": "專題講座",
+    "en": "Talks",
+    "tagline": {
+      "zh": "讓世界走進禮堂",
+      "en": "Bringing the world into the hall"
+    },
+    "color": "#0fa97f",
+    "soft": "#e2f8f1",
+    "icon": "mic"
+  },
+  {
+    "id": "sports",
+    "zh": "體育",
+    "en": "Sports",
+    "tagline": {
+      "zh": "在汗水中並肩作戰",
+      "en": "Side by side, in sweat and spirit"
+    },
+    "color": "#ff8a3d",
+    "soft": "#fff0e3",
+    "icon": "trophy"
+  },
+  {
+    "id": "arts",
+    "zh": "藝術",
+    "en": "Arts",
+    "tagline": {
+      "zh": "讓才華被看見",
+      "en": "Where talent takes the stage"
+    },
+    "color": "#8b5cf6",
+    "soft": "#f1ebff",
+    "icon": "music"
+  },
+  {
+    "id": "campus",
+    "zh": "校園生活",
+    "en": "Campus",
+    "tagline": {
+      "zh": "一起走過的日常",
+      "en": "Everyday life, shared"
+    },
+    "color": "#0e8792",
+    "soft": "#e2f6f7",
+    "icon": "school"
   }
 ];
 
@@ -47,418 +95,1520 @@ const SCHOOL_YEARS = ["2526", "2627"];
 
 const ACTIVITIES = [
   {
-    id: "reclamation-talk",
-    year: "2526",
-    category: "talks",
-    date: "2026-05-09",
-    title: { zh: "填海講座", en: "Land Reclamation Talk" },
-    subtitle: {
-      zh: "從地圖上看見澳門的成長",
-      en: "Seeing how Macau grew, one shoreline at a time"
+    "category": "sports",
+    "date": "2026-05-22",
+    "title": {
+      "zh": "F3 班際競賽",
+      "en": "F3 Inter-class Competition"
     },
-    location: { zh: "學校禮堂", en: "School Hall" },
-    excerpt: {
-      zh: "城市腳下的土地從何而來？一場講座，帶同學回看海岸線的變化與城市發展的選擇。",
-      en: "Where does the ground beneath the city come from? A talk tracing Macau's shifting shoreline and the choices behind its growth."
+    "subtitle": {
+      "zh": "為班級榮譽，一起拼盡全力",
+      "en": "Giving everything for the class"
     },
-    body: {
-      zh: [
-        "澳門是一座與海爭地的城市。講座從舊地圖與歷史照片出發，帶同學認識填海工程如何一步步改變海岸線，也如何塑造今日的街道、社區與生活空間。",
-        "講者以具體案例說明規劃、工程與環境之間的平衡，並提醒我們：每一寸新土地得來不易，城市發展的同時，也要思考自然、歷史與下一代的需要。",
-        "問答環節中，同學圍繞土地利用、生態影響與未來規劃踴躍發問，把課本上的地理概念，連結到每天走過的街道。"
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "F3 班際競賽結合速度、默契與團隊合作，同學在接力與挑戰項目中互相打氣。",
+      "en": "The F3 inter-class competition combined speed, teamwork and strategy, with students cheering each other through every challenge."
+    },
+    "body": {
+      "zh": [
+        "F3 班際競賽結合速度、默契與團隊合作，同學在接力與挑戰項目中全力以赴，場邊的加油聲此起彼落。",
+        "比賽讓不同班級的同學互相較量，也讓大家在合作中建立默契。勝負之外，最重要的是一起為同一個目標努力的過程。"
       ],
-      en: [
-        "Macau is a city that has grown out of the sea. Starting from old maps and archival photographs, the talk traced how land reclamation reshaped the coastline — and with it, the streets, neighbourhoods and living spaces we know today.",
-        "Speakers walked through real projects to explain the balance between planning, engineering and the environment, reminding us that every inch of new land comes at a cost, and that growth must also consider nature, history and the needs of the next generation.",
-        "During the Q&A, students asked about land use, ecological impact and future planning, connecting textbook geography to the streets they walk every day."
+      "en": [
+        "The F3 inter-class competition combined speed, teamwork and strategy. Students gave their all in relay races and challenges while cheers echoed around the hall.",
+        "Classes competed against one another, but also built a stronger sense of teamwork along the way. Beyond the result, what mattered most was working toward the same goal together."
       ]
     },
-    photos: [
+    "id": "class-competition",
+    "year": "2526",
+    "photos": [
       {
-        src: "assets/img/ph/reclamation-talk-01.svg",
-        caption: { zh: "講座以舊地圖對照今日海岸線，同學看得入神。", en: "Old maps beside today's coastline kept students captivated." }
+        "src": "photos/class-competition/01.jpg",
+        "caption": {
+          "zh": "班際競賽開始，同學全力以赴。",
+          "en": "The inter-class competition begins with full effort."
+        }
       },
       {
-        src: "assets/img/ph/reclamation-talk-02.svg",
-        caption: { zh: "講者用地圖解說填海工程的規劃。", en: "The speaker walked through reclamation plans on the map." }
+        "src": "photos/class-competition/02.jpg",
+        "caption": {
+          "zh": "隊友互相打氣，現場氣氛熱烈。",
+          "en": "Teammates cheer each other on in a lively atmosphere."
+        }
       },
       {
-        src: "assets/img/ph/reclamation-talk-03.svg",
-        caption: { zh: "同學專心記錄，思考城市發展的代價與可能。", en: "Students took notes, weighing the costs and possibilities of urban growth." }
+        "src": "photos/class-competition/03.jpg",
+        "caption": {
+          "zh": "比賽結束，班級合照留念。",
+          "en": "Classes pose for photos after the competition."
+        }
       },
       {
-        src: "assets/img/ph/reclamation-talk-04.svg",
-        caption: { zh: "問答環節，大家對腳下這片土地有了新的認識。", en: "In the Q&A, students saw the ground beneath them in a new light." }
+        "src": "photos/class-competition/04.jpg",
+        "caption": {
+          "zh": "班際競賽開始，同學全力以赴。",
+          "en": "The inter-class competition begins with full effort."
+        }
+      },
+      {
+        "src": "photos/class-competition/05.jpg",
+        "caption": {
+          "zh": "隊友互相打氣，現場氣氛熱烈。",
+          "en": "Teammates cheer each other on in a lively atmosphere."
+        }
+      },
+      {
+        "src": "photos/class-competition/06.jpg",
+        "caption": {
+          "zh": "比賽結束，班級合照留念。",
+          "en": "Classes pose for photos after the competition."
+        }
+      },
+      {
+        "src": "photos/class-competition/07.jpg",
+        "caption": {
+          "zh": "班際競賽開始，同學全力以赴。",
+          "en": "The inter-class competition begins with full effort."
+        }
+      },
+      {
+        "src": "photos/class-competition/08.jpg",
+        "caption": {
+          "zh": "隊友互相打氣，現場氣氛熱烈。",
+          "en": "Teammates cheer each other on in a lively atmosphere."
+        }
       }
     ]
   },
   {
-    id: "maritime-talk",
-    year: "2526",
-    category: "talks",
-    date: "2026-05-08",
-    title: { zh: "航海講座", en: "Maritime Talk" },
-    subtitle: {
-      zh: "把海圖攤開，讓好奇心啟航",
-      en: "Unfolding the chart, setting curiosity sail"
+    "category": "academic",
+    "date": "2026-05-21",
+    "title": {
+      "zh": "F3 行政人員入班講解新課程",
+      "en": "F3 New Curriculum Briefing"
     },
-    location: { zh: "學校禮堂", en: "School Hall" },
-    excerpt: {
-      zh: "從澳門港口到遠洋航線，講者帶同學認識海上工作的日常與航海科技。",
-      en: "From Macau's port to ocean routes, a look at life at sea and the technology of navigation."
+    "subtitle": {
+      "zh": "認識課程變化，規劃學習方向",
+      "en": "Understanding what's changing, planning what's next"
     },
-    body: {
-      zh: [
-        "澳門自古與海相伴，港口是城市與世界連結的起點。講座由本地航運的發展說起，帶同學認識碼頭運作、航道管理與船舶種類，也談到航海工作背後的專業與紀律。",
-        "講者分享在海上工作的日常：長時間離岸、團隊合作、天氣變化與突發情況的應對。同學最感興趣的，是航海儀器如何結合傳統經驗與現代科技，在茫茫大海中確認位置與方向。",
-        "問答環節中，有人問及航海科技與氣候變化，也有人關心入行途徑。講座讓同學看見，海洋不只是風景，更是一條值得探索的專業道路。"
+    "location": {
+      "zh": "F3 課室",
+      "en": "F3 Classrooms"
+    },
+    "excerpt": {
+      "zh": "行政人員走進 F3 課室，講解新課程安排與學習要求，並即場解答同學疑問。",
+      "en": "Administrators visited F3 classrooms to explain the new curriculum and answer students' questions on the spot."
+    },
+    "body": {
+      "zh": [
+        "行政人員走進 F3 課室，向同學講解新課程的科目安排、學習要求與評核方式，讓大家對接下來的學習有更清楚的掌握。",
+        "同學在問答環節提出關於選科、功課與考試的疑問，老師逐一回應。及早了解課程變化，有助大家規劃自己的學習節奏。"
       ],
-      en: [
-        "Macau has always lived alongside the sea; its port is where the city meets the world. The talk began with the story of local shipping, introducing students to terminal operations, channel management and vessel types — and the professionalism and discipline behind a life at sea.",
-        "Speakers described the daily realities of maritime work: long periods away from shore, teamwork, changing weather and responding to the unexpected. Students were especially fascinated by how navigation instruments combine traditional experience with modern technology to fix a position on the open sea.",
-        "In the Q&A, questions ranged from navigation technology and climate change to how to enter the industry. The talk showed that the ocean is not just a view — it is a professional path worth exploring."
+      "en": [
+        "Administrators visited F3 classrooms to explain the new curriculum's subject arrangements, learning requirements and assessment methods, giving students a clearer picture of what lies ahead.",
+        "During the Q&A, students raised questions about subject choices, homework and examinations, and teachers responded one by one. Understanding the changes early helps everyone plan their own learning rhythm."
       ]
     },
-    photos: [
+    "id": "new-curriculum",
+    "year": "2526",
+    "photos": [
       {
-        src: "assets/img/ph/maritime-talk-01.svg",
-        caption: { zh: "講者分享海上工作的日常與挑戰。", en: "The speaker shared the routines and challenges of life at sea." }
+        "src": "photos/new-curriculum/01.jpg",
+        "caption": {
+          "zh": "行政人員入班講解新課程安排。",
+          "en": "Administrators explain the new curriculum in class."
+        }
       },
       {
-        src: "assets/img/ph/maritime-talk-02.svg",
-        caption: { zh: "航海儀器展示，讓課本知識變得立體。", en: "Navigation instruments turned textbook knowledge into something tangible." }
+        "src": "photos/new-curriculum/02.jpg",
+        "caption": {
+          "zh": "同學細心聆聽，了解課程變化。",
+          "en": "Students listen carefully to the changes ahead."
+        }
       },
       {
-        src: "assets/img/ph/maritime-talk-03.svg",
-        caption: { zh: "同學對澳門港口與航運發展充滿好奇。", en: "Students were full of questions about Macau's port and shipping industry." }
+        "src": "photos/new-curriculum/03.jpg",
+        "caption": {
+          "zh": "老師即場解答同學的疑問。",
+          "en": "Teachers answer students' questions on the spot."
+        }
       },
       {
-        src: "assets/img/ph/maritime-talk-04.svg",
-        caption: { zh: "舉手發問一個接一個，講座在熱烈交流中結束。", en: "Hands kept going up as the talk ended in lively conversation." }
+        "src": "photos/new-curriculum/04.jpg",
+        "caption": {
+          "zh": "行政人員入班講解新課程安排。",
+          "en": "Administrators explain the new curriculum in class."
+        }
+      },
+      {
+        "src": "photos/new-curriculum/05.jpg",
+        "caption": {
+          "zh": "同學細心聆聽，了解課程變化。",
+          "en": "Students listen carefully to the changes ahead."
+        }
+      },
+      {
+        "src": "photos/new-curriculum/06.jpg",
+        "caption": {
+          "zh": "老師即場解答同學的疑問。",
+          "en": "Teachers answer students' questions on the spot."
+        }
+      },
+      {
+        "src": "photos/new-curriculum/07.jpg",
+        "caption": {
+          "zh": "行政人員入班講解新課程安排。",
+          "en": "Administrators explain the new curriculum in class."
+        }
       }
     ]
   },
   {
-    id: "bamboo-craft",
-    year: "2526",
-    category: "culture",
-    date: "2026-04-25",
-    title: { zh: "F3 搭棚工藝", en: "Bamboo Scaffolding Workshop" },
-    subtitle: {
-      zh: "一根竹、一條繩，撐起城市的手藝",
-      en: "Bamboo, rope, and a craft that holds up the city"
+    "category": "sports",
+    "date": "2026-05-13",
+    "title": {
+      "zh": "體育週",
+      "en": "Sports Week"
     },
-    location: { zh: "工藝室", en: "Craft Room" },
-    excerpt: {
-      zh: "同學跟隨搭棚師傅認識竹棚結構，親手體驗綁紮，感受澳門傳統工藝的智慧。",
-      en: "Students learned the structure of bamboo scaffolding and tried their hand at tying — a close encounter with a traditional Macau craft."
+    "subtitle": {
+      "zh": "動起來，讓校園充滿活力",
+      "en": "Get moving — campus in motion"
     },
-    body: {
-      zh: [
-        "搭棚是澳門街頭常見的景象，卻很少人真正走近細看。工作坊邀請經驗豐富的搭棚師傅走進校園，介紹竹材的選擇、棚架的結構與綁紮方法，讓同學認識這門以經驗與手感累積而成的手藝。",
-        "師傅示範後，同學分組動手嘗試。竹枝長短不一，繩結鬆緊有別，看似簡單的動作，實際操作起來才發現處處講究。每一次修正，都是對結構與安全的重新理解。",
-        "活動最後，各組完成小型竹棚。雖然規模不大，卻讓同學真切感受到傳統工藝的價值：它不只是技術，更是人與材料、經驗與合作之間的默契。"
+    "location": {
+      "zh": "學校禮堂及操場",
+      "en": "School Hall & Playground"
+    },
+    "excerpt": {
+      "zh": "體育週設有多個運動挑戰站，同學在比賽與遊戲中鍛鍊身體，也為班級互相打氣。",
+      "en": "Sports Week featured a range of activity stations where students built fitness, took on challenges and cheered for their classes."
+    },
+    "body": {
+      "zh": [
+        "體育週在校園設置多個運動挑戰站，從體能測試到趣味競技，讓同學在遊戲中活動身體，也在合作中互相鼓勵。",
+        "同學輪流挑戰不同項目，場邊的加油聲與笑聲不斷。體育週不只是比賽，更是一個讓大家放下課本、一起動起來的機會。"
       ],
-      en: [
-        "Bamboo scaffolding is a familiar sight on Macau's streets, yet few of us stop to look closely. The workshop invited experienced scaffolders onto campus to introduce bamboo selection, frame structure and tying techniques — a craft built on experience and a sensitive pair of hands.",
-        "After the demonstration, students worked in groups. Bamboo poles varied in length, knots differed in tension, and movements that looked simple turned out to demand care. Every correction brought a fresh understanding of structure and safety.",
-        "By the end, each group had built a small bamboo frame. Modest in scale, it made the value of the craft tangible: not just technique, but a rapport between people, material, experience and teamwork."
+      "en": [
+        "Sports Week set up a variety of activity stations across campus, from fitness tests to fun challenges, encouraging students to move and support one another.",
+        "Students rotated through the stations amid constant cheers and laughter. More than a competition, Sports Week was a chance to put down the textbooks and get moving together."
       ]
     },
-    photos: [
+    "id": "sports-week",
+    "year": "2526",
+    "photos": [
       {
-        src: "assets/img/ph/bamboo-craft-01.svg",
-        caption: { zh: "搭棚師傅示範竹棚的結構與綁紮技巧。", en: "A scaffolding master demonstrated structure and tying techniques." }
+        "src": "photos/sports-week/01.jpg",
+        "caption": {
+          "zh": "體育週活動開始，同學挑戰不同項目。",
+          "en": "Sports Week begins with a range of challenges."
+        }
       },
       {
-        src: "assets/img/ph/bamboo-craft-02.svg",
-        caption: { zh: "同學近距離觀察竹材的紋理與韌性。", en: "Students examined the grain and flexibility of bamboo up close." }
+        "src": "photos/sports-week/02.jpg",
+        "caption": {
+          "zh": "同學全力以赴，場邊加油聲不斷。",
+          "en": "Students give their all as cheers ring out."
+        }
       },
       {
-        src: "assets/img/ph/bamboo-craft-03.svg",
-        caption: { zh: "分組嘗試綁紮，手上滿是專注。", en: "In groups, students tried their hand at tying with intense focus." }
+        "src": "photos/sports-week/03.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留念。",
+          "en": "A group photo wraps up the day."
+        }
       },
       {
-        src: "assets/img/ph/bamboo-craft-04.svg",
-        caption: { zh: "導師逐一指導，修正每個細節。", en: "Instructors moved from group to group, refining every detail." }
+        "src": "photos/sports-week/04.jpg",
+        "caption": {
+          "zh": "體育週活動開始，同學挑戰不同項目。",
+          "en": "Sports Week begins with a range of challenges."
+        }
       },
       {
-        src: "assets/img/ph/bamboo-craft-05.svg",
-        caption: { zh: "竹枝交錯成架，手藝在合作中傳承。", en: "Bamboo crossed into a frame, passing craft down through teamwork." }
+        "src": "photos/sports-week/05.jpg",
+        "caption": {
+          "zh": "同學全力以赴，場邊加油聲不斷。",
+          "en": "Students give their all as cheers ring out."
+        }
       },
       {
-        src: "assets/img/ph/bamboo-craft-06.svg",
-        caption: { zh: "完成的小型竹棚，是合作與手藝的成果。", en: "The finished mini scaffold — a product of teamwork and skill." }
+        "src": "photos/sports-week/06.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留念。",
+          "en": "A group photo wraps up the day."
+        }
+      },
+      {
+        "src": "photos/sports-week/07.jpg",
+        "caption": {
+          "zh": "體育週活動開始，同學挑戰不同項目。",
+          "en": "Sports Week begins with a range of challenges."
+        }
+      },
+      {
+        "src": "photos/sports-week/08.jpg",
+        "caption": {
+          "zh": "同學全力以赴，場邊加油聲不斷。",
+          "en": "Students give their all as cheers ring out."
+        }
       }
     ]
   },
   {
-    id: "math-week",
-    year: "2526",
-    category: "academic",
-    date: "2026-04-20",
-    title: { zh: "數學週", en: "Mathematics Week" },
-    subtitle: {
-      zh: "數字走出課本，笑聲走進校園",
-      en: "Numbers leave the textbook, laughter fills the campus"
+    "category": "arts",
+    "date": "2026-05-10",
+    "title": {
+      "zh": "音樂週",
+      "en": "Music Week"
     },
-    location: { zh: "校園及禮堂", en: "Campus & School Hall" },
-    excerpt: {
-      zh: "數學遊蹤、解謎攤位與班際速算挑戰，讓同學在遊戲中發現數學的樂趣。",
-      en: "A maths trail, puzzle booths and inter-class challenges turned numbers into a campus-wide adventure."
+    "subtitle": {
+      "zh": "讓歌聲，成為校園的底色",
+      "en": "Let music fill the campus"
     },
-    body: {
-      zh: [
-        "數學週以「玩中學」為主題，設有數學遊蹤、邏輯解謎站及班際速算挑戰。同學在校園各處尋找線索，運用課堂所學破解難題，也在合作中發現數學並不只是紙上的計算。",
-        "攤位遊戲把公式與圖形變成手上的挑戰：有人用七巧板拼出圖案，有人與時間賽跑完成速算，也有人在解謎站前反覆嘗試，直到答案出現的那一刻一起歡呼。",
-        "壓軸的班際比賽把氣氛推上高峰。掌聲、倒數與歡呼此起彼落，讓整個禮堂都感受到數學的熱度。原來，數字也可以很好玩。"
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "音樂週為同學提供舞台，獨唱、合唱與樂器演出輪番登場，掌聲與歌聲充滿校園。",
+      "en": "Music Week gave students a stage for solos, duets, choir and instrumental performances, filling the campus with song and applause."
+    },
+    "body": {
+      "zh": [
+        "音樂週為同學提供展現才華的舞台，獨唱、合唱與樂器演出輪番登場。台下觀眾隨着旋律拍手，校園一時充滿歌聲。",
+        "對不少同學來說，這是第一次在台上表演。緊張與興奮交織，但當掌聲響起，所有練習都有了回應。"
       ],
-      en: [
-        "With the theme \"learning through play\", Mathematics Week featured a campus maths trail, logic puzzle stations and an inter-class speed challenge. Students hunted for clues around school, applied what they had learned in class, and discovered that maths is far more than calculations on paper.",
-        "Booth games turned formulas and shapes into hands-on challenges: assembling tangram figures, racing the clock on mental arithmetic, or persevering at a puzzle station until the answer finally clicked — and the whole group cheered.",
-        "The inter-class final brought the energy to its peak. Applause, countdowns and cheers filled the hall, and the whole school felt the heat of mathematics. Numbers, it turns out, can be a lot of fun."
+      "en": [
+        "Music Week gave students a stage to share their talents, with solos, duets, choir and instrumental performances one after another. The audience clapped along, and the campus was soon filled with song.",
+        "For many students, it was their first time performing on stage. Nerves and excitement mixed, but when the applause came, every rehearsal felt worthwhile."
       ]
     },
-    photos: [
+    "id": "music-week",
+    "year": "2526",
+    "photos": [
       {
-        src: "assets/img/ph/math-week-01.svg",
-        caption: { zh: "數學週開幕，禮堂坐滿期待的眼神。", en: "Mathematics Week opens to a hall full of expectant faces." }
+        "src": "photos/music-week/01.jpg",
+        "caption": {
+          "zh": "音樂週舞台上，同學投入演出。",
+          "en": "Students give an engaging performance on the Music Week stage."
+        }
       },
       {
-        src: "assets/img/ph/math-week-02.svg",
-        caption: { zh: "數學遊蹤：同學在校園各處尋找解謎線索。", en: "Maths trail: students hunt for clues across the campus." }
+        "src": "photos/music-week/02.jpg",
+        "caption": {
+          "zh": "台下的掌聲與歡呼此起彼落。",
+          "en": "Applause and cheers rise from the audience."
+        }
       },
       {
-        src: "assets/img/ph/math-week-03.svg",
-        caption: { zh: "攤位遊戲把公式變成手上的挑戰。", en: "Booth games turned formulas into hands-on challenges." }
+        "src": "photos/music-week/03.jpg",
+        "caption": {
+          "zh": "演出結束，表演者與老師合照。",
+          "en": "Performers and teachers pose for a photo after the show."
+        }
       },
       {
-        src: "assets/img/ph/math-week-04.svg",
-        caption: { zh: "小組討論，一起拆解難題。", en: "Small-group discussion, breaking down problems together." }
+        "src": "photos/music-week/04.jpg",
+        "caption": {
+          "zh": "音樂週舞台上，同學投入演出。",
+          "en": "Students give an engaging performance on the Music Week stage."
+        }
       },
       {
-        src: "assets/img/ph/math-week-05.svg",
-        caption: { zh: "班際速算比賽，氣氛緊張又熱烈。", en: "The inter-class speed challenge was tense and electric." }
+        "src": "photos/music-week/05.jpg",
+        "caption": {
+          "zh": "台下的掌聲與歡呼此起彼落。",
+          "en": "Applause and cheers rise from the audience."
+        }
       },
       {
-        src: "assets/img/ph/math-week-06.svg",
-        caption: { zh: "頒獎時刻，為努力寫下句號。", en: "Award time — a fitting close to every effort." }
+        "src": "photos/music-week/06.jpg",
+        "caption": {
+          "zh": "演出結束，表演者與老師合照。",
+          "en": "Performers and teachers pose for a photo after the show."
+        }
+      },
+      {
+        "src": "photos/music-week/07.jpg",
+        "caption": {
+          "zh": "音樂週舞台上，同學投入演出。",
+          "en": "Students give an engaging performance on the Music Week stage."
+        }
+      },
+      {
+        "src": "photos/music-week/08.jpg",
+        "caption": {
+          "zh": "台下的掌聲與歡呼此起彼落。",
+          "en": "Applause and cheers rise from the audience."
+        }
       }
     ]
   },
   {
-    id: "chinese-culture",
-    year: "2526",
-    category: "culture",
-    date: "2026-04-11",
-    title: { zh: "愛國愛澳中華文化推廣活動", en: "Chinese Culture Day" },
-    subtitle: {
-      zh: "在書法、茶香與手藝裡，遇見傳統",
-      en: "Meeting tradition through calligraphy, tea and craft"
+    "category": "talks",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "省會長講話",
+      "en": "Provincial Superior's Address"
     },
-    location: { zh: "學校操場及禮堂", en: "School Grounds & Hall" },
-    excerpt: {
-      zh: "書法、茶藝、傳統手工藝與文化問答，讓同學在體驗中認識中華文化。",
-      en: "Calligraphy, tea art, traditional crafts and a culture quiz brought heritage to life."
+    "subtitle": {
+      "zh": "在聆聽中，思考成長的方向",
+      "en": "Listening, reflecting, growing"
     },
-    body: {
-      zh: [
-        "文化推廣活動以傳統表演揭開序幕，校園一時變得熱鬧起來。書法、茶藝、剪紙與傳統手工藝攤位沿著操場排開，同學可以親手嘗試，也可以坐下來聽導師講解背後的故事。",
-        "在書法攤位，同學一筆一畫寫下自己的名字與祝福；茶藝桌前，大家學習溫杯、沖泡與奉茶，體會慢下來的節奏。傳統手工藝工作坊裡，一張紙、一根線，在手中慢慢變成作品。",
-        "文化問答比賽把一天的所學串連起來。同學在搶答與合作中，重新認識傳統不只是書本上的名詞，而是可以觸摸、可以品嘗、可以延續的生活。"
+    "location": {
+      "zh": "學校操場",
+      "en": "School Grounds"
+    },
+    "excerpt": {
+      "zh": "省會長向師生發表講話，分享勉勵與期許，鼓勵同學在學習與生活中保持熱情。",
+      "en": "The Provincial Superior addressed students and staff, offering encouragement and inviting everyone to keep growing with purpose."
+    },
+    "body": {
+      "zh": [
+        "省會長向師生發表講話，分享對學習、成長與服務的期許，鼓勵同學在日常中保持熱情與責任感。",
+        "師生在校園中安靜聆聽，講話結束後以掌聲致謝。短短的分享，為新一年的校園生活留下值得思考的方向。"
       ],
-      en: [
-        "The day opened with a traditional performance, and the campus came alive. Calligraphy, tea art, paper-cutting and craft booths lined the grounds, inviting students to try things with their own hands or sit down and hear the stories behind them.",
-        "At the calligraphy booth, students wrote their names and blessings stroke by stroke. At the tea table, they learned to warm cups, brew and serve, discovering a slower rhythm. In the craft workshop, a sheet of paper and a piece of thread slowly became something real.",
-        "A culture quiz tied the day together. Through quick-fire rounds and teamwork, students rediscovered that tradition is not just a word in a textbook — it is something you can touch, taste and carry forward."
+      "en": [
+        "The Provincial Superior addressed students and staff, sharing hopes for learning, growth and service, and encouraging everyone to keep a sense of passion and responsibility in daily life.",
+        "The school community listened quietly and applauded at the end. In just a short address, everyone was left with something worth reflecting on for the year ahead."
       ]
     },
-    photos: [
+    "id": "provincial-talk",
+    "year": "2526",
+    "photos": [
       {
-        src: "assets/img/ph/chinese-culture-01.svg",
-        caption: { zh: "中華文化推廣活動以傳統表演揭開序幕。", en: "Chinese Culture Day opened with a traditional performance." }
+        "src": "photos/provincial-talk/01.jpg",
+        "caption": {
+          "zh": "省會長向師生講話，分享勉勵。",
+          "en": "The Provincial Superior shares words of encouragement."
+        }
       },
       {
-        src: "assets/img/ph/chinese-culture-02.svg",
-        caption: { zh: "書法攤位前，同學一筆一畫感受漢字之美。", en: "At the calligraphy booth, students felt the beauty of every stroke." }
+        "src": "photos/provincial-talk/02.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，現場氣氛莊重。",
+          "en": "Students listen attentively in a solemn atmosphere."
+        }
       },
       {
-        src: "assets/img/ph/chinese-culture-03.svg",
-        caption: { zh: "茶藝體驗，學習慢下來品味一杯茶。", en: "A tea ceremony taught the art of slowing down." }
+        "src": "photos/provincial-talk/03.jpg",
+        "caption": {
+          "zh": "講話結束，全場以掌聲致謝。",
+          "en": "The community applauds at the end of the address."
+        }
       },
       {
-        src: "assets/img/ph/chinese-culture-04.svg",
-        caption: { zh: "傳統手工藝工作坊，作品在手中慢慢成形。", en: "In the craft workshop, small works took shape by hand." }
+        "src": "photos/provincial-talk/04.jpg",
+        "caption": {
+          "zh": "省會長向師生講話，分享勉勵。",
+          "en": "The Provincial Superior shares words of encouragement."
+        }
       },
       {
-        src: "assets/img/ph/chinese-culture-05.svg",
-        caption: { zh: "文化問答比賽，考驗知識也考驗默契。", en: "The culture quiz tested knowledge and teamwork alike." }
+        "src": "photos/provincial-talk/05.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，現場氣氛莊重。",
+          "en": "Students listen attentively in a solemn atmosphere."
+        }
       },
       {
-        src: "assets/img/ph/chinese-culture-06.svg",
-        caption: { zh: "活動結束，師生合照留住熱鬧的一天。", en: "Teachers and students gathered for a group photo at day's end." }
+        "src": "photos/provincial-talk/06.jpg",
+        "caption": {
+          "zh": "講話結束，全場以掌聲致謝。",
+          "en": "The community applauds at the end of the address."
+        }
       }
     ]
   },
   {
-    id: "math-competition",
-    year: "2526",
-    category: "academic",
-    date: "2026-03-14",
-    title: { zh: "初中數學比賽", en: "Junior Mathematics Competition" },
-    subtitle: {
-      zh: "一場安靜卻熱烈的頭腦競技",
-      en: "A quiet contest with a roaring sense of focus"
+    "id": "career-week",
+    "year": "2526",
+    "category": "guidance",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "生涯規劃週",
+      "en": "Career Planning Week"
     },
-    location: { zh: "學校禮堂", en: "School Hall" },
-    excerpt: {
-      zh: "F1 至 F3 同學同場較量，在有限時間裡拆解難題、挑戰自己。",
-      en: "F1 to F3 students tackled problems against the clock, pushing their thinking to the limit."
+    "subtitle": {
+      "zh": "把「未來」變成可以討論的現在",
+      "en": "Turning \"the future\" into something we can talk about today"
     },
-    body: {
-      zh: [
-        "比賽分為 F1、F2、F3 三個組別，題目涵蓋代數、幾何、數論與邏輯推理。參賽同學在限時內獨立作答，禮堂裡只聽見筆尖劃過紙面的聲音，安靜之中卻藏著最熱烈的思考。",
-        "今年的題目特別加入生活情境，要求同學把數學模型應用到真實問題。有人在圖形題上反覆推演，有人從看似無關的線索中找到突破口，每一張草稿紙都記錄著思考的痕跡。",
-        "賽後，老師即場講解幾道具挑戰性的題目，分享不同的解題思路。名次固然重要，但更珍貴的是同學願意走出舒適圈，在難題面前多堅持一會兒。"
-      ],
-      en: [
-        "The competition ran in three divisions — F1, F2 and F3 — with problems spanning algebra, geometry, number theory and logical reasoning. Students worked independently against the clock; the hall was silent except for pens on paper, yet the thinking was anything but quiet.",
-        "This year's problems included real-life contexts that asked students to apply mathematical models to genuine situations. Some worked and reworked geometry problems; others found a breakthrough in apparently unrelated clues. Every sheet of scratch paper held a trail of thought.",
-        "Afterwards, teachers walked through several challenging problems and shared different approaches. Rankings matter, but what matters more is the willingness to step outside one's comfort zone and stay with a hard problem a little longer."
-      ]
+    "location": {
+      "zh": "學校禮堂及課室",
+      "en": "School Hall & Classrooms"
     },
-    photos: [
-      {
-        src: "assets/img/ph/math-competition-01.svg",
-        caption: { zh: "初中數學比賽決賽現場，全神貫注。", en: "Finalists at the Junior Mathematics Competition, fully focused." }
-      },
-      {
-        src: "assets/img/ph/math-competition-02.svg",
-        caption: { zh: "題目投影在大屏幕上，全場只剩筆尖的聲音。", en: "With the problems on screen, only pens could be heard." }
-      },
-      {
-        src: "assets/img/ph/math-competition-03.svg",
-        caption: { zh: "同學在草稿紙上反覆推演。", en: "Students worked and reworked their solutions on scratch paper." }
-      },
-      {
-        src: "assets/img/ph/math-competition-04.svg",
-        caption: { zh: "老師即場講解解題思路。", en: "Teachers unpacked the solutions on the spot." }
-      },
-      {
-        src: "assets/img/ph/math-competition-05.svg",
-        caption: { zh: "同場較量，也是彼此學習。", en: "Competing side by side was also a way of learning together." }
-      },
-      {
-        src: "assets/img/ph/math-competition-06.svg",
-        caption: { zh: "賽後合照，每位參賽者都是贏家。", en: "A post-contest photo — every participant a winner." }
-      }
-    ]
-  },
-  {
-    id: "career-week",
-    year: "2526",
-    category: "guidance",
-    date: "2026-03-02",
-    title: { zh: "生涯規劃週", en: "Career Planning Week" },
-    subtitle: {
-      zh: "把「未來」變成可以討論的現在",
-      en: "Turning \"the future\" into something we can talk about today"
+    "excerpt": {
+      "zh": "校友分享、興趣測驗與模擬面試，陪同學一步步認識自己、想像未來。",
+      "en": "Alumni stories, interest assessments and mock interviews helped students know themselves and imagine what's next."
     },
-    location: { zh: "學校禮堂及課室", en: "School Hall & Classrooms" },
-    excerpt: {
-      zh: "校友分享、興趣測驗與模擬面試，陪同學一步步認識自己、想像未來。",
-      en: "Alumni stories, interest assessments and mock interviews helped students know themselves and imagine what's next."
-    },
-    body: {
-      zh: [
+    "body": {
+      "zh": [
         "生涯規劃不是一次就能完成的答案，而是一段持續探索的過程。今年的生涯規劃週邀請不同屆別的校友回到校園，分享升學選擇、大學生活與職場經驗，讓同學看見多條不同的路徑。",
         "活動設有興趣測驗、能力盤點與模擬面試。同學在導師引導下整理自己的強項與喜好，也練習如何介紹自己、回應問題。有人第一次發現，原來自己對某些領域的熱情比想像中更深。",
         "一對一諮詢時段，同學把升學壓力、選科猶豫與對未來的迷惘說出來。導師沒有給標準答案，而是陪著一起拆解問題，找到下一步可以行動的方向。"
       ],
-      en: [
+      "en": [
         "Career planning is not an answer to be completed once, but an ongoing process of exploration. This year's Career Planning Week invited alumni from different cohorts back to campus to share their study choices, university life and workplace experience, showing students that there are many paths.",
         "The programme included interest assessments, strengths mapping and mock interviews. With guidance from mentors, students organised their strengths and preferences, and practised introducing themselves and responding to questions. Some discovered a passion deeper than they had imagined.",
         "During one-on-one sessions, students spoke openly about study pressure, doubts over subject choices and uncertainty about the future. Mentors offered no standard answers; instead, they helped break the questions down and find one next step to take."
       ]
     },
-    photos: [
+    "photos": [
       {
-        src: "assets/img/ph/career-week-01.svg",
-        caption: { zh: "生涯規劃週開幕，攤位排滿好奇的同學。", en: "Career Planning Week opened with curious students lining the booths." }
+        "src": "photos/career-week/01.jpg",
+        "caption": {
+          "zh": "生涯規劃週攤位前，同學了解升學資訊。",
+          "en": "Students explore pathways at the Career Week booths."
+        }
       },
       {
-        src: "assets/img/ph/career-week-02.svg",
-        caption: { zh: "校友分享升學與職涯經驗。", en: "Alumni shared their study and career journeys." }
+        "src": "photos/career-week/02.jpg",
+        "caption": {
+          "zh": "導師與同學交流，協助探索方向。",
+          "en": "Mentors talk with students and help them explore directions."
+        }
       },
       {
-        src: "assets/img/ph/career-week-03.svg",
-        caption: { zh: "同學透過測驗認識自己的興趣與強項。", en: "Assessments helped students recognise their interests and strengths." }
+        "src": "photos/career-week/03.jpg",
+        "caption": {
+          "zh": "活動結束，同學帶著新想法離開。",
+          "en": "Students leave with new ideas and possibilities."
+        }
       },
       {
-        src: "assets/img/ph/career-week-04.svg",
-        caption: { zh: "模擬面試練習，讓未來更有準備。", en: "Mock interviews made the future feel a little more prepared." }
-      },
-      {
-        src: "assets/img/ph/career-week-05.svg",
-        caption: { zh: "導師一對一解答，為迷惘的腳步指路。", en: "One-on-one sessions helped point the way forward." }
-      },
-      {
-        src: "assets/img/ph/career-week-06.svg",
-        caption: { zh: "把問題寫下來，就是把方向找出來。", en: "Writing questions down is already finding a direction." }
+        "src": "photos/career-week/04.jpg",
+        "caption": {
+          "zh": "生涯規劃週攤位前，同學了解升學資訊。",
+          "en": "Students explore pathways at the Career Week booths."
+        }
       }
     ]
   },
   {
-    id: "subject-selection",
-    year: "2526",
-    category: "guidance",
-    date: "2026-02-07",
-    title: { zh: "F3 選科講解會（親子專場）", en: "F3 Subject Selection Talk (Parent Session)" },
-    subtitle: {
-      zh: "選科這一步，一起好好走",
-      en: "Choosing electives, together"
+    "id": "reclamation-talk",
+    "year": "2526",
+    "category": "talks",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "填海講座",
+      "en": "Land Reclamation Talk"
     },
-    location: { zh: "學校禮堂", en: "School Hall" },
-    excerpt: {
-      zh: "老師介紹選修科目與升學方向，家長與同學並肩討論，為下一步做好準備。",
-      en: "Teachers introduced elective subjects and pathways, while parents and students talked through the next step side by side."
+    "subtitle": {
+      "zh": "從地圖上看見澳門的成長",
+      "en": "Seeing how Macau grew, one shoreline at a time"
     },
-    body: {
-      zh: [
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "城市腳下的土地從何而來？一場講座，帶同學回看海岸線的變化與城市發展的選擇。",
+      "en": "Where does the ground beneath the city come from? A talk tracing Macau's shifting shoreline and the choices behind its growth."
+    },
+    "body": {
+      "zh": [
+        "澳門是一座與海爭地的城市。講座從舊地圖與歷史照片出發，帶同學認識填海工程如何一步步改變海岸線，也如何塑造今日的街道、社區與生活空間。",
+        "講者以具體案例說明規劃、工程與環境之間的平衡，並提醒我們：每一寸新土地得來不易，城市發展的同時，也要思考自然、歷史與下一代的需要。",
+        "問答環節中，同學圍繞土地利用、生態影響與未來規劃踴躍發問，把課本上的地理概念，連結到每天走過的街道。"
+      ],
+      "en": [
+        "Macau is a city that has grown out of the sea. Starting from old maps and archival photographs, the talk traced how land reclamation reshaped the coastline — and with it, the streets, neighbourhoods and living spaces we know today.",
+        "Speakers walked through real projects to explain the balance between planning, engineering and the environment, reminding us that every inch of new land comes at a cost, and that growth must also consider nature, history and the needs of the next generation.",
+        "During the Q&A, students asked about land use, ecological impact and future planning, connecting textbook geography to the streets they walk every day."
+      ]
+    },
+    "photos": [
+      {
+        "src": "photos/reclamation-talk/01.jpg",
+        "caption": {
+          "zh": "講者以地圖解說填海與城市發展。",
+          "en": "The speaker uses maps to explain reclamation and urban growth."
+        }
+      },
+      {
+        "src": "photos/reclamation-talk/02.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，思考土地與環境的關係。",
+          "en": "Students reflect on the relationship between land and environment."
+        }
+      },
+      {
+        "src": "photos/reclamation-talk/03.jpg",
+        "caption": {
+          "zh": "問答環節，同學踴躍舉手提問。",
+          "en": "Students raise questions during the Q&A."
+        }
+      },
+      {
+        "src": "photos/reclamation-talk/04.jpg",
+        "caption": {
+          "zh": "講者以地圖解說填海與城市發展。",
+          "en": "The speaker uses maps to explain reclamation and urban growth."
+        }
+      },
+      {
+        "src": "photos/reclamation-talk/05.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，思考土地與環境的關係。",
+          "en": "Students reflect on the relationship between land and environment."
+        }
+      },
+      {
+        "src": "photos/reclamation-talk/06.jpg",
+        "caption": {
+          "zh": "問答環節，同學踴躍舉手提問。",
+          "en": "Students raise questions during the Q&A."
+        }
+      }
+    ]
+  },
+  {
+    "category": "sports",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "初中跳繩比賽",
+      "en": "Junior High Jump Rope Competition"
+    },
+    "subtitle": {
+      "zh": "繩影翻飛，跳出節奏",
+      "en": "Finding rhythm in every jump"
+    },
+    "location": {
+      "zh": "學校球場",
+      "en": "School Court"
+    },
+    "excerpt": {
+      "zh": "初中跳繩比賽在學校球場舉行，參賽同學在繩影與掌聲中挑戰速度與默契。",
+      "en": "The junior high jump rope competition took place on the school court, with students testing their speed and rhythm amid cheers."
+    },
+    "body": {
+      "zh": [
+        "初中跳繩比賽在學校球場舉行，參賽同學在繩影與掌聲中挑戰速度、節奏與默契。",
+        "看似簡單的跳繩，其實講究體力與專注。比賽讓同學在輕鬆的氣氛中運動，也為校園添上活力。"
+      ],
+      "en": [
+        "The junior high jump rope competition took place on the school court, where students tested their speed, rhythm and coordination amid cheers.",
+        "Jumping rope may look simple, but it demands stamina and focus. The competition got students moving in a relaxed atmosphere and brought extra energy to campus."
+      ]
+    },
+    "id": "jump-rope",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/jump-rope/01.jpg",
+        "caption": {
+          "zh": "跳繩比賽現場，同學全力以赴。",
+          "en": "Students give their best at the jump rope competition."
+        }
+      },
+      {
+        "src": "photos/jump-rope/02.jpg",
+        "caption": {
+          "zh": "繩影翻飛，場邊同學加油打氣。",
+          "en": "Ropes spin as classmates cheer from the sidelines."
+        }
+      }
+    ]
+  },
+  {
+    "category": "campus",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "中小學復活節祈禱會",
+      "en": "Easter Prayer Gathering"
+    },
+    "subtitle": {
+      "zh": "在祈禱中，一起迎接希望",
+      "en": "Welcoming hope together"
+    },
+    "location": {
+      "zh": "學校操場",
+      "en": "School Grounds"
+    },
+    "excerpt": {
+      "zh": "中小學師生齊聚校園，透過祈禱、歌詠與分享，一同迎接復活節的盼望。",
+      "en": "Primary and secondary students gathered on campus for prayer, song and reflection as they welcomed the hope of Easter."
+    },
+    "body": {
+      "zh": [
+        "中小學師生齊聚校園，透過祈禱、歌詠與分享，一同迎接復活節的盼望。",
+        "在安靜的時刻裡，同學沉澱心情，也想起彼此守望的重要。祈禱會為校園帶來一份平和與力量。"
+      ],
+      "en": [
+        "Primary and secondary students and teachers gathered on campus for prayer, song and sharing as they welcomed the hope of Easter.",
+        "In the quiet moments, students paused to reflect and remembered the importance of looking out for one another. The gathering brought a sense of peace and strength to the school."
+      ]
+    },
+    "id": "easter-prayer",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/easter-prayer/01.jpg",
+        "caption": {
+          "zh": "中小學師生齊聚，參與復活節祈禱會。",
+          "en": "Primary and secondary students gather for the Easter prayer."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/02.jpg",
+        "caption": {
+          "zh": "同學安靜祈禱，現場氣氛平和。",
+          "en": "Students pray quietly in a peaceful atmosphere."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/03.jpg",
+        "caption": {
+          "zh": "祈禱會結束，師生有序離開會場。",
+          "en": "The gathering ends and everyone leaves in an orderly way."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/04.jpg",
+        "caption": {
+          "zh": "中小學師生齊聚，參與復活節祈禱會。",
+          "en": "Primary and secondary students gather for the Easter prayer."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/05.jpg",
+        "caption": {
+          "zh": "同學安靜祈禱，現場氣氛平和。",
+          "en": "Students pray quietly in a peaceful atmosphere."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/06.jpg",
+        "caption": {
+          "zh": "祈禱會結束，師生有序離開會場。",
+          "en": "The gathering ends and everyone leaves in an orderly way."
+        }
+      },
+      {
+        "src": "photos/easter-prayer/07.jpg",
+        "caption": {
+          "zh": "中小學師生齊聚，參與復活節祈禱會。",
+          "en": "Primary and secondary students gather for the Easter prayer."
+        }
+      }
+    ]
+  },
+  {
+    "id": "subject-selection",
+    "year": "2526",
+    "category": "guidance",
+    "date": "2026-05-09",
+    "title": {
+      "zh": "F3 選科講解會（親子專場）",
+      "en": "F3 Subject Selection Talk (Parent Session)"
+    },
+    "subtitle": {
+      "zh": "選科這一步，一起好好走",
+      "en": "Choosing electives, together"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "老師介紹選修科目與升學方向，家長與同學並肩討論，為下一步做好準備。",
+      "en": "Teachers introduced elective subjects and pathways, while parents and students talked through the next step side by side."
+    },
+    "body": {
+      "zh": [
         "F3 是初中階段的重要轉折點，選科不只關乎未來兩年的學習，也與升學方向息息相關。講解會特別設為親子專場，希望家長與同學能在同一張桌子上，理解彼此的期待與考慮。",
         "老師逐一介紹各選修科目的課程內容、評核方式與銜接路徑，也分享過往同學的選科經驗。家長最關心的是出路與負擔，同學則在興趣與能力之間尋找平衡，現場的提問真實而具體。",
         "會後，不少家庭留下來與老師個別交流。選科沒有標準答案，但當資訊清楚、溝通坦誠，這一步就能走得更踏實。"
       ],
-      en: [
+      "en": [
         "F3 marks an important turning point in junior secondary. Subject selection shapes not only the next two years of study but also future pathways. The talk was designed as a parent-and-student session so that families could sit at the same table and understand each other's hopes and concerns.",
         "Teachers introduced each elective's content, assessment and progression routes, and shared past students' experiences. Parents focused on pathways and workload; students looked for a balance between interest and ability. The questions from the floor were honest and specific.",
         "Afterwards, many families stayed for individual conversations with teachers. There are no standard answers in subject selection, but clear information and open conversation make the next step a more grounded one."
       ]
     },
-    photos: [
+    "photos": [
       {
-        src: "assets/img/ph/subject-selection-01.svg",
-        caption: { zh: "F3 選科講解會（親子專場）在家長與同學的期待中開始。", en: "The F3 subject selection talk began with parents and students eager to learn." }
+        "src": "photos/subject-selection/01.jpg",
+        "caption": {
+          "zh": "講解會現場，家長與同學專心聆聽。",
+          "en": "Parents and students listen closely at the briefing."
+        }
       },
       {
-        src: "assets/img/ph/subject-selection-02.svg",
-        caption: { zh: "老師介紹不同選修科目的特色與出路。", en: "Teachers introduced the character and pathways of each elective." }
+        "src": "photos/subject-selection/02.jpg",
+        "caption": {
+          "zh": "老師介紹選科資訊，家長不時記錄。",
+          "en": "Teachers present subject information as parents take notes."
+        }
       },
       {
-        src: "assets/img/ph/subject-selection-03.svg",
-        caption: { zh: "家長與同學一起討論未來方向。", en: "Parents and students discussed the road ahead together." }
+        "src": "photos/subject-selection/03.jpg",
+        "caption": {
+          "zh": "會後交流，家長與老師討論升學方向。",
+          "en": "Families talk with teachers about pathways after the talk."
+        }
       },
       {
-        src: "assets/img/ph/subject-selection-04.svg",
-        caption: { zh: "問答環節，現場互動熱烈。", en: "The Q&A session sparked lively exchange." }
+        "src": "photos/subject-selection/04.jpg",
+        "caption": {
+          "zh": "講解會現場，家長與同學專心聆聽。",
+          "en": "Parents and students listen closely at the briefing."
+        }
       },
       {
-        src: "assets/img/ph/subject-selection-05.svg",
-        caption: { zh: "會後仍有不少家庭留下來請教老師。", en: "After the talk, many families stayed to ask more questions." }
+        "src": "photos/subject-selection/05.jpg",
+        "caption": {
+          "zh": "老師介紹選科資訊，家長不時記錄。",
+          "en": "Teachers present subject information as parents take notes."
+        }
       },
       {
-        src: "assets/img/ph/subject-selection-06.svg",
-        caption: { zh: "選科這一步，一起好好走。", en: "Choosing electives — a step taken together." }
+        "src": "photos/subject-selection/06.jpg",
+        "caption": {
+          "zh": "會後交流，家長與老師討論升學方向。",
+          "en": "Families talk with teachers about pathways after the talk."
+        }
+      },
+      {
+        "src": "photos/subject-selection/07.jpg",
+        "caption": {
+          "zh": "講解會現場，家長與同學專心聆聽。",
+          "en": "Parents and students listen closely at the briefing."
+        }
+      },
+      {
+        "src": "photos/subject-selection/08.jpg",
+        "caption": {
+          "zh": "老師介紹選科資訊，家長不時記錄。",
+          "en": "Teachers present subject information as parents take notes."
+        }
+      }
+    ]
+  },
+  {
+    "category": "guidance",
+    "date": "2026-05-06",
+    "title": {
+      "zh": "F3 選科講解會",
+      "en": "F3 Subject Selection Talk"
+    },
+    "subtitle": {
+      "zh": "為下一步，認識每個選擇",
+      "en": "Getting to know every choice ahead"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "老師向 F3 同學介紹選修科目、課程要求與升學方向，協助大家為選科做好準備。",
+      "en": "Teachers introduced elective subjects, course requirements and pathways to help F3 students prepare for subject selection."
+    },
+    "body": {
+      "zh": [
+        "F3 選科講解會由老師向同學介紹各選修科目的課程內容、評核方式與升學銜接，幫助大家理解不同選擇帶來的學習方向。",
+        "同學細心聆聽，也在問答環節就課程要求與未來出路踴躍發問。選科是重要的決定，但只要有清楚的資訊與充分的討論，就能更踏實地走出下一步。"
+      ],
+      "en": [
+        "Teachers introduced the content, assessment and progression routes of each elective, helping F3 students understand where different choices can lead.",
+        "Students listened closely and asked about course requirements and future pathways during the Q&A. Subject selection is an important decision, but clear information and open discussion make the next step a more grounded one."
+      ]
+    },
+    "id": "subject-selection-talk",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/subject-selection-talk/01.jpg",
+        "caption": {
+          "zh": "老師向 F3 同學介紹各選修科目。",
+          "en": "Teachers introduce the elective subjects to F3 students."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/02.jpg",
+        "caption": {
+          "zh": "同學細心聆聽，了解課程要求。",
+          "en": "Students listen closely to the course requirements."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/03.jpg",
+        "caption": {
+          "zh": "問答環節，同學踴躍舉手提問。",
+          "en": "Students raise their hands during the Q&A."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/04.jpg",
+        "caption": {
+          "zh": "老師向 F3 同學介紹各選修科目。",
+          "en": "Teachers introduce the elective subjects to F3 students."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/05.jpg",
+        "caption": {
+          "zh": "同學細心聆聽，了解課程要求。",
+          "en": "Students listen closely to the course requirements."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/06.jpg",
+        "caption": {
+          "zh": "問答環節，同學踴躍舉手提問。",
+          "en": "Students raise their hands during the Q&A."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/07.jpg",
+        "caption": {
+          "zh": "老師向 F3 同學介紹各選修科目。",
+          "en": "Teachers introduce the elective subjects to F3 students."
+        }
+      },
+      {
+        "src": "photos/subject-selection-talk/08.jpg",
+        "caption": {
+          "zh": "同學細心聆聽，了解課程要求。",
+          "en": "Students listen closely to the course requirements."
+        }
+      }
+    ]
+  },
+  {
+    "category": "culture",
+    "date": "2026-04-30",
+    "title": {
+      "zh": "F3 搭棚工藝",
+      "en": "Bamboo Scaffolding Workshop"
+    },
+    "subtitle": {
+      "zh": "一根竹、一條繩，撐起城市的手藝",
+      "en": "Bamboo, rope, and a craft that holds up the city"
+    },
+    "location": {
+      "zh": "課室",
+      "en": "Classroom"
+    },
+    "excerpt": {
+      "zh": "講者向同學介紹竹棚的結構、材料與工藝智慧，讓大家認識這門澳門常見卻少人細看的傳統手藝。",
+      "en": "A guest speaker introduced the structure, materials and wisdom of bamboo scaffolding — a familiar Macau craft that few stop to examine."
+    },
+    "body": {
+      "zh": [
+        "搭棚是澳門街頭常見的景象，卻很少人真正走近細看。講者從竹材的選擇、棚架的結構與綁紮方法說起，帶同學認識這門以經驗與手感累積而成的手藝。",
+        "講座配合圖片與影片示範，讓同學了解搭棚工程背後的力學原理與安全考量。雖然未能親手搭棚，但同學對這門傳統工藝有了更立體的理解。"
+      ],
+      "en": [
+        "Bamboo scaffolding is a familiar sight on Macau's streets, yet few of us stop to look closely. The speaker began with bamboo selection, frame structure and tying methods, introducing a craft built on experience and a sensitive pair of hands.",
+        "Photographs and video demonstrations helped students understand the mechanics and safety considerations behind scaffolding work. Though they did not build a scaffold themselves, students came away with a fuller picture of this traditional craft."
+      ]
+    },
+    "id": "bamboo-craft",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/bamboo-craft/01.jpg",
+        "caption": {
+          "zh": "講者介紹竹棚工藝的結構與特色。",
+          "en": "The speaker introduces the structure of bamboo scaffolding."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/02.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，認識傳統搭棚技術。",
+          "en": "Students learn about traditional scaffolding techniques."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/03.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留念。",
+          "en": "A group photo at the end of the activity."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/04.jpg",
+        "caption": {
+          "zh": "講者介紹竹棚工藝的結構與特色。",
+          "en": "The speaker introduces the structure of bamboo scaffolding."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/05.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，認識傳統搭棚技術。",
+          "en": "Students learn about traditional scaffolding techniques."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/06.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留念。",
+          "en": "A group photo at the end of the activity."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/07.jpg",
+        "caption": {
+          "zh": "講者介紹竹棚工藝的結構與特色。",
+          "en": "The speaker introduces the structure of bamboo scaffolding."
+        }
+      },
+      {
+        "src": "photos/bamboo-craft/08.jpg",
+        "caption": {
+          "zh": "同學專心聆聽，認識傳統搭棚技術。",
+          "en": "Students learn about traditional scaffolding techniques."
+        }
+      }
+    ]
+  },
+  {
+    "id": "chinese-culture",
+    "year": "2526",
+    "category": "culture",
+    "date": "2026-04-16",
+    "title": {
+      "zh": "愛國愛澳中華文化推廣活動",
+      "en": "Chinese Culture Day"
+    },
+    "subtitle": {
+      "zh": "在遊戲與體驗中，認識中華文化",
+      "en": "Discovering Chinese culture through games and experiences"
+    },
+    "location": {
+      "zh": "學校操場及禮堂",
+      "en": "School Grounds & Hall"
+    },
+    "excerpt": {
+      "zh": "透過文化攤位、問答遊戲與表演，讓同學在互動中認識中華文化。",
+      "en": "Cultural booths, quizzes and performances brought Chinese culture to life through hands-on participation."
+    },
+    "body": {
+      "zh": [
+        "文化推廣活動以攤位與互動遊戲為主，同學在校園中穿梭，透過配對、問答與展示認識中華文化的不同面向。",
+        "活動讓同學在輕鬆的氣氛中交流與學習，也讓傳統文化以更貼近生活的方式走進校園。"
+      ],
+      "en": [
+        "The Chinese Culture Day centred on booths and interactive games. Students moved around campus, exploring different aspects of Chinese culture through matching games, quizzes and displays.",
+        "The relaxed atmosphere encouraged conversation and learning, bringing traditional culture into campus life in a way that felt close to students' everyday experience."
+      ]
+    },
+    "photos": [
+      {
+        "src": "photos/chinese-culture/01.jpg",
+        "caption": {
+          "zh": "同學在攤位前進行文化配對遊戲。",
+          "en": "Students take part in a cultural matching game."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/02.jpg",
+        "caption": {
+          "zh": "導師講解文化知識，同學細心聆聽。",
+          "en": "Students listen as instructors share cultural knowledge."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/03.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留住熱鬧的一天。",
+          "en": "Teachers and students pose together at the end of the day."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/04.jpg",
+        "caption": {
+          "zh": "同學在攤位前進行文化配對遊戲。",
+          "en": "Students take part in a cultural matching game."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/05.jpg",
+        "caption": {
+          "zh": "導師講解文化知識，同學細心聆聽。",
+          "en": "Students listen as instructors share cultural knowledge."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/06.jpg",
+        "caption": {
+          "zh": "活動結束，師生合照留住熱鬧的一天。",
+          "en": "Teachers and students pose together at the end of the day."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/07.jpg",
+        "caption": {
+          "zh": "同學在攤位前進行文化配對遊戲。",
+          "en": "Students take part in a cultural matching game."
+        }
+      },
+      {
+        "src": "photos/chinese-culture/08.jpg",
+        "caption": {
+          "zh": "導師講解文化知識，同學細心聆聽。",
+          "en": "Students listen as instructors share cultural knowledge."
+        }
+      }
+    ]
+  },
+  {
+    "id": "maritime-talk",
+    "year": "2526",
+    "category": "talks",
+    "date": "2026-04-03",
+    "title": {
+      "zh": "航海講座",
+      "en": "Maritime Talk"
+    },
+    "subtitle": {
+      "zh": "把海圖攤開，讓好奇心啟航",
+      "en": "Unfolding the chart, setting curiosity sail"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "從澳門港口到遠洋航線，講者帶同學認識海上工作的日常與航海科技。",
+      "en": "From Macau's port to ocean routes, a look at life at sea and the technology of navigation."
+    },
+    "body": {
+      "zh": [
+        "澳門自古與海相伴，港口是城市與世界連結的起點。講座由本地航運的發展說起，帶同學認識碼頭運作、航道管理與船舶種類，也談到航海工作背後的專業與紀律。",
+        "講者分享在海上工作的日常：長時間離岸、團隊合作、天氣變化與突發情況的應對。同學最感興趣的，是航海儀器如何結合傳統經驗與現代科技，在茫茫大海中確認位置與方向。",
+        "問答環節中，有人問及航海科技與氣候變化，也有人關心入行途徑。講座讓同學看見，海洋不只是風景，更是一條值得探索的專業道路。"
+      ],
+      "en": [
+        "Macau has always lived alongside the sea; its port is where the city meets the world. The talk began with the story of local shipping, introducing students to terminal operations, channel management and vessel types — and the professionalism and discipline behind a life at sea.",
+        "Speakers described the daily realities of maritime work: long periods away from shore, teamwork, changing weather and responding to the unexpected. Students were especially fascinated by how navigation instruments combine traditional experience with modern technology to fix a position on the open sea.",
+        "In the Q&A, questions ranged from navigation technology and climate change to how to enter the industry. The talk showed that the ocean is not just a view — it is a professional path worth exploring."
+      ]
+    },
+    "photos": [
+      {
+        "src": "photos/maritime-talk/01.jpg",
+        "caption": {
+          "zh": "講者分享航海工作與航運發展。",
+          "en": "The speaker shares insights into maritime work and shipping."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/02.jpg",
+        "caption": {
+          "zh": "同學對航海儀器與海上生活充滿好奇。",
+          "en": "Students are curious about navigation instruments and life at sea."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/03.jpg",
+        "caption": {
+          "zh": "活動結束，師生以掌聲感謝講者。",
+          "en": "The audience thanks the speaker with a round of applause."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/04.jpg",
+        "caption": {
+          "zh": "講者分享航海工作與航運發展。",
+          "en": "The speaker shares insights into maritime work and shipping."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/05.jpg",
+        "caption": {
+          "zh": "同學對航海儀器與海上生活充滿好奇。",
+          "en": "Students are curious about navigation instruments and life at sea."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/06.jpg",
+        "caption": {
+          "zh": "活動結束，師生以掌聲感謝講者。",
+          "en": "The audience thanks the speaker with a round of applause."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/07.jpg",
+        "caption": {
+          "zh": "講者分享航海工作與航運發展。",
+          "en": "The speaker shares insights into maritime work and shipping."
+        }
+      },
+      {
+        "src": "photos/maritime-talk/08.jpg",
+        "caption": {
+          "zh": "同學對航海儀器與海上生活充滿好奇。",
+          "en": "Students are curious about navigation instruments and life at sea."
+        }
+      }
+    ]
+  },
+  {
+    "category": "academic",
+    "date": "2026-04-03",
+    "title": {
+      "zh": "F2 數學比賽",
+      "en": "F2 Mathematics Competition"
+    },
+    "subtitle": {
+      "zh": "思路交鋒，台上較量",
+      "en": "A meeting of quick minds on stage"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "F2 數學比賽以台上問答形式進行，參賽同學在限時內拆解難題，台下同學熱烈打氣。",
+      "en": "The F2 competition took the form of a stage quiz, with contestants solving problems against the clock and classmates cheering them on."
+    },
+    "body": {
+      "zh": [
+        "F2 數學比賽以台上問答形式進行，參賽同學在限時內拆解題目，台下同學則以掌聲與歡呼為班級打氣。",
+        "題目結合課堂知識與生活情境，考驗同學的運算、推理與臨場反應。無論勝負，大家都從比賽中看見數學的趣味。"
+      ],
+      "en": [
+        "The F2 Mathematics Competition took the form of a stage quiz. Contestants solved problems against the clock while classmates cheered them on from the audience.",
+        "Questions blended classroom knowledge with everyday situations, testing calculation, reasoning and quick thinking. Win or lose, everyone came away with a fresh sense of how much fun mathematics can be."
+      ]
+    },
+    "id": "math-competition-f2",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/math-competition-f2/01.jpg",
+        "caption": {
+          "zh": "F2 參賽同學在台上準備應戰。",
+          "en": "F2 contestants get ready on stage."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/02.jpg",
+        "caption": {
+          "zh": "台下同學為班級熱烈打氣。",
+          "en": "Classmates cheer from the audience."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/03.jpg",
+        "caption": {
+          "zh": "比賽結束，參賽隊伍合照留念。",
+          "en": "Teams pose for a photo after the competition."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/04.jpg",
+        "caption": {
+          "zh": "F2 參賽同學在台上準備應戰。",
+          "en": "F2 contestants get ready on stage."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/05.jpg",
+        "caption": {
+          "zh": "台下同學為班級熱烈打氣。",
+          "en": "Classmates cheer from the audience."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/06.jpg",
+        "caption": {
+          "zh": "比賽結束，參賽隊伍合照留念。",
+          "en": "Teams pose for a photo after the competition."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/07.jpg",
+        "caption": {
+          "zh": "F2 參賽同學在台上準備應戰。",
+          "en": "F2 contestants get ready on stage."
+        }
+      },
+      {
+        "src": "photos/math-competition-f2/08.jpg",
+        "caption": {
+          "zh": "台下同學為班級熱烈打氣。",
+          "en": "Classmates cheer from the audience."
+        }
+      }
+    ]
+  },
+  {
+    "category": "academic",
+    "date": "2026-04-03",
+    "title": {
+      "zh": "F1 數學比賽",
+      "en": "F1 Mathematics Competition"
+    },
+    "subtitle": {
+      "zh": "在解題中建立自信",
+      "en": "Building confidence, one problem at a time"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "F1 同學透過班際解題挑戰，在緊張又熱鬧的氣氛中比拼數學實力。",
+      "en": "F1 students tested their maths skills in a lively inter-class problem-solving challenge."
+    },
+    "body": {
+      "zh": [
+        "F1 數學比賽以班際形式進行，題目涵蓋算術、圖形與邏輯推理。同學在限時內專注解題，為班級爭取分數。",
+        "比賽不只是比拼速度，也考驗冷靜與策略。賽後老師講解題目，讓同學從每一道難題中帶走新的思路。"
+      ],
+      "en": [
+        "The F1 Mathematics Competition ran as an inter-class challenge, with questions covering arithmetic, shapes and logical reasoning. Students focused hard against the clock to earn points for their class.",
+        "It was a test of speed as well as calm and strategy. After the contest, teachers walked through the problems so that every student could take away a new way of thinking."
+      ]
+    },
+    "id": "math-competition-f1",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/math-competition-f1/01.jpg",
+        "caption": {
+          "zh": "F1 同學專注解答比賽題目。",
+          "en": "F1 students focus on their competition problems."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/02.jpg",
+        "caption": {
+          "zh": "限時之內，大家冷靜思考。",
+          "en": "Working calmly against the clock."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/03.jpg",
+        "caption": {
+          "zh": "賽後師生合照，記錄努力的一天。",
+          "en": "Students and teachers gather for a photo after the contest."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/04.jpg",
+        "caption": {
+          "zh": "F1 同學專注解答比賽題目。",
+          "en": "F1 students focus on their competition problems."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/05.jpg",
+        "caption": {
+          "zh": "限時之內，大家冷靜思考。",
+          "en": "Working calmly against the clock."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/06.jpg",
+        "caption": {
+          "zh": "賽後師生合照，記錄努力的一天。",
+          "en": "Students and teachers gather for a photo after the contest."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/07.jpg",
+        "caption": {
+          "zh": "F1 同學專注解答比賽題目。",
+          "en": "F1 students focus on their competition problems."
+        }
+      },
+      {
+        "src": "photos/math-competition-f1/08.jpg",
+        "caption": {
+          "zh": "限時之內，大家冷靜思考。",
+          "en": "Working calmly against the clock."
+        }
+      }
+    ]
+  },
+  {
+    "id": "math-week",
+    "year": "2526",
+    "category": "academic",
+    "date": "2026-04-02",
+    "title": {
+      "zh": "數學週",
+      "en": "Mathematics Week"
+    },
+    "subtitle": {
+      "zh": "數字走出課本，笑聲走進校園",
+      "en": "Numbers leave the textbook, laughter fills the campus"
+    },
+    "location": {
+      "zh": "校園及禮堂",
+      "en": "Campus & School Hall"
+    },
+    "excerpt": {
+      "zh": "數學遊蹤、解謎攤位與班際速算挑戰，讓同學在遊戲中發現數學的樂趣。",
+      "en": "A maths trail, puzzle booths and inter-class challenges turned numbers into a campus-wide adventure."
+    },
+    "body": {
+      "zh": [
+        "數學週以「玩中學」為主題，設有數學遊蹤、邏輯解謎站及班際速算挑戰。同學在校園各處尋找線索，運用課堂所學破解難題，也在合作中發現數學並不只是紙上的計算。",
+        "攤位遊戲把公式與圖形變成手上的挑戰：有人用七巧板拼出圖案，有人與時間賽跑完成速算，也有人在解謎站前反覆嘗試，直到答案出現的那一刻一起歡呼。",
+        "壓軸的班際比賽把氣氛推上高峰。掌聲、倒數與歡呼此起彼落，讓整個禮堂都感受到數學的熱度。原來，數字也可以很好玩。"
+      ],
+      "en": [
+        "With the theme \"learning through play\", Mathematics Week featured a campus maths trail, logic puzzle stations and an inter-class speed challenge. Students hunted for clues around school, applied what they had learned in class, and discovered that maths is far more than calculations on paper.",
+        "Booth games turned formulas and shapes into hands-on challenges: assembling tangram figures, racing the clock on mental arithmetic, or persevering at a puzzle station until the answer finally clicked — and the whole group cheered.",
+        "The inter-class final brought the energy to its peak. Applause, countdowns and cheers filled the hall, and the whole school felt the heat of mathematics. Numbers, it turns out, can be a lot of fun."
+      ]
+    },
+    "photos": [
+      {
+        "src": "photos/math-week/01.jpg",
+        "caption": {
+          "zh": "數學週攤位前，同學挑戰解題遊戲。",
+          "en": "Students take on puzzle games at the Maths Week booths."
+        }
+      },
+      {
+        "src": "photos/math-week/02.jpg",
+        "caption": {
+          "zh": "同學分組合作，一起破解難題。",
+          "en": "Teams work together to crack the problems."
+        }
+      },
+      {
+        "src": "photos/math-week/03.jpg",
+        "caption": {
+          "zh": "禮堂內氣氛熱烈，掌聲與歡呼不斷。",
+          "en": "The hall is filled with applause and cheers."
+        }
+      },
+      {
+        "src": "photos/math-week/04.jpg",
+        "caption": {
+          "zh": "數學週攤位前，同學挑戰解題遊戲。",
+          "en": "Students take on puzzle games at the Maths Week booths."
+        }
+      },
+      {
+        "src": "photos/math-week/05.jpg",
+        "caption": {
+          "zh": "同學分組合作，一起破解難題。",
+          "en": "Teams work together to crack the problems."
+        }
+      },
+      {
+        "src": "photos/math-week/06.jpg",
+        "caption": {
+          "zh": "禮堂內氣氛熱烈，掌聲與歡呼不斷。",
+          "en": "The hall is filled with applause and cheers."
+        }
+      },
+      {
+        "src": "photos/math-week/07.jpg",
+        "caption": {
+          "zh": "數學週攤位前，同學挑戰解題遊戲。",
+          "en": "Students take on puzzle games at the Maths Week booths."
+        }
+      },
+      {
+        "src": "photos/math-week/08.jpg",
+        "caption": {
+          "zh": "同學分組合作，一起破解難題。",
+          "en": "Teams work together to crack the problems."
+        }
+      }
+    ]
+  },
+  {
+    "category": "academic",
+    "date": "2026-04-02",
+    "title": {
+      "zh": "F3 數學比賽",
+      "en": "F3 Mathematics Competition"
+    },
+    "subtitle": {
+      "zh": "在限時挑戰中，磨練思考",
+      "en": "Sharpening the mind against the clock"
+    },
+    "location": {
+      "zh": "學校禮堂",
+      "en": "School Hall"
+    },
+    "excerpt": {
+      "zh": "F3 同學在禮堂同場較量，於限時內拆解代數、幾何與邏輯題目，展現平日所學。",
+      "en": "F3 students competed in the hall, solving algebra, geometry and logic problems against the clock."
+    },
+    "body": {
+      "zh": [
+        "F3 數學比賽在禮堂舉行，題目涵蓋代數、幾何與邏輯推理。參賽同學在限時內獨立作答，現場只聽見筆尖劃過紙面的聲音。",
+        "賽後老師講解幾道具挑戰性的題目，分享不同的解題思路。名次以外，更重要的是同學願意在難題面前多堅持一會兒。"
+      ],
+      "en": [
+        "The F3 Mathematics Competition took place in the school hall, with problems spanning algebra, geometry and logical reasoning. Students worked independently against the clock; the only sound was pens moving across paper.",
+        "Afterwards, teachers walked through several challenging problems and shared different approaches. Beyond the rankings, what mattered most was the willingness to stay with a hard problem a little longer."
+      ]
+    },
+    "id": "math-competition",
+    "year": "2526",
+    "photos": [
+      {
+        "src": "photos/math-competition/01.jpg",
+        "caption": {
+          "zh": "比賽現場，同學全神貫注。",
+          "en": "Students are fully focused during the competition."
+        }
+      },
+      {
+        "src": "photos/math-competition/02.jpg",
+        "caption": {
+          "zh": "參賽者細心思考，逐一拆解難題。",
+          "en": "Contestants work carefully through each problem."
+        }
+      },
+      {
+        "src": "photos/math-competition/03.jpg",
+        "caption": {
+          "zh": "賽後合照，為努力留下紀錄。",
+          "en": "A group photo after the contest captures the effort."
+        }
+      },
+      {
+        "src": "photos/math-competition/04.jpg",
+        "caption": {
+          "zh": "比賽現場，同學全神貫注。",
+          "en": "Students are fully focused during the competition."
+        }
+      },
+      {
+        "src": "photos/math-competition/05.jpg",
+        "caption": {
+          "zh": "參賽者細心思考，逐一拆解難題。",
+          "en": "Contestants work carefully through each problem."
+        }
+      },
+      {
+        "src": "photos/math-competition/06.jpg",
+        "caption": {
+          "zh": "賽後合照，為努力留下紀錄。",
+          "en": "A group photo after the contest captures the effort."
+        }
+      },
+      {
+        "src": "photos/math-competition/07.jpg",
+        "caption": {
+          "zh": "比賽現場，同學全神貫注。",
+          "en": "Students are fully focused during the competition."
+        }
+      },
+      {
+        "src": "photos/math-competition/08.jpg",
+        "caption": {
+          "zh": "參賽者細心思考，逐一拆解難題。",
+          "en": "Contestants work carefully through each problem."
+        }
       }
     ]
   }

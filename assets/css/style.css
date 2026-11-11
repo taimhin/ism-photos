@@ -1089,6 +1089,34 @@ html[lang="en"] .brand-text strong {
   transform: rotate(45deg);
 }
 
+.category-all {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.category-all .cat-icon {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.category-all .cat-tagline {
+  color: rgba(255, 248, 232, 0.68);
+}
+
+.category-all .cat-meta {
+  color: rgba(255, 248, 232, 0.48);
+}
+
+.category-all .cat-arrow {
+  background: rgba(255, 248, 232, 0.12);
+  color: var(--yellow);
+}
+
+.category-all:hover .cat-arrow {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
 /* ---------------- photo strip ---------------- */
 
 .strip-section {

@@ -11,18 +11,28 @@
 - **關於**：平台理念、數據一覽、照片授權聯絡方式
 - **中英雙語**：右上角按鈕切換中文 / English
 
-目前收錄 8 個活動、44 張版面示意圖（網站設計為可持續新增活動）：
+目前收錄 2526 年度 18 個活動、128 張照片。桌面原圖不會上傳，網站只保留壓縮後的網頁版本：
 
 | 活動 ID | 年度 | 活動名稱 | 主題 |
 | --- | --- | --- | --- |
-| `reclamation-talk` | 2526 | 填海講座 | 專題講座 |
-| `maritime-talk` | 2526 | 航海講座 | 專題講座 |
-| `bamboo-craft` | 2526 | F3 搭棚工藝 | 文化傳承 |
-| `math-week` | 2526 | 數學週 | 學術 |
-| `chinese-culture` | 2526 | 愛國愛澳中華文化推廣活動 | 文化傳承 |
-| `math-competition` | 2526 | 初中數學比賽 | 學術 |
-| `career-week` | 2526 | 生涯規劃週 | 升學與生涯 |
+| `music-week` | 2526 | 音樂週 | 藝術 |
+| `sports-week` | 2526 | 體育週 | 體育 |
+| `class-competition` | 2526 | F3 班際競賽 | 體育 |
+| `new-curriculum` | 2526 | F3 行政人員入班講解新課程 | 學術 |
+| `provincial-talk` | 2526 | 省會長講話 | 專題講座 |
+| `easter-prayer` | 2526 | 中小學復活節祈禱會 | 校園生活 |
 | `subject-selection` | 2526 | F3 選科講解會（親子專場） | 升學與生涯 |
+| `subject-selection-talk` | 2526 | F3 選科講解會 | 升學與生涯 |
+| `bamboo-craft` | 2526 | F3 搭棚工藝 | 文化傳承 |
+| `chinese-culture` | 2526 | 愛國愛澳中華文化推廣活動 | 文化傳承 |
+| `math-competition-f2` | 2526 | F2 數學比賽 | 學術 |
+| `math-competition-f1` | 2526 | F1 數學比賽 | 學術 |
+| `math-competition` | 2526 | F3 數學比賽 | 學術 |
+| `math-week` | 2526 | 數學週 | 學術 |
+| `maritime-talk` | 2526 | 航海講座 | 專題講座 |
+| `reclamation-talk` | 2526 | 填海講座 | 專題講座 |
+| `career-week` | 2526 | 生涯規劃週 | 升學與生涯 |
+| `jump-rope` | 2526 | 初中跳繩比賽 | 體育 |
 
 活動頁的年度分頁由 `assets/js/data.js` 的 `SCHOOL_YEARS` 控制：
 
@@ -32,31 +42,31 @@ const SCHOOL_YEARS = ["2526", "2627"];
 
 新增 2627 活動時，在該活動物件加入 `year: "2627"`，它就會自動出現在 2627 分頁；未有活動的年度會顯示「活動照片準備中」。
 
-## 換上真實照片
+## 新增或更換照片
 
-1. 在 `photos/` 下按活動 ID 建立資料夾，例如：
+1. 把照片壓縮後放入 `photos/<活動 ID>/`，例如：
    ```
    photos/
-     math-week/
+     music-week/
        01.jpg
        02.jpg
-     bamboo-craft/
+     sports-week/
        01.jpg
    ```
-   建議先壓縮照片（長邊 1600–2000px、每張 300–800KB），網站載入會更順。
+   建議長邊 1600px、JPEG 品質 80、每張約 150–300KB；上傳前請移除 EXIF（GPS 等位置資料）。
 
-2. 打開 `assets/js/data.js`，找到該活動的 `photos` 陣列，把 `src` 換成真實照片路徑，並修改中英文說明：
+2. 打開 `assets/js/data.js`，找到該活動的 `photos` 陣列，更新 `src` 與中英文說明：
    ```js
    {
-     id: "math-week",
+     id: "music-week",
      year: "2526",
      // ...
      photos: [
        {
-         src: "photos/math-week/01.jpg",
+         src: "photos/music-week/01.jpg",
          caption: {
-           zh: "數學遊蹤開始，同學在校園尋找解題線索。",
-           en: "The maths trail begins as students hunt for clues around campus."
+           zh: "音樂週舞台上，同學投入演出。",
+           en: "Students give an engaging performance on the Music Week stage."
          }
        }
      ]
@@ -66,7 +76,8 @@ const SCHOOL_YEARS = ["2526", "2627"];
 
 3. 重新整理網頁即可。照片數量、分類數字、統計數字都會自動更新。
 
-> 佔位圖放在 `assets/img/ph/`，由 `tools/generate_placeholders.py` 產生，不需要時可整批刪除。
+> 早期版面示意圖仍放在 `assets/img/ph/`，現已不被 `data.js` 引用；如不需要可整批刪除。
+> `tools/build_real_photos.py` 是這次由桌面原圖批次產生網頁照片的腳本，內含本機路徑，只作參考。
 
 ## 本機預覽
 
@@ -100,9 +111,9 @@ assets/
   js/data.js               活動、照片、分類資料（主要編輯位置）
   js/app.js                路由、雙語、搜尋、燈箱、互動
   img/logo.svg             網站標誌
-  img/ph/                  版面示意圖（可替換）
-photos/                    真實照片放這裡
-tools/generate_placeholders.py
+  img/ph/                  早期版面示意圖（現已停用）
+photos/                    已壓縮的網站照片
+tools/                     照片與版面示意圖產生工具
 ```
 
 ---

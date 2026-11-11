@@ -23,7 +23,7 @@ const UI = {
     statPhotos: "張照片",
     statThemes: "個主題",
     heroNote: "由校園媒體小組整理 · 持續更新",
-    marquee: ["數學週", "選科講解會", "搭棚工藝", "生涯規劃", "中華文化", "航海講座", "填海講座", "初中數學比賽"],
+    marquee: ["數學週", "選科講解會", "搭棚工藝", "生涯規劃", "中華文化", "音樂週", "體育週", "班際競賽", "跳繩比賽", "復活節祈禱會", "航海講座", "填海講座", "初中數學比賽"],
     featuredKicker: "精選活動 FEATURED",
     featuredTitle: "最近在校園發生的事",
     featuredLead: "從禮堂到操場，從課室到工藝室，看看同學最近經歷了什麼。",
@@ -31,7 +31,9 @@ const UI = {
     view: "查看活動",
     catKicker: "探索類別 CATEGORIES",
     catTitle: "用一個主題，找回那一天",
-    catLead: "四個主題，四種校園風景。點進去，重溫當天的笑聲與專注。",
+    catLead: "七個主題，七種校園風景。點進去，重溫當天的笑聲與專注。",
+    allActivitiesTitle: "全部活動",
+    allActivitiesTagline: "一次看遍所有校園片段",
     photoKicker: "相簿快照 SNAPSHOTS",
     photoTitle: "鏡頭下的片段",
     photoLead: "點擊任何一張照片，放大重溫現場。",
@@ -143,7 +145,7 @@ const UI = {
     statPhotos: "photos",
     statThemes: "themes",
     heroNote: "Curated by the Campus Media Team · Updated regularly",
-    marquee: ["Maths Week", "Subject Selection", "Bamboo Craft", "Career Planning", "Chinese Culture", "Maritime Talk", "Reclamation Talk", "Maths Competition"],
+    marquee: ["Maths Week", "Subject Selection", "Bamboo Craft", "Career Planning", "Chinese Culture", "Music Week", "Sports Week", "Inter-class Games", "Jump Rope", "Easter Prayer", "Maritime Talk", "Reclamation Talk", "Maths Competition"],
     featuredKicker: "FEATURED",
     featuredTitle: "What happened on campus lately",
     featuredLead: "From the hall to the playground, from classrooms to the craft room — a look at what students have been up to.",
@@ -151,7 +153,9 @@ const UI = {
     view: "View event",
     catKicker: "BROWSE BY THEME",
     catTitle: "Pick a theme, find that day",
-    catLead: "Four themes, four sides of campus life. Step in and relive the laughter and focus.",
+    catLead: "Seven themes, seven sides of campus life. Step in and relive the laughter and focus.",
+    allActivitiesTitle: "All activities",
+    allActivitiesTagline: "Every moment in one place",
     photoKicker: "SNAPSHOTS",
     photoTitle: "Fragments through the lens",
     photoLead: "Tap any photo to open it full screen and return to the moment.",
@@ -308,6 +312,9 @@ const ICONS = {
   expand: '<path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"/>',
   layers: '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5"/>',
   share: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/>',
+  school: '<path d="M3 10l9-6 9 6M5 10v10h14V10M9 20v-6h6v6"/>',
+  trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 5H5v2a3 3 0 0 0 3 3M16 5h3v2a3 3 0 0 1-3 3M12 13v4M8 21h8M10 17h4"/>',
+  music: '<path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/>',
   heart: '<path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/>'
 };
 
@@ -569,10 +576,10 @@ function initPage(route) {
 function pageHome() {
   const T = t();
   const events = sortedActivities();
-  const featured = ["chinese-culture", "bamboo-craft", "math-week", "career-week"]
+  const featured = ["music-week", "sports-week", "class-competition", "chinese-culture"]
     .map(activityById)
     .filter(Boolean);
-  const stripPhotos = ["math-week", "bamboo-craft", "subject-selection", "chinese-culture", "career-week", "maritime-talk", "math-competition", "reclamation-talk"]
+  const stripPhotos = ["music-week", "sports-week", "math-week", "chinese-culture", "bamboo-craft", "class-competition", "subject-selection", "maritime-talk"]
     .map((id) => {
       const activity = activityById(id);
       return activity ? { ...activity.photos[1] || activity.photos[0], activity } : null;
@@ -581,9 +588,9 @@ function pageHome() {
   photoSets.home = stripPhotos;
 
   const collage = [
-    { id: "bamboo-craft", index: 1, cls: "c1" },
-    { id: "math-week", index: 0, cls: "c2" },
-    { id: "chinese-culture", index: 2, cls: "c3" }
+    { id: "music-week", index: 0, cls: "c1" },
+    { id: "sports-week", index: 0, cls: "c2" },
+    { id: "chinese-culture", index: 1, cls: "c3" }
   ].map((item) => {
     const activity = activityById(item.id);
     const photo = activity.photos[item.index] || activity.photos[0];
@@ -668,6 +675,7 @@ function pageHome() {
       </div>
       <div class="category-grid">
         ${CATEGORIES.map((cat) => categoryCard(cat)).join("")}
+        ${categoryAllCard()}
       </div>
     </div>
   </section>
@@ -693,9 +701,9 @@ function pageHome() {
   <section class="section about-teaser-section">
     <div class="container about-teaser">
       <div class="about-collage" aria-hidden="true">
-        ${["career-week", "subject-selection", "maritime-talk"].map((id, i) => {
+        ${["music-week", "sports-week", "chinese-culture"].map((id, i) => {
           const a = activityById(id);
-          return `<figure class="about-photo ap-${i + 1}"><img src="${a.photos[i + 1].src}" alt="" loading="lazy"></figure>`;
+          return `<figure class="about-photo ap-${i + 1}"><img src="${a.photos[(i + 1) % a.photos.length].src}" alt="" loading="lazy"></figure>`;
         }).join("")}
         <span class="about-badge">${icon("sparkle")} ${esc(T.aboutBadge)}</span>
       </div>
@@ -754,13 +762,24 @@ function featureCard(activity, index) {
 function categoryCard(cat) {
   const events = ACTIVITIES.filter((a) => a.category === cat.id);
   const photos = events.reduce((sum, a) => sum + a.photos.length, 0);
-  const T = t();
   return `
     <a class="category-card reveal" href="#/gallery?cat=${cat.id}" style="--cat:${cat.color};--cat-soft:${cat.soft}">
       <span class="cat-icon">${icon(cat.icon)}</span>
       <span class="cat-name">${esc(L(cat))}</span>
       <span class="cat-tagline">${esc(L(cat.tagline))}</span>
       <span class="cat-meta">${activityCount(events.length)} · ${photoCount(photos)}</span>
+      <span class="cat-arrow">${icon("arrowUpRight")}</span>
+    </a>`;
+}
+
+function categoryAllCard() {
+  const T = t();
+  return `
+    <a class="category-card category-all reveal" href="#/activities" style="--cat:var(--yellow);--cat-soft:var(--ink)">
+      <span class="cat-icon">${icon("layers")}</span>
+      <span class="cat-name">${esc(T.allActivitiesTitle)}</span>
+      <span class="cat-tagline">${esc(T.allActivitiesTagline)}</span>
+      <span class="cat-meta">${activityCount(ACTIVITIES.length)} · ${photoCount(totalPhotos())}</span>
       <span class="cat-arrow">${icon("arrowUpRight")}</span>
     </a>`;
 }
@@ -1269,9 +1288,9 @@ function pageAbout() {
     <section class="section story-section">
       <div class="container story-grid">
         <div class="story-collage" aria-hidden="true">
-          ${["math-week", "bamboo-craft", "career-week"].map((id, i) => {
+          ${["music-week", "sports-week", "chinese-culture"].map((id, i) => {
             const a = activityById(id);
-            return `<figure class="story-photo sp-${i + 1}"><img src="${a.photos[i + 2].src}" alt="" loading="lazy"></figure>`;
+            return `<figure class="story-photo sp-${i + 1}"><img src="${a.photos[(i + 1) % a.photos.length].src}" alt="" loading="lazy"></figure>`;
           }).join("")}
           <span class="story-star">✦</span>
         </div>
