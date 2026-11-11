@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>澳門慈幼中學 · 活動照片</title>
+  <meta name="description" content="澳門慈幼中學活動照片庫，記錄課堂以外的學習、文化與成長。Salesian School Macau activity photo gallery.">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta property="og:title" content="澳門慈幼中學 · 活動照片">
+  <meta property="og:description" content="記錄校園裡的光影、笑聲與成長。A gallery of campus moments at Salesian School Macau.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">跳至主要內容</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <div id="lightbox" class="lightbox" hidden aria-hidden="true">
+    <div class="lb-backdrop" data-lb-close></div>
+    <div class="lb-dialog" role="dialog" aria-modal="true" aria-label="照片檢視">
+      <div class="lb-top">
+        <span class="lb-counter" id="lb-counter"></span>
+        <button class="lb-close" id="lb-close" type="button" data-lb-close aria-label="關閉">✕</button>
+      </div>
+      <button class="lb-nav lb-prev" id="lb-prev" type="button" aria-label="上一張">‹</button>
+      <figure class="lb-figure">
+        <img class="lb-img" id="lb-img" alt="">
+        <figcaption class="lb-caption">
+          <span class="lb-cap-text" id="lb-caption"></span>
+          <span class="lb-cap-meta" id="lb-meta"></span>
+        </figcaption>
+      </figure>
+      <button class="lb-nav lb-next" id="lb-next" type="button" aria-label="下一張">›</button>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

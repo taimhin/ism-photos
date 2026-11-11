@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#57130A"/>
+      <stop offset="1" stop-color="#FF6B4A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFC2B5" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#FFC2B5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+    <rect width="1200" height="900" fill="url(#bg)"/>
+    <line x1="120" y1="0" x2="120" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="240" y1="0" x2="240" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="360" y1="0" x2="360" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="480" y1="0" x2="480" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="600" y1="0" x2="600" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="720" y1="0" x2="720" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="840" y1="0" x2="840" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="960" y1="0" x2="960" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="1080" y1="0" x2="1080" y2="900" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="120" x2="1200" y2="120" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="240" x2="1200" y2="240" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="360" x2="1200" y2="360" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="480" x2="1200" y2="480" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="600" x2="1200" y2="600" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="720" x2="1200" y2="720" stroke="#FFC2B5" stroke-width="1" opacity=".07"/><line x1="0" y1="840" x2="1200" y2="840" stroke="#FFC2B5" stroke-width="1" opacity=".07"/>
+    
+    <circle cx="984" cy="162" r="270" fill="#FFCF3F" opacity=".10"/>
+    <circle cx="144" cy="828" r="378" fill="none" stroke="#FFC2B5" stroke-width="2" opacity=".16"/>
+    
+  
+        <path d="M0 648 L552 648 L0 882 Z" fill="#FFC2B5" opacity=".10"/>
+        <line x1="72" y1="144" x2="72" y2="756" stroke="#FFCF3F" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+        
+  
+    <circle cx="756" cy="495" r="345" fill="url(#glow)" opacity=".9"/>
+    <text x="756" y="513" text-anchor="middle" dominant-baseline="central"
+          font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',sans-serif" font-size="594" font-weight="900"
+          fill="#FFCF3F" opacity=".14">選</text>
+    <text x="756" y="513" text-anchor="middle" dominant-baseline="central"
+          font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',sans-serif" font-size="594" font-weight="900"
+          fill="none" stroke="#FFCF3F" stroke-width="2.4" opacity=".82">選</text>
+    
+  
+    <text x="52" y="450" transform="rotate(-90 52 450)"
+          text-anchor="middle" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',sans-serif" font-size="15" font-weight="600"
+          letter-spacing="5" fill="#FFC2B5" opacity=".52">SALESIAN SCHOOL MACAU · ACTIVITY GALLERY</text>
+    
+</svg>
