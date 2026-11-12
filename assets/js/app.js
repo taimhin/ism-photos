@@ -8,7 +8,7 @@ const UI = {
     siteName: "澳門慈幼中學",
     siteSub: "活動照片",
     skip: "跳至主要內容",
-    nav: { home: "首頁", activities: "活動", gallery: "相簿" },
+    nav: { home: "首頁", gallery: "相簿" },
     langSwitch: "Switch to English",
     langButton: "EN",
     menu: "開啟選單",
@@ -17,8 +17,8 @@ const UI = {
     heroTitle1: "把校園的每一刻，",
     heroTitle2: "好好收藏。",
     heroLead: "澳門慈幼中學活動照片庫，記錄課堂以外的學習、文化與成長。",
-    heroCta1: "探索活動",
-    heroCta2: "瀏覽相簿",
+    heroCta1: "探索相簿",
+    heroCta2: "所有照片",
     statEvents: "個活動",
     statPhotos: "張照片",
     statThemes: "個主題",
@@ -32,11 +32,11 @@ const UI = {
     catKicker: "探索類別 CATEGORIES",
     catTitle: "用一個主題，找回那一天",
     catLead: "七個主題，七種校園風景。點進去，重溫當天的笑聲與專注。",
-    allActivitiesTitle: "全部活動",
+    allActivitiesTitle: "所有相簿",
     allActivitiesTagline: "一次看遍所有校園片段",
     photoKicker: "相簿快照 SNAPSHOTS",
     photoTitle: "鏡頭下的片段",
-    photoLead: "點擊任何一張照片，放大重溫現場。",
+    photoLead: "點擊照片，進入該活動的完整相簿。",
     openGallery: "打開完整相簿",
     aboutKicker: "關於平台 ABOUT",
     aboutTitle: "不只是一個相簿，\n而是校園的共同記憶。",
@@ -52,7 +52,7 @@ const UI = {
     ctaKicker: "持續更新 UPDATED REGULARLY",
     ctaTitle: "下一個精彩瞬間，\n我們繼續拍下。",
     ctaLead: "活動陸續有來，相簿也會一直長大。記得回來看看，說不定下一張照片裡就有你。",
-    ctaButton: "瀏覽全部活動",
+    ctaButton: "瀏覽所有相簿",
     footerTagline: "記錄校園裡的光影、笑聲與成長，讓每個精彩瞬間都有地方停留。",
     footerExplore: "探索",
     footerCategories: "類別",
@@ -72,15 +72,20 @@ const UI = {
     yearEmptyBody: "這一年度的活動照片會陸續上傳，敬請期待。",
     yearEmptyCta: "先回顧",
     resultActivities: "個活動",
+    resultAlbums: "個相簿",
     resultPhotos: "張照片",
-    noActivityTitle: "找不到符合的活動",
+    noActivityTitle: "找不到符合的相簿",
     noActivityBody: "試試其他關鍵字，或清除篩選條件。",
     noPhotoTitle: "找不到符合的照片",
     noPhotoBody: "換個關鍵字，或看看其他類別。",
     reset: "清除篩選",
     pageGalleryKicker: "完整相簿 FULL GALLERY",
-    pageGalleryTitle: "校園裡的光影瞬間",
-    pageGalleryLead: "所有活動照片，按主題與時間整理。點擊放大，慢慢看。",
+    pageGalleryTitle: "活動相簿",
+    pageGalleryLead: "按活動或分類瀏覽相簿，選擇一本相簿；也可切換到所有照片。",
+    galleryViewLabel: "檢視方式",
+    viewActivity: "按活動",
+    viewCategory: "按分類",
+    viewPhotos: "所有照片",
     pageAboutKicker: "關於 ABOUT",
     pageAboutTitle: "把校園的故事，\n好好說下去。",
     pageAboutLead: "一個由校園媒體小組整理的活動照片平台，為同學、家長與校友保存共同的記憶。",
@@ -106,7 +111,7 @@ const UI = {
     contactNote: "澳門慈幼中學 · 澳門",
     contactButton: "學校官方網站",
     detailHome: "首頁",
-    detailActivities: "活動",
+    detailActivities: "相簿",
     aboutEvent: "關於活動",
     albumTitle: "活動相簿",
     albumHint: "點擊照片放大 · Click to enlarge",
@@ -114,9 +119,9 @@ const UI = {
     location: "地點",
     photosLabel: "照片",
     photoCount: "張照片",
-    prevActivity: "上一個活動",
-    nextActivity: "下一個活動",
-    backActivities: "返回活動列表",
+    prevActivity: "上一個相簿",
+    nextActivity: "下一個相簿",
+    backActivities: "返回相簿列表",
     albumEnd: "已看完整個相簿",
     notFoundTitle: "找不到這個頁面",
     notFoundBody: "它可能已經移動，或連結有誤。",
@@ -131,7 +136,7 @@ const UI = {
     siteName: "Salesian School Macau",
     siteSub: "Activity Gallery",
     skip: "Skip to main content",
-    nav: { home: "Home", activities: "Activities", gallery: "Gallery" },
+    nav: { home: "Home", gallery: "Gallery" },
     langSwitch: "切換至中文",
     langButton: "中",
     menu: "Open menu",
@@ -140,8 +145,8 @@ const UI = {
     heroTitle1: "Every bright moment,",
     heroTitle2: "kept forever.",
     heroLead: "The activity photo gallery of Salesian School Macau — capturing learning, culture and growth beyond the classroom.",
-    heroCta1: "Explore activities",
-    heroCta2: "Browse gallery",
+    heroCta1: "Browse albums",
+    heroCta2: "All photos",
     statEvents: "events",
     statPhotos: "photos",
     statThemes: "themes",
@@ -155,11 +160,11 @@ const UI = {
     catKicker: "BROWSE BY THEME",
     catTitle: "Pick a theme, find that day",
     catLead: "Seven themes, seven sides of campus life. Step in and relive the laughter and focus.",
-    allActivitiesTitle: "All activities",
+    allActivitiesTitle: "All albums",
     allActivitiesTagline: "Every moment in one place",
     photoKicker: "SNAPSHOTS",
     photoTitle: "Fragments through the lens",
-    photoLead: "Tap any photo to open it full screen and return to the moment.",
+    photoLead: "Click a photo to open the event's album.",
     openGallery: "Open full gallery",
     aboutKicker: "ABOUT",
     aboutTitle: "More than an album —\na shared campus memory.",
@@ -175,7 +180,7 @@ const UI = {
     ctaKicker: "UPDATED REGULARLY",
     ctaTitle: "The next bright moment?\nWe'll keep shooting.",
     ctaLead: "More activities are on the way, and the gallery keeps growing. Come back soon — you might be in the next photo.",
-    ctaButton: "Browse all activities",
+    ctaButton: "Browse all albums",
     footerTagline: "Light, laughter and growth on campus — a place for every bright moment to stay.",
     footerExplore: "Explore",
     footerCategories: "Themes",
@@ -195,15 +200,20 @@ const UI = {
     yearEmptyBody: "Photos from this year will be added as activities happen. Stay tuned.",
     yearEmptyCta: "Browse",
     resultActivities: "activities",
+    resultAlbums: "albums",
     resultPhotos: "photos",
-    noActivityTitle: "No matching activities",
+    noActivityTitle: "No matching albums",
     noActivityBody: "Try another keyword, or clear the filters.",
     noPhotoTitle: "No matching photos",
     noPhotoBody: "Try another keyword, or explore a different theme.",
     reset: "Clear filters",
     pageGalleryKicker: "FULL GALLERY",
-    pageGalleryTitle: "Light and life, frame by frame",
-    pageGalleryLead: "Every activity photo, organised by theme and time. Click to enlarge and take your time.",
+    pageGalleryTitle: "Activity Albums",
+    pageGalleryLead: "Browse albums by activity or theme, then open one — or switch to all photos.",
+    galleryViewLabel: "View by",
+    viewActivity: "By activity",
+    viewCategory: "By theme",
+    viewPhotos: "All photos",
     pageAboutKicker: "ABOUT",
     pageAboutTitle: "Keeping the campus story\nalive.",
     pageAboutLead: "An activity gallery curated by the Campus Media Team, preserving shared memories for students, parents and alumni.",
@@ -229,7 +239,7 @@ const UI = {
     contactNote: "Salesian School Macau · Macau",
     contactButton: "School website",
     detailHome: "Home",
-    detailActivities: "Activities",
+    detailActivities: "Gallery",
     aboutEvent: "About the event",
     albumTitle: "Event album",
     albumHint: "Click a photo to enlarge",
@@ -237,9 +247,9 @@ const UI = {
     location: "Location",
     photosLabel: "Photos",
     photoCount: "photos",
-    prevActivity: "Previous event",
-    nextActivity: "Next event",
-    backActivities: "Back to activities",
+    prevActivity: "Previous album",
+    nextActivity: "Next album",
+    backActivities: "Back to albums",
     albumEnd: "You've reached the end of the album",
     notFoundTitle: "Page not found",
     notFoundBody: "It may have moved, or the link might be wrong.",
@@ -262,7 +272,7 @@ const state = {
   })(),
   filters: {
     activities: { cat: "all", q: "", year: "all" },
-    gallery: { cat: "all", q: "" }
+    gallery: { cat: "all", q: "", view: "activity" }
   }
 };
 
@@ -379,7 +389,7 @@ function parseRoute() {
   const segments = pathPart.split("/").filter(Boolean).map(decodeURIComponent);
   const params = new URLSearchParams(queryPart || "");
   if (!segments.length) return { name: "home", params, key: "home" };
-  if (segments[0] === "activities") return { name: "activities", params, key: "activities" };
+  if (segments[0] === "activities") return { name: "gallery", params, key: "gallery" };
   if (segments[0] === "gallery") return { name: "gallery", params, key: "gallery" };
   if (segments[0] === "activity" && segments[1]) {
     return { name: "activity", id: segments[1], params, key: "activity/" + segments[1] };
@@ -388,16 +398,14 @@ function parseRoute() {
 }
 
 function applyRouteParams(route) {
-  if (route.name === "activities" && lastRouteName !== "activities") {
-    state.filters.activities = { cat: "all", q: "", year: "all" };
-  }
   if (route.name === "gallery" && lastRouteName !== "gallery") {
-    state.filters.gallery = { cat: "all", q: "" };
+    state.filters.gallery = { cat: "all", q: "", view: "activity" };
   }
   const cat = route.params.get("cat");
-  if (cat && catById(cat)) {
-    if (route.name === "activities") state.filters.activities.cat = cat;
-    if (route.name === "gallery") state.filters.gallery.cat = cat;
+  if (cat && catById(cat) && route.name === "gallery") state.filters.gallery.cat = cat;
+  const view = route.params.get("view");
+  if (route.name === "gallery" && ["activity", "category", "photos"].includes(view)) {
+    state.filters.gallery.view = view;
   }
 }
 
@@ -413,8 +421,8 @@ function handleRoute() {
 /* ---------------- chrome ---------------- */
 
 function navLink(route, key, href, label) {
-  const active = key === "activities"
-    ? route.name === "activities" || route.name === "activity"
+  const active = key === "gallery"
+    ? route.name === "gallery" || route.name === "activity"
     : route.name === key;
   return `<a class="nav-link${active ? " is-active" : ""}" href="${href}"${active ? ' aria-current="page"' : ""}>${esc(label)}</a>`;
 }
@@ -435,7 +443,6 @@ function renderHeader(route) {
       </a>
       <nav class="site-nav" id="site-nav" aria-label="${state.lang === "zh" ? "主導航" : "Main navigation"}">
         ${navLink(route, "home", "#/", T.nav.home)}
-        ${navLink(route, "activities", "#/activities", T.nav.activities)}
         ${navLink(route, "gallery", "#/gallery", T.nav.gallery)}
       </nav>
       <div class="header-actions">
@@ -464,7 +471,6 @@ function renderFooter() {
       <div class="footer-col">
         <h3>${esc(T.footerExplore)}</h3>
         <a href="#/">${esc(T.nav.home)}</a>
-        <a href="#/activities">${esc(T.nav.activities)}</a>
         <a href="#/gallery">${esc(T.nav.gallery)}</a>
       </div>
       <div class="footer-col">
@@ -546,7 +552,6 @@ function setDocumentTitle(route) {
     document.title = activity ? `${L(activity.title)} · ${base}` : `${t().notFoundTitle} · ${base}`;
   } else {
     const labels = {
-      activities: t().nav.activities,
       gallery: t().nav.gallery,
       notfound: t().notFoundTitle
     };
@@ -557,7 +562,6 @@ function setDocumentTitle(route) {
 function viewFor(route) {
   switch (route.name) {
     case "home": return pageHome();
-    case "activities": return pageActivities();
     case "gallery": return pageGallery();
     case "activity": return pageActivity(route);
     default: return pageNotFound();
@@ -565,7 +569,6 @@ function viewFor(route) {
 }
 
 function initPage(route) {
-  if (route.name === "activities") initActivitiesPage();
   if (route.name === "gallery") initGalleryPage();
 }
 
@@ -610,8 +613,8 @@ function pageHome() {
         <h1 class="hero-title">${esc(T.heroTitle1)}<br><span class="mark">${esc(T.heroTitle2)}</span></h1>
         <p class="hero-lead">${esc(T.heroLead)}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#/activities">${esc(T.heroCta1)} ${icon("arrowRight")}</a>
-          <a class="btn btn-ghost" href="#/gallery">${esc(T.heroCta2)}</a>
+          <a class="btn btn-primary" href="#/gallery">${esc(T.heroCta1)} ${icon("arrowRight")}</a>
+          <a class="btn btn-ghost" href="#/gallery?view=photos">${esc(T.heroCta2)}</a>
         </div>
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem"><span class="stat-num">${events.length}</span><span class="stat-label">${esc(T.statEvents)}</span></div>
@@ -655,7 +658,7 @@ function pageHome() {
           <h2 class="section-title">${esc(T.featuredTitle)}</h2>
           <p class="section-lead">${esc(T.featuredLead)}</p>
         </div>
-        <a class="text-link" href="#/activities">${esc(T.viewAll)} ${icon("arrowUpRight")}</a>
+        <a class="text-link" href="#/gallery">${esc(T.viewAll)} ${icon("arrowUpRight")}</a>
       </div>
       <div class="featured-grid">
         ${featured.map((activity, index) => featureCard(activity, index)).join("")}
@@ -703,7 +706,7 @@ function pageHome() {
           <p class="section-kicker light">${esc(T.ctaKicker)}</p>
           <h2 class="cta-title">${nl2br(T.ctaTitle)}</h2>
           <p class="cta-lead">${esc(T.ctaLead)}</p>
-          <a class="btn btn-sun" href="#/activities">${esc(T.ctaButton)} ${icon("arrowRight")}</a>
+          <a class="btn btn-sun" href="#/gallery">${esc(T.ctaButton)} ${icon("arrowRight")}</a>
         </div>
         <div class="cta-art" aria-hidden="true">
           ${featured.slice(0, 2).map((a) => `<img src="${a.photos[1] ? a.photos[1].src : a.photos[0].src}" alt="">`).join("")}
@@ -739,7 +742,7 @@ function categoryCard(cat) {
 function categoryAllCard() {
   const T = t();
   return `
-    <a class="category-card category-all reveal" href="#/activities" style="--cat:var(--yellow);--cat-soft:var(--ink)">
+    <a class="category-card category-all reveal" href="#/gallery" style="--cat:var(--yellow);--cat-soft:var(--ink)">
       <span class="cat-icon">${icon("layers")}</span>
       <span class="cat-name">${esc(T.allActivitiesTitle)}</span>
       <span class="cat-arrow">${icon("arrowUpRight")}</span>
@@ -999,12 +1002,12 @@ function activityCard(activity) {
 
 function emptyState(scope) {
   const T = t();
-  const isActivities = scope === "activities";
+  const isPhotos = scope === "gallery";
   return `
     <div class="empty-state">
       <span class="empty-icon">${icon("search")}</span>
-      <h3>${esc(isActivities ? T.noActivityTitle : T.noPhotoTitle)}</h3>
-      <p>${esc(isActivities ? T.noActivityBody : T.noPhotoBody)}</p>
+      <h3>${esc(isPhotos ? T.noPhotoTitle : T.noActivityTitle)}</h3>
+      <p>${esc(isPhotos ? T.noPhotoBody : T.noActivityBody)}</p>
       <button class="btn btn-ghost" type="button" data-reset>${esc(T.reset)}</button>
     </div>`;
 }
@@ -1014,12 +1017,16 @@ function emptyState(scope) {
 function pageGallery() {
   const T = t();
   const f = state.filters.gallery;
+  const view = f.view || "activity";
   return `
     <section class="page-hero gallery-hero">
       <div class="container page-hero-inner">
         <p class="section-kicker">${esc(T.pageGalleryKicker)}</p>
         <h1 class="page-title">${esc(T.pageGalleryTitle)}</h1>
         <p class="page-lead">${esc(T.pageGalleryLead)}</p>
+        <div class="gallery-views" role="group" aria-label="${esc(T.galleryViewLabel)}">
+          ${galleryViewTabs(view)}
+        </div>
         <div class="toolbar">
           <label class="search-box">
             <span class="sr-only">${esc(T.searchLabel)}</span>
@@ -1043,6 +1050,19 @@ function pageGallery() {
     </section>`;
 }
 
+function galleryViewTabs(active) {
+  const T = t();
+  const views = [
+    { id: "activity", label: T.viewActivity },
+    { id: "category", label: T.viewCategory },
+    { id: "photos", label: T.viewPhotos }
+  ];
+  return views.map((view) => `
+    <button class="view-tab${active === view.id ? " is-active" : ""}" type="button" data-view="${view.id}" aria-pressed="${active === view.id}">
+      ${esc(view.label)}
+    </button>`).join("");
+}
+
 function filterPhotos(f) {
   const photos = allPhotos();
   return photos.filter((photo) => {
@@ -1050,6 +1070,19 @@ function filterPhotos(f) {
     return (f.cat === "all" || photo.activity.category === f.cat) &&
       matches(f.q, photo.caption, photo.activity.title, photo.activity.excerpt, cat, photo.activity.year);
   });
+}
+
+function filterGalleryActivities(f) {
+  return sortedActivities().filter((activity) => {
+    const cat = catById(activity.category);
+    return (f.cat === "all" || activity.category === f.cat) &&
+      matches(f.q, activity.title, activity.excerpt, activity.subtitle, activity.location, cat, activity.year);
+  });
+}
+
+function albumCount(n) {
+  if (state.lang === "zh") return `${n} ${t().resultAlbums}`;
+  return `${n} ${n === 1 ? "album" : "albums"}`;
 }
 
 function initGalleryPage() {
@@ -1067,6 +1100,12 @@ function initGalleryPage() {
       updateGalleryResults();
     });
   });
+  $$(".gallery-views [data-view]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      f.view = btn.dataset.view;
+      updateGalleryResults();
+    });
+  });
   $("#gallery-results").addEventListener("click", (event) => {
     if (event.target.closest("[data-reset]")) {
       f.cat = "all";
@@ -1080,23 +1119,70 @@ function initGalleryPage() {
 }
 
 function updateGalleryResults() {
-  const T = t();
   const f = state.filters.gallery;
-  const list = filterPhotos(f);
-  photoSets.gallery = list;
+  const view = f.view || "activity";
   const results = $("#gallery-results");
   if (!results) return;
-  results.innerHTML = list.length
-    ? `<div class="masonry">${list.map((photo, i) => galleryItem(photo, i)).join("")}</div>`
-    : emptyState("gallery");
-  const count = $("#gallery-count");
-  if (count) count.textContent = photoCount(list.length);
+
+  if (view === "photos") {
+    const list = filterPhotos(f);
+    photoSets.gallery = list;
+    results.innerHTML = list.length
+      ? `<div class="masonry">${list.map((photo, i) => galleryItem(photo, i)).join("")}</div>`
+      : emptyState("gallery");
+    const count = $("#gallery-count");
+    if (count) count.textContent = photoCount(list.length);
+  } else {
+    photoSets.gallery = [];
+    const list = filterGalleryActivities(f);
+    if (!list.length) {
+      results.innerHTML = emptyState("albums");
+    } else if (view === "category") {
+      results.innerHTML = CATEGORIES.map((cat) => {
+        const group = list.filter((activity) => activity.category === cat.id);
+        if (!group.length) return "";
+        return `
+          <section class="album-group">
+            <div class="year-group-head album-group-head">
+              <h2><span class="tag-dot" style="background:${cat.color}"></span>${esc(L(cat))}</h2>
+              <span>${albumCount(group.length)}</span>
+              <span class="year-line" aria-hidden="true"></span>
+            </div>
+            <div class="activity-grid">${group.map(activityCard).join("")}</div>
+          </section>`;
+      }).join("");
+    } else {
+      results.innerHTML = `<div class="activity-grid">${list.map(activityCard).join("")}</div>`;
+    }
+    const count = $("#gallery-count");
+    if (count) count.textContent = albumCount(list.length);
+  }
+
+  $$(".gallery-views [data-view]").forEach((btn) => {
+    const active = btn.dataset.view === view;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-pressed", String(active));
+  });
   $$("#gallery-filters [data-cat]").forEach((btn) => {
     const active = btn.dataset.cat === f.cat;
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-pressed", String(active));
   });
+  updateGalleryChipCounts(f);
   initReveals();
+}
+
+function updateGalleryChipCounts(f) {
+  const photosView = f.view === "photos";
+  const all = $("#gallery-filters [data-count-all]");
+  if (all) all.textContent = photosView ? totalPhotos() : ACTIVITIES.length;
+  CATEGORIES.forEach((cat) => {
+    const el = $(`#gallery-filters [data-count-cat="${cat.id}"]`);
+    if (!el) return;
+    el.textContent = photosView
+      ? allPhotos().filter((photo) => photo.activity.category === cat.id).length
+      : ACTIVITIES.filter((activity) => activity.category === cat.id).length;
+  });
 }
 
 function galleryItem(photo, index) {
@@ -1127,7 +1213,7 @@ function pageActivity(route) {
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="#/">${esc(T.detailHome)}</a>
           <span aria-hidden="true">/</span>
-          <a href="#/activities">${esc(T.detailActivities)}</a>
+          <a href="#/gallery">${esc(T.detailActivities)}</a>
           <span aria-hidden="true">/</span>
           <span>${esc(L(activity.title))}</span>
         </nav>
