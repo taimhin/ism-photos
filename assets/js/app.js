@@ -6,7 +6,7 @@
 const UI = {
   zh: {
     siteName: "澳門慈幼中學",
-    siteSub: "活動照片 · Activity Gallery",
+    siteSub: "活動照片",
     skip: "跳至主要內容",
     nav: { home: "首頁", activities: "活動", gallery: "相簿" },
     langSwitch: "Switch to English",
@@ -429,7 +429,7 @@ function renderHeader(route) {
       <a class="brand" href="#/" aria-label="${esc(T.siteName)}">
         <img src="assets/img/crest.png" alt="" width="46" height="46">
         <span class="brand-text">
-          <strong>${esc(T.siteName)}</strong>
+          <strong>${esc(T.siteName)}<span class="brand-sep"> ·</span></strong>
           <span>${esc(T.siteSub)}</span>
         </span>
       </a>
@@ -456,7 +456,7 @@ function renderFooter() {
       <div class="footer-brand">
         <a class="brand brand-footer" href="#/">
           <img src="assets/img/crest.png" alt="" width="46" height="46">
-          <span class="brand-text"><strong>${esc(T.siteName)}</strong><span>${esc(T.siteSub)}</span></span>
+          <span class="brand-text"><strong>${esc(T.siteName)}<span class="brand-sep"> ·</span></strong><span>${esc(T.siteSub)}</span></span>
         </a>
         <p>${esc(T.footerTagline)}</p>
         <p class="footer-note">${esc(T.footerNote)}</p>
