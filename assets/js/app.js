@@ -124,6 +124,7 @@ const UI = {
     lightboxClose: "關閉",
     lightboxPrev: "上一張",
     lightboxNext: "下一張",
+    downloadPhoto: "下載照片",
     lightboxLabel: "照片檢視"
   },
   en: {
@@ -246,6 +247,7 @@ const UI = {
     lightboxClose: "Close",
     lightboxPrev: "Previous photo",
     lightboxNext: "Next photo",
+    downloadPhoto: "Download photo",
     lightboxLabel: "Photo viewer"
   }
 };
@@ -1318,6 +1320,15 @@ function updateLightbox() {
   $("#lb-counter").textContent = `${lb.index + 1} / ${lb.list.length}`;
   $("#lb-caption").textContent = photo.activity ? L(photo.activity.title) : "";
   $("#lb-meta").textContent = "";
+  const download = $("#lb-download");
+  if (download) {
+    const filename = photo.src.split("/").pop();
+    const slug = photo.activity ? photo.activity.id : "photo";
+    download.href = photo.src;
+    download.setAttribute("download", `${slug}-${filename}`);
+    download.setAttribute("aria-label", T.downloadPhoto);
+    download.setAttribute("title", T.downloadPhoto);
+  }
   const dialog = $("#lightbox .lb-dialog");
   dialog.setAttribute("aria-label", T.lightboxLabel);
   $("#lb-close").setAttribute("aria-label", T.lightboxClose);
