@@ -1130,6 +1130,7 @@ html[lang="en"] .brand-text strong {
 
 .strip-item {
   position: relative;
+  display: block;
   flex: 0 0 auto;
   width: 300px;
   height: 330px;
@@ -1138,7 +1139,8 @@ html[lang="en"] .brand-text strong {
   border: 0;
   border-radius: 20px;
   background: var(--ink);
-  cursor: zoom-in;
+  text-decoration: none;
+  cursor: pointer;
   scroll-snap-align: start;
 }
 

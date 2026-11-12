@@ -583,7 +583,6 @@ function pageHome() {
       return activity ? { ...activity.photos[1] || activity.photos[0], activity } : null;
     })
     .filter(Boolean);
-  photoSets.home = stripPhotos;
 
   const collage = [
     { id: "music-week", index: 0, cls: "c1" },
@@ -691,7 +690,7 @@ function pageHome() {
     </div>
     <div class="container strip-container">
       <div class="photo-strip">
-        ${stripPhotos.map((photo, i) => stripItem(photo, i)).join("")}
+        ${stripPhotos.map((photo) => stripItem(photo)).join("")}
       </div>
     </div>
   </section>
@@ -747,15 +746,16 @@ function categoryAllCard() {
     </a>`;
 }
 
-function stripItem(photo, index) {
+function stripItem(photo) {
+  const activity = photo.activity;
   return `
-    <button class="strip-item" type="button" data-photo-set="home" data-photo-index="${index}" aria-label="${esc(L(photo.caption))}">
+    <a class="strip-item" href="#/activity/${encodeURIComponent(activity.id)}" aria-label="${esc(L(activity.title))}">
       <img src="${photo.src}" alt="${esc(L(photo.caption))}" loading="lazy">
       <span class="strip-overlay">
-        <span class="strip-activity">${esc(L(photo.activity.title))}</span>
-        <span class="strip-icon">${icon("expand")}</span>
+        <span class="strip-activity">${esc(L(activity.title))}</span>
+        <span class="strip-icon">${icon("arrowRight")}</span>
       </span>
-    </button>`;
+    </a>`;
 }
 
 /* ---------------- activities ---------------- */
