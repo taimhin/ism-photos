@@ -80,7 +80,7 @@ const UI = {
     reset: "清除篩選",
     pageGalleryKicker: "完整相簿 FULL GALLERY",
     pageGalleryTitle: "活動相簿",
-    pageGalleryLead: "按活動或分類瀏覽相簿，選擇一本相簿；也可切換到所有照片。",
+    pageGalleryLead: "按年份、活動或分類瀏覽相簿，選擇一本相簿；也可切換到所有照片。",
     galleryViewLabel: "檢視方式",
     viewActivity: "按活動",
     viewCategory: "按分類",
@@ -207,7 +207,7 @@ const UI = {
     reset: "Clear filters",
     pageGalleryKicker: "FULL GALLERY",
     pageGalleryTitle: "Activity Albums",
-    pageGalleryLead: "Browse albums by activity or theme, then open one — or switch to all photos.",
+    pageGalleryLead: "Browse albums by year, activity or theme, then open one — or switch to all photos.",
     galleryViewLabel: "View by",
     viewActivity: "By activity",
     viewCategory: "By theme",
@@ -270,7 +270,7 @@ const state = {
   })(),
   filters: {
     activities: { cat: "all", q: "", year: "all" },
-    gallery: { cat: "all", q: "", view: "activity" }
+    gallery: { cat: "all", q: "", view: "activity", year: "all" }
   }
 };
 
@@ -397,13 +397,17 @@ function parseRoute() {
 
 function applyRouteParams(route) {
   if (route.name === "gallery" && lastRouteName !== "gallery") {
-    state.filters.gallery = { cat: "all", q: "", view: "activity" };
+    state.filters.gallery = { cat: "all", q: "", view: "activity", year: "all" };
   }
   const cat = route.params.get("cat");
   if (cat && catById(cat) && route.name === "gallery") state.filters.gallery.cat = cat;
   const view = route.params.get("view");
   if (route.name === "gallery" && ["activity", "category", "photos"].includes(view)) {
     state.filters.gallery.view = view;
+  }
+  const year = route.params.get("year");
+  if (route.name === "gallery" && orderedYears().includes(year)) {
+    state.filters.gallery.year = year;
   }
 }
 
@@ -1021,6 +1025,12 @@ function pageGallery() {
         <p class="section-kicker">${esc(T.pageGalleryKicker)}</p>
         <h1 class="page-title">${esc(T.pageGalleryTitle)}</h1>
         <p class="page-lead">${esc(T.pageGalleryLead)}</p>
+        <div class="year-switch">
+          <span class="year-switch-label">${esc(T.yearLabel)}</span>
+          <div class="year-tabs" id="gallery-years" role="group" aria-label="${esc(T.yearLabel)}">
+            ${yearTabs(f.year || "all")}
+          </div>
+        </div>
         <div class="gallery-views" role="group" aria-label="${esc(T.galleryViewLabel)}">
           ${galleryViewTabs(view)}
         </div>
@@ -1064,7 +1074,8 @@ function filterPhotos(f) {
   const photos = allPhotos();
   return photos.filter((photo) => {
     const cat = catById(photo.activity.category);
-    return (f.cat === "all" || photo.activity.category === f.cat) &&
+    return (f.year === "all" || photo.activity.year === f.year) &&
+      (f.cat === "all" || photo.activity.category === f.cat) &&
       matches(f.q, photo.caption, photo.activity.title, photo.activity.excerpt, cat, photo.activity.year);
   });
 }
@@ -1072,7 +1083,8 @@ function filterPhotos(f) {
 function filterGalleryActivities(f) {
   return sortedActivities().filter((activity) => {
     const cat = catById(activity.category);
-    return (f.cat === "all" || activity.category === f.cat) &&
+    return (f.year === "all" || activity.year === f.year) &&
+      (f.cat === "all" || activity.category === f.cat) &&
       matches(f.q, activity.title, activity.excerpt, activity.subtitle, activity.location, cat, activity.year);
   });
 }
@@ -1103,13 +1115,26 @@ function initGalleryPage() {
       updateGalleryResults();
     });
   });
+  $$("#gallery-years [data-year]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      f.year = btn.dataset.year;
+      updateGalleryResults();
+    });
+  });
   $("#gallery-results").addEventListener("click", (event) => {
     if (event.target.closest("[data-reset]")) {
       f.cat = "all";
       f.q = "";
+      f.year = "all";
       $("#gallery-search").value = "";
       updateGalleryResults();
       $("#gallery-search").focus();
+      return;
+    }
+    const jump = event.target.closest("[data-jump-year]");
+    if (jump) {
+      f.year = jump.dataset.jumpYear;
+      updateGalleryResults();
     }
   });
   updateGalleryResults();
@@ -1132,24 +1157,46 @@ function updateGalleryResults() {
   } else {
     photoSets.gallery = [];
     const list = filterGalleryActivities(f);
-    if (!list.length) {
-      results.innerHTML = emptyState("albums");
-    } else if (view === "category") {
-      results.innerHTML = CATEGORIES.map((cat) => {
-        const group = list.filter((activity) => activity.category === cat.id);
-        if (!group.length) return "";
-        return `
-          <section class="album-group">
-            <div class="year-group-head album-group-head">
-              <h2><span class="tag-dot" style="background:${cat.color}"></span>${esc(L(cat))}</h2>
-              <span>${albumCount(group.length)}</span>
+    const activeFilters = f.cat !== "all" || f.q.trim() !== "";
+
+    if (view === "category") {
+      if (!list.length) {
+        results.innerHTML = emptyState("albums");
+      } else {
+        results.innerHTML = CATEGORIES.map((cat) => {
+          const group = list.filter((activity) => activity.category === cat.id);
+          if (!group.length) return "";
+          return `
+            <section class="album-group">
+              <div class="year-group-head album-group-head">
+                <h2><span class="tag-dot" style="background:${cat.color}"></span>${esc(L(cat))}</h2>
+                <span>${albumCount(group.length)}</span>
+                <span class="year-line" aria-hidden="true"></span>
+              </div>
+              <div class="activity-grid">${group.map(activityCard).join("")}</div>
+            </section>`;
+        }).join("");
+      }
+    } else {
+      const years = f.year === "all" ? orderedYears() : [f.year];
+      const groups = years
+        .map((year) => ({ year, list: list.filter((activity) => activity.year === year) }))
+        .filter((group) => group.list.length || (!activeFilters && f.year === "all") || (!activeFilters && f.year === group.year));
+      if (!groups.length) {
+        results.innerHTML = emptyState("albums");
+      } else {
+        results.innerHTML = groups.map((group) => `
+          <section class="year-group">
+            <div class="year-group-head">
+              <h2>${esc(group.year)}</h2>
+              <span>${albumCount(group.list.length)}</span>
               <span class="year-line" aria-hidden="true"></span>
             </div>
-            <div class="activity-grid">${group.map(activityCard).join("")}</div>
-          </section>`;
-      }).join("");
-    } else {
-      results.innerHTML = `<div class="activity-grid">${list.map(activityCard).join("")}</div>`;
+            ${group.list.length
+              ? `<div class="activity-grid">${group.list.map(activityCard).join("")}</div>`
+              : yearEmptyPanel(group.year)}
+          </section>`).join("");
+      }
     }
     const count = $("#gallery-count");
     if (count) count.textContent = albumCount(list.length);
@@ -1157,6 +1204,11 @@ function updateGalleryResults() {
 
   $$(".gallery-views [data-view]").forEach((btn) => {
     const active = btn.dataset.view === view;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-pressed", String(active));
+  });
+  $$("#gallery-years [data-year]").forEach((btn) => {
+    const active = btn.dataset.year === f.year;
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-pressed", String(active));
   });
@@ -1171,14 +1223,16 @@ function updateGalleryResults() {
 
 function updateGalleryChipCounts(f) {
   const photosView = f.view === "photos";
+  const yearPool = f.year === "all" ? ACTIVITIES : ACTIVITIES.filter((activity) => activity.year === f.year);
+  const photoPool = f.year === "all" ? allPhotos() : allPhotos().filter((photo) => photo.activity.year === f.year);
   const all = $("#gallery-filters [data-count-all]");
-  if (all) all.textContent = photosView ? totalPhotos() : ACTIVITIES.length;
+  if (all) all.textContent = photosView ? photoPool.length : yearPool.length;
   CATEGORIES.forEach((cat) => {
     const el = $(`#gallery-filters [data-count-cat="${cat.id}"]`);
     if (!el) return;
     el.textContent = photosView
-      ? allPhotos().filter((photo) => photo.activity.category === cat.id).length
-      : ACTIVITIES.filter((activity) => activity.category === cat.id).length;
+      ? photoPool.filter((photo) => photo.activity.category === cat.id).length
+      : yearPool.filter((activity) => activity.category === cat.id).length;
   });
 }
 
