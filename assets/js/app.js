@@ -80,7 +80,7 @@ const UI = {
     reset: "清除篩選",
     pageGalleryKicker: "完整相簿 FULL GALLERY",
     pageGalleryTitle: "活動相簿",
-    pageGalleryLead: "按年份、活動或分類瀏覽相簿，選擇一本相簿；也可切換到所有照片。",
+    pageGalleryLead: "按年份或分類瀏覽相簿，選擇一本相簿。",
     galleryViewLabel: "檢視方式",
     viewActivity: "按活動",
     viewCategory: "按分類",
@@ -207,7 +207,7 @@ const UI = {
     reset: "Clear filters",
     pageGalleryKicker: "FULL GALLERY",
     pageGalleryTitle: "Activity Albums",
-    pageGalleryLead: "Browse albums by year, activity or theme, then open one — or switch to all photos.",
+    pageGalleryLead: "Browse albums by year or theme, then open one.",
     galleryViewLabel: "View by",
     viewActivity: "By activity",
     viewCategory: "By theme",
@@ -270,7 +270,7 @@ const state = {
   })(),
   filters: {
     activities: { cat: "all", q: "", year: "all" },
-    gallery: { cat: "all", q: "", view: "activity", year: "all" }
+    gallery: { cat: "all", q: "", year: "all" }
   }
 };
 
@@ -397,14 +397,10 @@ function parseRoute() {
 
 function applyRouteParams(route) {
   if (route.name === "gallery" && lastRouteName !== "gallery") {
-    state.filters.gallery = { cat: "all", q: "", view: "activity", year: "all" };
+    state.filters.gallery = { cat: "all", q: "", year: "all" };
   }
   const cat = route.params.get("cat");
   if (cat && catById(cat) && route.name === "gallery") state.filters.gallery.cat = cat;
-  const view = route.params.get("view");
-  if (route.name === "gallery" && ["activity", "category", "photos"].includes(view)) {
-    state.filters.gallery.view = view;
-  }
   const year = route.params.get("year");
   if (route.name === "gallery" && orderedYears().includes(year)) {
     state.filters.gallery.year = year;
@@ -615,7 +611,6 @@ function pageHome() {
         <p class="hero-lead">${esc(T.heroLead)}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#/gallery">${esc(T.heroCta1)} ${icon("arrowRight")}</a>
-          <a class="btn btn-ghost" href="#/gallery?view=photos">${esc(T.heroCta2)}</a>
         </div>
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem"><span class="stat-num">${events.length}</span><span class="stat-label">${esc(T.statEvents)}</span></div>
@@ -1018,7 +1013,6 @@ function emptyState(scope) {
 function pageGallery() {
   const T = t();
   const f = state.filters.gallery;
-  const view = f.view || "activity";
   return `
     <section class="page-hero gallery-hero">
       <div class="container page-hero-inner">
@@ -1030,9 +1024,6 @@ function pageGallery() {
           <div class="year-tabs" id="gallery-years" role="group" aria-label="${esc(T.yearLabel)}">
             ${yearTabs(f.year || "all")}
           </div>
-        </div>
-        <div class="gallery-views" role="group" aria-label="${esc(T.galleryViewLabel)}">
-          ${galleryViewTabs(view)}
         </div>
         <div class="toolbar">
           <label class="search-box">
@@ -1055,19 +1046,6 @@ function pageGallery() {
         <div id="gallery-results"></div>
       </div>
     </section>`;
-}
-
-function galleryViewTabs(active) {
-  const T = t();
-  const views = [
-    { id: "activity", label: T.viewActivity },
-    { id: "category", label: T.viewCategory },
-    { id: "photos", label: T.viewPhotos }
-  ];
-  return views.map((view) => `
-    <button class="view-tab${active === view.id ? " is-active" : ""}" type="button" data-view="${view.id}" aria-pressed="${active === view.id}">
-      ${esc(view.label)}
-    </button>`).join("");
 }
 
 function filterPhotos(f) {
@@ -1109,12 +1087,6 @@ function initGalleryPage() {
       updateGalleryResults();
     });
   });
-  $$(".gallery-views [data-view]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      f.view = btn.dataset.view;
-      updateGalleryResults();
-    });
-  });
   $$("#gallery-years [data-year]").forEach((btn) => {
     btn.addEventListener("click", () => {
       f.year = btn.dataset.year;
@@ -1142,71 +1114,34 @@ function initGalleryPage() {
 
 function updateGalleryResults() {
   const f = state.filters.gallery;
-  const view = f.view || "activity";
   const results = $("#gallery-results");
   if (!results) return;
 
-  if (view === "photos") {
-    const list = filterPhotos(f);
-    photoSets.gallery = list;
-    results.innerHTML = list.length
-      ? `<div class="masonry">${list.map((photo, i) => galleryItem(photo, i)).join("")}</div>`
-      : emptyState("gallery");
-    const count = $("#gallery-count");
-    if (count) count.textContent = photoCount(list.length);
-  } else {
-    photoSets.gallery = [];
-    const list = filterGalleryActivities(f);
-    const activeFilters = f.cat !== "all" || f.q.trim() !== "";
+  const list = filterGalleryActivities(f);
+  const activeFilters = f.cat !== "all" || f.q.trim() !== "";
+  const years = f.year === "all" ? orderedYears() : [f.year];
+  const groups = years
+    .map((year) => ({ year, list: list.filter((activity) => activity.year === year) }))
+    .filter((group) => group.list.length || (!activeFilters && f.year === "all") || (!activeFilters && f.year === group.year));
 
-    if (view === "category") {
-      if (!list.length) {
-        results.innerHTML = emptyState("albums");
-      } else {
-        results.innerHTML = CATEGORIES.map((cat) => {
-          const group = list.filter((activity) => activity.category === cat.id);
-          if (!group.length) return "";
-          return `
-            <section class="album-group">
-              <div class="year-group-head album-group-head">
-                <h2><span class="tag-dot" style="background:${cat.color}"></span>${esc(L(cat))}</h2>
-                <span>${albumCount(group.length)}</span>
-                <span class="year-line" aria-hidden="true"></span>
-              </div>
-              <div class="activity-grid">${group.map(activityCard).join("")}</div>
-            </section>`;
-        }).join("");
-      }
-    } else {
-      const years = f.year === "all" ? orderedYears() : [f.year];
-      const groups = years
-        .map((year) => ({ year, list: list.filter((activity) => activity.year === year) }))
-        .filter((group) => group.list.length || (!activeFilters && f.year === "all") || (!activeFilters && f.year === group.year));
-      if (!groups.length) {
-        results.innerHTML = emptyState("albums");
-      } else {
-        results.innerHTML = groups.map((group) => `
-          <section class="year-group">
-            <div class="year-group-head">
-              <h2>${esc(group.year)}</h2>
-              <span>${albumCount(group.list.length)}</span>
-              <span class="year-line" aria-hidden="true"></span>
-            </div>
-            ${group.list.length
-              ? `<div class="activity-grid">${group.list.map(activityCard).join("")}</div>`
-              : yearEmptyPanel(group.year)}
-          </section>`).join("");
-      }
-    }
-    const count = $("#gallery-count");
-    if (count) count.textContent = albumCount(list.length);
+  if (!groups.length) {
+    results.innerHTML = emptyState("albums");
+  } else {
+    results.innerHTML = groups.map((group) => `
+      <section class="year-group">
+        <div class="year-group-head">
+          <h2>${esc(group.year)}</h2>
+          <span>${albumCount(group.list.length)}</span>
+          <span class="year-line" aria-hidden="true"></span>
+        </div>
+        ${group.list.length
+          ? `<div class="activity-grid">${group.list.map(activityCard).join("")}</div>`
+          : yearEmptyPanel(group.year)}
+      </section>`).join("");
   }
 
-  $$(".gallery-views [data-view]").forEach((btn) => {
-    const active = btn.dataset.view === view;
-    btn.classList.toggle("is-active", active);
-    btn.setAttribute("aria-pressed", String(active));
-  });
+  const count = $("#gallery-count");
+  if (count) count.textContent = albumCount(list.length);
   $$("#gallery-years [data-year]").forEach((btn) => {
     const active = btn.dataset.year === f.year;
     btn.classList.toggle("is-active", active);
@@ -1222,17 +1157,12 @@ function updateGalleryResults() {
 }
 
 function updateGalleryChipCounts(f) {
-  const photosView = f.view === "photos";
   const yearPool = f.year === "all" ? ACTIVITIES : ACTIVITIES.filter((activity) => activity.year === f.year);
-  const photoPool = f.year === "all" ? allPhotos() : allPhotos().filter((photo) => photo.activity.year === f.year);
   const all = $("#gallery-filters [data-count-all]");
-  if (all) all.textContent = photosView ? photoPool.length : yearPool.length;
+  if (all) all.textContent = yearPool.length;
   CATEGORIES.forEach((cat) => {
     const el = $(`#gallery-filters [data-count-cat="${cat.id}"]`);
-    if (!el) return;
-    el.textContent = photosView
-      ? photoPool.filter((photo) => photo.activity.category === cat.id).length
-      : yearPool.filter((activity) => activity.category === cat.id).length;
+    if (el) el.textContent = yearPool.filter((activity) => activity.category === cat.id).length;
   });
 }
 
