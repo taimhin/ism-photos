@@ -729,14 +729,10 @@ function featureCard(activity, index) {
 }
 
 function categoryCard(cat) {
-  const events = ACTIVITIES.filter((a) => a.category === cat.id);
-  const photos = events.reduce((sum, a) => sum + a.photos.length, 0);
   return `
     <a class="category-card reveal" href="#/gallery?cat=${cat.id}" style="--cat:${cat.color};--cat-soft:${cat.soft}">
       <span class="cat-icon">${icon(cat.icon)}</span>
       <span class="cat-name">${esc(L(cat))}</span>
-      <span class="cat-tagline">${esc(L(cat.tagline))}</span>
-      <span class="cat-meta">${activityCount(events.length)} · ${photoCount(photos)}</span>
       <span class="cat-arrow">${icon("arrowUpRight")}</span>
     </a>`;
 }
@@ -747,8 +743,6 @@ function categoryAllCard() {
     <a class="category-card category-all reveal" href="#/activities" style="--cat:var(--yellow);--cat-soft:var(--ink)">
       <span class="cat-icon">${icon("layers")}</span>
       <span class="cat-name">${esc(T.allActivitiesTitle)}</span>
-      <span class="cat-tagline">${esc(T.allActivitiesTagline)}</span>
-      <span class="cat-meta">${activityCount(ACTIVITIES.length)} · ${photoCount(totalPhotos())}</span>
       <span class="cat-arrow">${icon("arrowUpRight")}</span>
     </a>`;
 }
