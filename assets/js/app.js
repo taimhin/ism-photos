@@ -56,7 +56,6 @@ const UI = {
     footerTagline: "記錄校園裡的光影、笑聲與成長，讓每個精彩瞬間都有地方停留。",
     footerExplore: "探索",
     footerCategories: "類別",
-    footerNote: "本網站由校園媒體小組整理及更新。如欲索取照片原檔或授權使用，請經校務處聯絡我們。",
     footerRights: "© 2026 澳門慈幼中學 · 活動照片",
     footerMade: "以鏡頭記錄校園",
     pageActivitiesKicker: "活動總覽 ALL ACTIVITIES",
@@ -184,7 +183,6 @@ const UI = {
     footerTagline: "Light, laughter and growth on campus — a place for every bright moment to stay.",
     footerExplore: "Explore",
     footerCategories: "Themes",
-    footerNote: "This gallery is maintained by the Campus Media Team. For original files or usage permission, please contact us through the school office.",
     footerRights: "© 2026 Salesian School Macau · Activity Gallery",
     footerMade: "Documenting campus life",
     pageActivitiesKicker: "ALL ACTIVITIES",
@@ -466,7 +464,6 @@ function renderFooter() {
           <span class="brand-text"><strong>${esc(T.siteName)}<span class="brand-sep"> ·</span></strong><span>${esc(T.siteSub)}</span></span>
         </a>
         <p>${esc(T.footerTagline)}</p>
-        <p class="footer-note">${esc(T.footerNote)}</p>
       </div>
       <div class="footer-col">
         <h3>${esc(T.footerExplore)}</h3>
