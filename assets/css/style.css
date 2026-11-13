@@ -3443,6 +3443,11 @@ html[lang="en"] .brand-text strong {
     margin-top: 0;
   }
 
+  html[lang="en"] .brand-text > span,
+  html[lang="en"] .brand-sep {
+    display: none;
+  }
+
   .lang-btn,
   .menu-btn {
     width: 40px;

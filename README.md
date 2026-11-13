@@ -121,4 +121,4 @@ tools/                     照片與版面示意圖產生工具
 
 ---
 
-以鏡頭記錄校園 · Salesian School Macau
+以鏡頭記錄校園 · Instituto Salesiano
