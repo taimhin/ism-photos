@@ -132,7 +132,7 @@ const UI = {
     lightboxLabel: "照片檢視"
   },
   en: {
-    siteName: "Instituto Salesiano",
+    siteName: "Instituto Salesiano Macau",
     siteSub: "Activity Gallery",
     skip: "Skip to main content",
     nav: { home: "Home", gallery: "Gallery" },
@@ -143,7 +143,7 @@ const UI = {
     heroKicker: "CAMPUS MOMENTS · UPDATED REGULARLY",
     heroTitle1: "Every bright moment,",
     heroTitle2: "kept forever.",
-    heroLead: "The activity photo gallery of Instituto Salesiano — capturing learning, culture and growth beyond the classroom.",
+    heroLead: "The activity photo gallery of Instituto Salesiano Macau — capturing learning, culture and growth beyond the classroom.",
     heroCta1: "Browse albums",
     heroCta2: "All photos",
     statEvents: "events",
@@ -183,7 +183,7 @@ const UI = {
     footerTagline: "Light, laughter and growth on campus — a place for every bright moment to stay.",
     footerExplore: "Explore",
     footerCategories: "Themes",
-    footerRights: "© 2026 Instituto Salesiano · Activity Gallery",
+    footerRights: "© 2026 Instituto Salesiano Macau · Activity Gallery",
     footerMade: "Documenting campus life",
     pageActivitiesKicker: "ALL ACTIVITIES",
     pageActivitiesTitle: "Every event deserves\nto be remembered.",
@@ -234,7 +234,7 @@ const UI = {
     contactKicker: "CONTACT",
     contactTitle: "Photo requests & collaborations",
     contactBody: "For original files, usage permission or a photo collaboration, please contact the Campus Media Team through the school office.",
-    contactNote: "Instituto Salesiano · Macau",
+    contactNote: "Instituto Salesiano Macau",
     contactButton: "School website",
     detailHome: "Home",
     detailActivities: "Gallery",
@@ -624,7 +624,7 @@ function pageHome() {
         <div class="orbit-badge" aria-hidden="true">
           <svg viewBox="0 0 120 120">
             <defs><path id="orbitPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
-            <text><textPath href="#orbitPath">INSTITUTO SALESIANO · ACTIVITY GALLERY · </textPath></text>
+            <text><textPath href="#orbitPath">INSTITUTO SALESIANO MACAU · ACTIVITY GALLERY · </textPath></text>
           </svg>
           <span><img src="assets/img/crest.png" alt=""></span>
         </div>

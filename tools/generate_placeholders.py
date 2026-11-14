@@ -129,7 +129,7 @@ def build_svg(activity_id, category, glyph, index, width, height):
     brand = f'''
     <text x="{width * 0.043:.0f}" y="{height * 0.5:.0f}" transform="rotate(-90 {width * 0.043:.0f} {height * 0.5:.0f})"
           text-anchor="middle" font-family="{FONT}" font-size="{unit * 0.017:.0f}" font-weight="600"
-          letter-spacing="{unit * 0.006:.0f}" fill="{p["soft"]}" opacity=".52">SALESIAN SCHOOL MACAU · ACTIVITY GALLERY</text>
+          letter-spacing="{unit * 0.006:.0f}" fill="{p["soft"]}" opacity=".52">INSTITUTO SALESIANO MACAU · ACTIVITY GALLERY</text>
     '''
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" role="img">
